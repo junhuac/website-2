@@ -3,7 +3,7 @@ var sass = require("gulp-sass");
 var watchSass = require("gulp-watch-sass");
 var gs		= require('gulp-selectors');
 
-gulp.task("mangle", ['sass'], function() {
+gulp.task("mangle", ['sass', 'bootstrap'], function() {
   gulp.src(['**/*.css', '**/*.html', '**/.+(htpasswd|htaccess)', '!dist/**/*.*', '!node_modules/**/*.*'])
     // .pipe(gs.run())
     .pipe(gulp.dest('dist'));
@@ -12,6 +12,11 @@ gulp.task("mangle", ['sass'], function() {
 gulp.task("sass", function () {
   return gulp.src('assets/scss/**/*.scss')
   .pipe(sass())
+    .pipe(gulp.dest('assets/css/'))
+});
+
+gulp.task("bootstrap", function() {
+  return gulp.src('node_modules/bootstrap/dist/css/bootstrap.min.css')
     .pipe(gulp.dest('assets/css/'))
 });
 
