@@ -1,0 +1,94 @@
+.team-page {
+    position: relative;
+    &:after{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 537px;
+        background: url(../images/svg/team_shape.svg);
+        width: 1311px;
+        max-width: 100%;
+        height: 363px;
+        @include media('<992px'){
+            display: none;
+        }
+    }
+    .card-list {
+        margin-top: 105px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 80px;
+        flex-wrap: wrap;
+
+        .card-item {
+            width: calc(50% - 15px);
+            background-color: #ffffff;
+            text-align: center;
+            padding: 65px;
+            //margin-top: 75px;
+            margin-bottom: 75px;
+            border-radius: 6px;
+            box-shadow: 0 1px 4px rgba(35, 40, 54, 0.1);
+            @include media('<992px'){
+                padding:0 15px;
+            }
+            @include media('<768px'){
+                width: 100%;
+                padding: 0 15px;
+            }
+            .card-socials {
+                margin-top: 55px;
+                margin-bottom: 15px;
+            }
+
+            .image.rocket {
+                position: relative;
+                &:before {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    background: url(../images/svg/rocket.svg);
+                    width: 163px;
+                    height: 234px;
+                    margin-top: -25px;
+                    opacity: .5;
+                }
+                img {
+                    width: 120px;
+                    height: 120px;
+                }
+
+                .icon {
+                    position: absolute;
+                    top: 0px;
+                    left: 50%;
+                    transform: translateY(-16px);
+                }
+                &:before {
+
+                    //content: '';
+
+                }
+            }
+
+            span.small{
+                display: block;
+                margin-bottom: 20px;
+            }
+            &.ronnie{
+                @include media('<768px'){
+                    margin-top: 35px;
+                }
+            }
+        }
+    }
+
+    .team-avatar {
+        border-radius: 50%;
+        height: 120px;
+        margin-top: 15px;
+
+    }
+}

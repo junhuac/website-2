@@ -1,0 +1,295 @@
+.investment-page{
+  &:after{
+
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 537px;
+    background: url(../images/svg/invest_shape.svg) no-repeat;
+    width: 1311px;
+    max-width: 100%;
+    height: 363px;
+    @include media('<768px'){
+      opacity: .2;
+    }
+  }
+  h1{
+    margin-top: 112px;
+    margin-bottom: 55px;
+    & +.row{
+      margin-bottom: 50px;
+    }
+  }
+
+  .calculate{
+    display: block;
+    text-align: center;
+    strong{
+      color:$main_dark;
+    }
+  }
+
+
+  .calculator-box{
+    display: flex;
+    flex-direction: column;
+    max-width: 970px;
+    margin:0 auto;
+    box-shadow: 0 1px 4px rgba(35, 40, 54, 0.1);
+    border-radius: 6px;
+    border: 1px solid #dae2e9;
+    background-color: #ffffff;
+    margin-top: 25px;
+    margin-bottom: 170px;
+
+    @include media('<768px'){
+      margin-bottom: 70px;
+    }
+
+    .calculator-row{
+      display: flex;
+      flex-direction: row;
+      @include media('<768px'){
+        flex-direction: column;
+      }
+      &.grey{
+        background-color: #f3f7fb;
+      }
+      div.val{
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        min-height:115px;
+        @include media('<768px'){
+          width: 100%;
+        }
+        &:first-of-type{
+          border-right: 1px solid #dae2e9;;
+          @include media('<768px'){
+            border-right:none;
+            border-bottom: 1px solid #dae2e9;;
+          }
+        }
+        p{
+          margin-bottom: 0;
+          @include font(24, 36, 400, $futura);
+          color: $main_dark;
+          text-transform: uppercase;
+        }
+      }
+
+      &.slider-row{
+        position: relative;
+        height: 160px;
+        padding-top: 40px;
+        &:after{
+          content:'';
+          border-radius: 8px;
+          background-color: #e8e6fa;
+          width: calc(100% + 200px);
+          left: -100px;
+          position: absolute;
+          height: 16px;
+          z-index:1;
+          @include media('<1200px'){
+            width: 95%;
+            left: 50%;
+            transform: translateX(-50%);
+          }
+        }
+      }
+
+      .noUi-target{
+        width: 80%;
+        margin:0 auto;
+      }
+
+      #slider{
+        border:none;
+        z-index:2;
+        background: transparent;
+        border-radius: 0;
+        box-shadow:none;
+        position: relative;
+        &:before{
+          content: 'US $0';
+          position: absolute;
+          top: 40px;
+          left: 0;
+          color: #787e8a;
+          @include font(12,20,400,$defaultFontFamily);
+        }
+        &:after{
+          content: 'US $500,000';
+          position: absolute;
+          top: 40px;
+          right: 0;
+          color: #787e8a;
+          @include font(12,20,400,$defaultFontFamily);
+        }
+      }
+
+      .noUi-base{
+        height: 16px;
+        border-radius: 8px;
+        background-color: #e8e6fa;
+        position: relative;
+        &:after{
+          content: '';
+          width: 1px;
+          height: 16px;
+          border: 1px dashed #e64e64;
+          position: absolute;
+          top: 0;
+          left: 0;
+          transform: translateY(100%);
+        }
+        &:before{
+          content: '';
+          width: 1px;
+          height: 16px;
+          border: 1px dashed #e64e64;
+          position: absolute;
+          top: 0;
+          right: 0;
+          transform: translateY(100%);
+        }
+        .noUi-connect{
+          top:50%;
+          transform: translateY(-50%);
+          height: 6px;
+          border-radius: 0;
+          background-color: #e64e64;
+        }
+      }
+
+      .noUi-handle{
+        background: url(../images/slider_slider.png) no-repeat;
+        width: 146px;
+        height: 98px;
+        border:none;
+        box-shadow:none;
+        outline:none;
+        cursor: pointer;
+        top: 18px;
+        left: 0px;
+        transform: translate(-50%, -50%);
+        @include media('<768px'){
+          top: 13px;
+          transform: translate(-50%, -50%) scale(0.53);
+        }
+        &:after,
+        &:before{
+          display: none;
+        }
+      }
+    }
+  }
+
+  .form-box{
+    display: flex;
+    flex-direction: column;
+    max-width: 970px;
+    margin:0 auto;
+    margin-top: 50px;
+  }
+
+  .payment-methods{
+    margin-top: 45px;
+    display: flex;
+    @include media('<768px'){
+      flex-direction: column;
+    }
+    .investment-value{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      @include media('<768px'){
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      p{
+        margin-top: 10px;
+        color: $main_dark;
+        @include font(18,24,400,$futura);
+        text-transform: uppercase;
+        @include media('<992px'){
+          font-size:16px !important;
+        }
+      }
+    }
+    .payment-method{
+      margin-left: auto;
+      @include media('<768px'){
+        text-align: center;
+        z-index:2;
+        margin-right: auto;
+      }
+      input[type="radio"]{
+        display: none;
+      }
+      .method{
+        width: 150px;
+        z-index: 3;
+        height: 70px;
+        margin-right: 8px;
+        box-shadow: 0 1px 4px rgba(35, 40, 54, 0.1);
+        border-radius: 4px;
+        background: #ffffff;
+        cursor: pointer;
+        @include media('<992px'){
+          width: 145px;
+        }
+        @include media('<768px'){
+          margin-bottom: 20px;
+        }
+        span{
+          display: block;
+          width: 100%;
+          height: 100%;
+          background-repeat: no-repeat;
+          background-position: center;
+          filter:grayscale(100%);
+          transition:.3s;
+          &:after{
+            content:'';
+            display: flex;
+            position: absolute;
+            bottom: 0;
+            height: 0;
+            left: 50%;
+            transform:translateX(-50%);
+            width: 94px;
+            background-color: #f33853;
+            background-image: linear-gradient(to right, #e64e64 0%, #fe9e63 100%);
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+          }
+        }
+
+        .method-bitcoin{
+          background-image: url(../images/payment_bitcoin.png);
+        }
+        .method-method{
+          background-image: url(../images/payment_method.png);
+        }
+        .method-mastercard{
+          background-image: url(../images/payment_mastercard.png);
+        }
+      }
+
+      input[type="radio"]:checked + .method{
+        position: relative;
+        span{
+          filter:none;
+          &:after{
+            height: 5px;
+          }
+        }
+      }
+    }
+  }
+}

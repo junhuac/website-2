@@ -1,0 +1,100 @@
+@import "variables";
+@import "libs/owl/owl.carousel";
+@import "libs/nouislider";
+@import "pages/homepage";
+@import "pages/_eig-berlin.scss";
+@import "pages/team";
+@import "pages/market";
+@import "pages/road_map";
+@import "pages/technical";
+@import "pages/investment";
+@import "blocks/buttons";
+@import "blocks/header";
+@import "blocks/roadmap";
+@import "blocks/icons";
+@import "blocks/footer";
+@import "blocks/forms";
+
+
+html,
+body {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: $main_dark;
+}
+
+h1 {
+    @include font(48, 60, 400);
+    font-family: $futura;
+    @include media('<768px') {
+        @include font(32, 44, 400);
+    }
+}
+
+h2 {
+    @include font(36, 48, 400);
+    font-family: $futura;
+    @include media('<768px') {
+        @include font(28, 34, 400);
+    }
+}
+
+h3 {
+    @include font(24, 36, 400);
+    font-family: $futura;
+}
+
+h4 {
+    @include font(18, 24, 400);
+    font-family: $futura;
+}
+
+h5 {
+    @include font(16, 20, 400);
+    font-family: $futura;
+}
+
+h6 {
+    @include font(14, 18, 400);
+    font-family: $futura;
+}
+
+p {
+    @include font(16, 24, 400);
+    @include media('<768px') {
+        @include font(14, 26, 400);
+    }
+}
+
+.lead {
+    @include font(24, 36, 400);
+}
+
+.small {
+    @include font(12, 20, 400);
+    color: #787e8a;
+}
+
+a {
+    &:hover {
+        text-decoration: none !important;
+    }
+}
+
+
+.container{
+    @include media('>1199px'){
+        padding: 0;
+    }
+}
+.tooltip {
+    .tooltip-inner {
+        border-radius: 30px;
+        color: #787e8a;
+        font-size: 12px;
+        padding: 4px 10px;
+    }
+}

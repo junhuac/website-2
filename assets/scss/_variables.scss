@@ -1,0 +1,33 @@
+$defaultFontSize: 16;
+
+$main_dark: #232836;
+$page_red: #e64e64;
+$defaultFontFamily: 'Open Sans';
+$futura: "Futura";
+
+@mixin font($fz, $lh: $fz, $fw: 400, $fontFamily: $defaultFontFamily) {
+  font: $fw #{($fz/$defaultFontSize)}rem/#{($lh/$defaultFontSize)}rem $fontFamily;
+}
+
+@font-face {
+  font-family: 'Futura';
+  src:  url('../fonts/futura/3509E8_0_0.woff2') format('woff2'),
+        url('../fonts/futura/3509E8_0_0.woff') format('woff'),
+        url('../fonts/futura/3509E8_0_0.ttf') format('ttf'),
+        url('../fonts/futura/3509E8_0_0.eot') format('eot');
+}
+
+@font-face {
+  font-family: 'Futura Bold';
+  src:  url('../fonts/futura-bold-light/35117F_0_0.woff2') format('woff2'),
+        url('../fonts/futura-bold-light/35117F_0_0.woff') format('woff'),
+        url('../fonts/futura-bold-light/35117F_0_0.ttf') format('ttf'),
+        url('../fonts/futura-bold-light/35117F_0_0.eot') format('eot');
+}
+@font-face {
+  font-family: 'Futura Light';
+  src:  url('../fonts/futura-bold-light/35117F_1_0.woff2') format('woff2'),
+        url('../fonts/futura-bold-light/35117F_1_0.woff') format('woff'),
+        url('../fonts/futura-bold-light/35117F_1_0.ttf') format('ttf'),
+        url('../fonts/futura-bold-light/35117F_1_0.eot') format('eot');
+}

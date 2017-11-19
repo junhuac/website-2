@@ -1,0 +1,173 @@
+.icon{
+  display: inline-flex;
+  background-repeat:no-repeat;
+
+
+  &.icon-bbb{
+    width: 26px;
+    height: 26px;
+    background-image: url(../images/svg/icon-bbb.svg);
+  }
+  &.icon-btc{
+    width: 26px;
+    height: 26px;
+    background-image: url(../images/svg/icon-btc.svg);
+  }
+  &.icon-dollar{
+    width: 26px;
+    height: 26px;
+    background-image: url(../images/svg/icon-dollar.svg);
+  }
+  &.icon-eth{
+    width: 26px;
+    height: 26px;
+    background-image: url(../images/svg/icon-eth.svg);
+  }
+  &.icon-medal{
+    width: 100px;
+    height: 100px;
+    background-image: url(../images/svg/medal.svg);
+    background-position: center center;
+  }
+  &.icon-mail{
+    height: 18px;
+    width: 23px;
+    background-image: url(../images/svg/mail_icon.svg);
+    &:hover{
+      background-image: url(../images/svg/mail_icon_blue.svg);
+    }
+  }
+  &.icon-twitter{
+    height: 16px;
+    width: 19px;
+    background-image: url(../images/svg/twitter_icon.svg);
+    &:hover{
+      background-image: url(../images/svg/twitter_icon_blue.svg);
+    }
+  }
+  &.icon-linkedin{
+    height: 18px;
+    width: 19px;
+    background-image: url(../images/svg/linkedin_icon.svg);
+    &:hover{
+      background-image: url(../images/svg/linkedin_icon_blue.svg);
+    }
+  }
+  &.icon-slack{
+    height: 19px;
+    width: 20px;
+    background-image: url(../images/svg/slack_icon.svg);
+    &:hover{
+      background-image: url(../images/svg/slack_icon_blue.svg);
+    }
+  }
+  &.icon-bitcoin{
+    height: 21px;
+    width: 21px;
+    background-image: url(../images/svg/b_icon.svg);
+    &:hover{
+      background-image: url(../images/svg/b_icon_blue.svg);
+    }
+  }
+  &.icon-peer_to_peer{
+    height: 51px;
+    width: 51px;
+    background: url(../images/svg/peer_to_peer_icon.svg);
+  }
+  &.icon-activities{
+    height: 51px;
+    width: 45px;
+    background: url(../images/svg/activities_icon.svg);
+  }
+  &.icon-operate{
+    height: 51px;
+    width: 51px;
+    background: url(../images/svg/operate_icon.svg);
+  }
+  &.icon-access{
+    height: 51px;
+    width: 51px;
+    background: url(../images/svg/access_icon.svg);
+  }
+  &.icon-open_source{
+    height: 51px;
+    width: 51px;
+    background: url(../images/svg/open-source_icon.svg);
+  }
+  &.icon-diamond{
+    height: 51px;
+    width: 51px;
+    background: url(../images/svg/diamond.svg);
+  }
+  &.icon-scale{
+    height: 51px;
+    width: 51px;
+    background: url(../images/svg/scale_icon.svg);
+  }
+  &.icon-founding{
+    height: 51px;
+    width: 51px;
+    background: url(../images/svg/founding_icon.svg);
+  }
+  &.icon-risk{
+    height: 51px;
+    width: 51px;
+    background: url(../images/svg/risk_icon.svg);
+  }
+  &.icon-winning{
+    height: 51px;
+    width: 51px;
+    background: url(../images/svg/winnings.svg);
+  }
+  &.icon-consensus{
+    height: 51px;
+    width: 51px;
+    background: url(../images/svg/consenss_icon.svg);
+  }
+  &.icon-layor{
+    height: 51px;
+    width: 51px;
+    background: url(../images/svg/layor_icon.svg);
+  }
+  &.icon-arbitration{
+    height: 51px;
+    width: 39px;
+    background: url(../images/svg/arbitration.svg);
+  }
+  &.icon-directory{
+    height: 44px;
+    width: 51px;
+    background: url(../images/svg/directory_icon.svg);
+  }
+  &.icon-transaction{
+    height: 51px;
+    width: 48px;
+    background: url(../images/svg/tanscation_icon.svg);
+  }
+
+  &.icon-consensus{
+    height: 51px;
+    width: 38px;
+    background: url(../images/svg/consensus_icon.svg);
+  }
+  &.icon-interpolation{
+    height: 51px;
+    width: 56px;
+    background: url(../images/svg/interpolation_icon.svg);
+  }
+  &.icon-communications{
+    height: 51px;
+    width: 45px;
+    background: url(../images/svg/communications_icon.svg);
+  }
+  &.icon-apis{
+    height: 47px;
+    width: 51px;
+    background: url(../images/svg/apis_icon.svg);
+  }
+  &.icon-contracts{
+    height: 51px;
+    width: 40px;
+    background: url(../images/svg/contracts_icon.svg);
+  }
+}

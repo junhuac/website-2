@@ -1,0 +1,319 @@
+.header {
+    z-index: 23;
+    .container {
+        display: flex;
+        flex-direction: row;
+        .logo {
+            color: #ffffff;
+            @include font(27, 33, 400, $futura);
+            span{
+                font-size: 12px;
+                position: relative;
+                top: -12px;
+                font-family: $futura;
+                left: -2px;
+            }
+            sup {
+                font-size: 12px;
+            }
+            @include media('<768px') {
+                margin-right: auto;
+            }
+        }
+        .menu {
+            display: flex;
+            flex-direction: row;
+            margin-left: auto;
+            height: 35px;
+            justify-content: center;
+            align-items: center;
+            @include media('<768px') {
+                height: 100%;
+                width: 50px;
+                margin-right: 10px;
+                position: relative;
+            }
+            &.showed {
+                @include media('<768px') {
+                    position: fixed;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(255, 255, 255, .95);
+                    z-index: 234;
+                    left: 0;
+                    top: 0;
+                    ul {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        li {
+                            height: auto !important;
+                            margin: 10px 0;
+                            a {
+                                font-size: 20px !important;
+                                color: $main_dark !important;
+                            }
+                        }
+                    }
+                    .close {
+                        content: '';
+                        position: absolute;
+                        top: 23px;
+                        right: 8px;
+                        transform: translate(-50%, -50%);
+                        height: 16px;
+                        width: 16px;
+                        display: block;
+                        opacity: 1;
+                        background: url(../images/svg/close.svg);
+                    }
+                }
+            }
+            ul {
+                display: flex;
+                flex-direction: row;
+                margin: 0;
+                margin-left: auto;
+                list-style: none;
+                width: 100%;
+                padding: 0;
+                @include media('<768px') {
+                    display: none;
+                }
+                li {
+                    a {
+                        padding: 0 15px;
+                        color: #ffffff;
+                        @include font(14, 18, 400, $futura);
+                        text-transform: uppercase;
+                        text-decoration: none !important;
+                        @include media('<992px') {
+                            padding: 0 10px;
+                        }
+                    }
+                }
+            }
+            .button {
+                height: 100%;
+                min-width: 140px;
+                @include font(14, 20, 400, $futura);
+                @include media('<992px') {
+                    display: none;
+                }
+            }
+        }
+        @include media('<768px') {
+            .menu-icon {
+                content: '';
+                position: absolute;
+                top: 50%;
+                right: -15px;
+                transform: translate(-50%, -50%);
+                height: 100%;
+                width: 40px;
+                display: block;
+                background: url(../images/svg/menu.svg);
+                background-repeat: no-repeat;
+                background-size: 25px;
+                background-position: center;
+                z-index: 2;
+            }
+        }
+    }
+    &.subsite-header {
+        position: relative;
+        z-index: 100;
+        width: 100%;
+        height: 71px;
+        box-shadow: 0 1px 4px rgba(35, 40, 54, 0.1);
+        background-color: #ffffff;
+        @include media('<1700px') {
+            display: flex;
+            padding-left: 15px;
+        }
+        @include media('<768px') {
+            height: 45px;
+        }
+        &.header {
+            .container {
+                padding-left: 0px;
+                padding-right: 0px; //margin-left: 350px; //border: 1px solid red;
+                position: relative;
+                display: flex;
+                height: 100%;
+                width: 1171px;
+                justify-content: center;
+                align-items: center;
+                .logo {
+                    //margin-left: 350px;
+                    height: 100%;
+                    color: black;
+                    line-height: 71px;
+                    align-self: flex-start;
+                    @include media('<768px') {
+                        font-size: 17px;
+                        line-height: 45px;
+                    }
+                }
+                .menu {
+                    height: calc(100% - 2px);
+                    ul {
+                        margin: -4px 0px 0 0;
+                        height: 100%;
+                        li {
+                            height: 100%;
+                            a {
+                                display: flex;
+                                height: 100%;
+                                align-content: center;
+                                align-items: center;
+                                color: $main_dark;
+                                position: relative;
+                                padding: 0;
+                                margin: 0 15px;
+                                @include media('<992px') {
+                                    margin: 0 10px;
+                                    @include font(12, 16, 400, $futura);
+                                }
+                                &.active {
+                                    &:after {
+                                        content: '';
+                                        position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                        width: 100%;
+                                        height: 4px;
+                                        background: #fe9e63;
+                                        @include media('<768px'){
+                                            top:auto;
+                                            bottom: -5px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .calculator {
+                    margin-top: 0px;
+                    display: flex;
+                    background-color: #f3f7fb;
+                    height: 100%;
+                    padding: 0 20px 0 8px;
+                    align-items: center;
+                    @include media('<768px'){
+                        display: none;
+                    }
+                    .item {
+                        margin-top: -5px;
+                        display: flex;
+                        max-height: 19px;
+                        margin-left: 12px;
+                        img {
+                            margin-right: 6px;
+                            vertical-align: top;
+                            margin-top: -1px;
+                            height: 19px;
+                        }
+                        .text {
+                            font-family: "Futura";
+                            font-size: 14px;
+                        }
+                    }
+                    .equals {
+                        color: #787e8a;
+                        font-family: "Open Sans";
+                        font-size: 12px;
+                        margin-top: -7px;
+                        margin-left: 12px;
+                        margin-right: 2px;
+                    }
+                }
+            }
+        }
+        .betr-offer {
+            position: absolute;
+            right: 0;
+            top: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            @include media('<1700px') {
+                position: relative;
+            }
+            .buy-bbb-methods {
+                width: 150px;
+                height: 100%;
+                display: flex;
+                justify-content: flex-end;
+                flex-wrap: wrap;
+                margin-right: 20px;
+                @include media('<1200px') {
+                    display: none;
+                }
+                .text {
+                    align-self: flex-end;
+                    width: 100%;
+                    height: 13px;
+                    color: #787e8a;
+                    font-family: "Open Sans";
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 16px;
+                    text-align: right;
+                    margin-bottom: 5px;
+                }
+                .methods {
+                    height: 17px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-end;
+                    .method {
+                        width: 17px;
+                        height: 100%;
+                        &.cash {
+                            background: url('../images/bbb-buy-method-cash-small.png') no-repeat;
+                            margin-right: 2px;
+                        }
+                        &.bitcoin {
+                            background: url('../images/bbb-buy-method-bitcoin-small.png') no-repeat;
+                            margin-right: 3px;
+                        }
+                        &.other {
+                            margin-right: -2px;
+                            padding-right: 0;
+                            background: url('../images/bbb-buy-method-other-small.png') no-repeat;
+                        }
+                    }
+                }
+            }
+            .buy-bbb-btn {
+                margin-top: -1px;
+                font-size: 14px;
+                .button {
+                    width: 145px;
+                    text-transform: uppercase;
+                    height: 82px;
+                    line-height: 92px;
+                    @include media('<768px') {
+                        height: 58px;
+                        line-height: 65px;
+                        width: 75px;
+                        b,
+                        span {
+                            display: none;
+                        }
+                    }
+                }
+                .extension {
+                    margin-top: - 1px;
+                    width: 75px;
+                    height: 12px;
+                    background: url('../images/buy-bbb-btn-extension.png') no-repeat;
+                }
+            }
+        }
+    }
+}

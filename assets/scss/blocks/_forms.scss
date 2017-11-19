@@ -1,0 +1,27 @@
+.form-group{
+  margin-bottom: 25px;
+}
+
+.form-control{
+  height: 55px;
+  border-radius: 4px;
+  border: 1px solid #dae2e9 !important;
+  background-color: #ffffff;
+  outline: none !important;
+  box-shadow: none!important;
+  color:$main_dark;
+
+  &:focus{
+    background-color: #f3f7fb;
+  }
+}
+
+textarea{
+  width: 100%;
+  max-width:100%;
+  resize:none;
+  min-height: 135px;
+  border-radius: 4px;
+  border: 1px solid #dae2e9;
+  background-color: #ffffff;
+}
