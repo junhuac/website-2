@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Authentication Required"
+AuthUserFile "/var/www/vhosts/betterbetting.org/httpdocs/.htpasswd"
+Require valid-user
