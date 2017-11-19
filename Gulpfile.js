@@ -4,7 +4,7 @@ var watchSass = require("gulp-watch-sass");
 var gs		= require('gulp-selectors');
 
 gulp.task("mangle", ['sass'], function() {
-  gulp.src(['**/*.css', '**/*.html', '!dist/**/*.*'])
+  gulp.src(['**/*.css', '**/*.html', '!dist/**/*.*', '!node_modules/**/*.*'])
     // .pipe(gs.run())
     .pipe(gulp.dest('dist'));
 });
