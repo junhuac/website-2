@@ -50,15 +50,15 @@
             <div class="equals">equals</div>
             <div class="item">
                 <img src="assets/images/dollar-circle.png" alt="Betr" />
-                <div class="text">0.05</div>
+                <div class="text">0.10</div>
             </div>
             <div class="item">
                 <img src="assets/images/bitcoin-circle.png" alt="Betr" />
-                <div class="text">0.00005</div>
+                <div class="text">0.00010</div>
             </div>
             <div class="item">
                 <img src="assets/images/other-circle.png" alt="Betr" />
-                <div class="text">0.004</div>
+                <div class="text">0.008</div>
             </div>
         </div>
     </div>
@@ -72,7 +72,7 @@
             </div>
         </div>
         <div class="buy-bbb-btn">
-            <a href="investment.html" class="button block colorful">Buy <b>Betr</b> <span>Coins</span></a>
+            <a href="investment.html" class="button block colorful">Buy <b>Betr</b> <span>Tokens</span></a>
             <div class="extension"></div>
         </div>
     </div>
@@ -85,7 +85,7 @@
         <p class="main">The Better Betting Foundation represents a true marriage of experienced Blockchain and iGaming experts.</p>
 
         <div class="card-list">
-            <div class="card-item">
+            <div class="card-item" id="brink">
                 <img class="team-avatar" src="assets/images/team/brink.png" alt="brink">
                 <h3>Adriaan Brick</h3>
                 <span class="small">Founder</span>
@@ -123,7 +123,7 @@
                     <i class="icon icon-linkedin"></i>
                 </div>
             </div>
-            <div class="card-item">
+            <div class="card-item" id="ian">
                 <img class="team-avatar" src="assets/images/team/ian.png" alt="Ian Sherrington">
                 <h3>Ian Sherrington</h3>
                 <span class="small">Advisor</span>
@@ -150,7 +150,7 @@
                     <i class="icon icon-twitter"></i>
                 </div>
             </div>
-            <div class="card-item">
+            <div class="card-item" id="ehrlich">
                 <img class="team-avatar" src="assets/images/team/ehrlich.png" alt="ehrlich">
                 <h3>Hilly Ehrlich</h3>
                 <span class="small">Co-Founder</span>
@@ -170,7 +170,7 @@
                     <i class="icon icon-twitter"></i>
                 </div>
             </div>
-            <div class="card-item">
+            <div class="card-item" id="rankin">
                 <img class="team-avatar" src="assets/images/team/rankin.png" alt="Mitchell Rankin">
                 <h3>Mitchell Rankin</h3>
                 <span class="small">CTO</span>
@@ -185,11 +185,11 @@
                     lottery and gaming systems, and Chief Technical Architect of a major online operator. These roles included
                     responsibility for large scale software development, game development, deployment, and integration efforts,
                     as well as budgetary and management control. Previous roles include Head of Engineering - Scientific
-                    Games, Chief Architect & Software Development Manager - Scientific Games, Senior Software Developer -
+                    Games, Chief Architect &amp; Software Development Manager - Scientific Games, Senior Software Developer -
                     Cadillac Jack, Founder and CTO Snowcat Games and Chief Technical Architect Gamesys.
                 </p>
             </div>
-            <div class="card-item ronnie">
+            <div class="card-item ronnie" id="ronnie">
                 <div class="image rocket">
                     <img src="assets/images/team/ronnie.png" alt="">
                     <i class="icon icon-medal"></i>
@@ -216,7 +216,24 @@
                     in 5 minutes and 20 seconds. Ronnie is hugely popular in Asia and has a passion for sports betting.
                 </p>
             </div>
-            <div class="card-item">
+            <div class="card-item" id="vlad">
+                <img class="team-avatar" src="assets/images/team/vlad.png" alt="Vlad Agaev">
+                <h3>Vlad Agaev</h3>
+                <span class="small">Consultant</span>
+                <p>
+                    Vladimir Agaev is a young and talented <strong>Blockchain</strong> developer. He is also known as Vlad Wulf , a popular Blockchain instructor. Vladimir has done numerous seminars and webinars educating developers and business people about the Blockchain technology.
+                </p>
+                <p>
+                    Armed with a legal and computer science background, Vladimir is experienced in Ethereum, smart contracts, and full-stack Blockchain development. He has worked with startups and with big banking institutions helping them building solutions on top of Blockchain technology.
+                </p>
+                <p>
+                    Vladimir's skills range from low level technical expertise to high level architecture solutions.
+                </p>
+            </div>
+        </div>
+        <h2>Advisors</h2>
+        <div class="card-list">
+            <div class="card-item" id="matonis">
                 <img class="team-avatar" src="assets/images/team/matonis.png" alt="Jon Matonis">
                 <h3>Jon Matonis</h3>
                 <span class="small">Advisor</span>
@@ -238,7 +255,7 @@
                     security firms, hedge funds, gold investors, and family offices.
                 </p>
             </div>
-            <div class="card-item">
+            <div class="card-item" id="benz">
                 <img class="team-avatar" src="assets/images/team/benz.png" alt="Eric Benz">
                 <h3>Eric Benz</h3>
                 <span class="small">Advisor</span>
@@ -250,8 +267,8 @@
                     longest running Bitcoin exchange and merchant processor, Cryptopay.
                 </p>
             </div>
-            <div class="card-item">
-                <img class="team-avatar" src="assets/images/team/vanremen.png" alt="David Van Renen">
+            <div class="card-item" id="vanrenen">
+                <img class="team-avatar" src="assets/images/team/vanrenen.png" alt="David Van Renen">
                 <h3>David Vanrenen</h3>
                 <span class="small">Advisor</span>
 
@@ -267,7 +284,7 @@
                     2002.
                 </p>
             </div>
-            <div class="card-item">
+            <div class="card-item" id="caselli">
                 <img class="team-avatar" src="assets/images/team/caselli.png" alt="Caselli">
                 <h3>Michael Caselli </h3>
                 <span class="small">Advisor</span>
@@ -283,41 +300,15 @@
                     been honored as a Leader in Gaming by the Global Gaming Expo where he has spoken and chaired on a variety
                     of iGaming topics. Michael is a Director and Head of Strategy at iGaming Business / Clarion Gaming, where
                     he works actively on a variety of publications and conferences; and organizes social events for the industry
-                    including Fire & Ice, the iGaming industry’s oldest and largest social gathering.
+                    including Fire &amp; Ice, the iGaming industry’s oldest and largest social gathering.
                 </p>
             </div>
-            <div class="card-item">
-                <img class="team-avatar" src="assets/images/team/image6.png" alt="Dennis Van Maanen">
-                <h3>Dennis Van Maanen</h3>
-                <span class="small">Advisor</span>
-                <p>
-                    Dennis van Maanen has worked with iGaming companies since 2002.
-                    Initially, as a recruiter, and more recently as
-                    a matchmaker for M&A, JV’s, partnerships, funding, expansion and staffing.
-                    As founder and chairman of Esanda Consulting, he led the sale of the business
-                    to a FTSE100 company. As an Angel investor, he continues to help technology companies grow.
-                    Through Esanda Recruitment he continues to lead th way in executive search for staff.
-                </p>
-            </div>
-            <div class="card-item">
-                <img class="team-avatar" src="assets/images/team/image11.png" alt="Kamila Bobinska">
-                <h3>Kamila Bobinska</h3>
-                <span class="small">Advisor</span>
-                <p>
-                    Kamila currently Head of Business Development for Bet Advisor.
-                    She  is an investor and entrepreneur with 13 years experience gained
-                    at blue chip large organisations in Finance as well as early stage successful ventures.
-                    While involved in Private Equity and Hedge Funds deals she has transitioned into Sports Betting.
-                    She has invested in several public and private companies and is highly experienced in preparing
-                    and managing companies for successful funding rounds (equity, debt, IPOs, ICOs)
-                </p>
-            </div>
-            <div class="card-item">
+            <div class="card-item" id="rasmus">
                 <img class="team-avatar" src="assets/images/team/image16.png" alt="Rasmus Sojmark">
                 <h3>Rasmus Sojmark</h3>
                 <span class="small">Advisor</span>
                 <p>
-                    CEO & Founder of SBC, Rasmus has 15 years industry experience,
+                    CEO &amp; Founder of SBC, Rasmus has 15 years industry experience,
                     with an early career start as commercial director of BetBrain.com,
                     and founding team member of EveryMatrix.
                     In 2009 he founded SBCGlobal (a successful events, news and media business) and Oddslife.com
@@ -330,7 +321,7 @@
                     and the Best Overall Affiliate with BetBrain.com.
                 </p>
             </div>
-            <div class="card-item">
+            <div class="card-item" id="jez">
                 <img class="team-avatar" src="assets/images/team/image13.png" alt="Jez San">
                 <h3>Jez San</h3>
                 <span class="small">Advisor</span>
@@ -350,9 +341,35 @@
                     Technologies (acquired by Google in 2014) and the cryptocurrency exchange Kraken.
                 </p>
             </div>
-            <div class="card-item">
+            <div class="card-item" id="kamila">
+                <img class="team-avatar" src="assets/images/team/image11.png" alt="Kamila Bobinska">
+                <h3>Kamila Bobinska</h3>
+                <span class="small">Advisor</span>
+                <p>
+                    Kamila currently Head of Business Development for Bet Advisor.
+                    She  is an investor and entrepreneur with 13 years experience gained
+                    at blue chip large organisations in Finance as well as early stage successful ventures.
+                    While involved in Private Equity and Hedge Funds deals she has transitioned into Sports Betting.
+                    She has invested in several public and private companies and is highly experienced in preparing
+                    and managing companies for successful funding rounds (equity, debt, IPOs, ICOs)
+                </p>
+            </div>
+            <div class="card-item" id="dennis">
+                <img class="team-avatar" src="assets/images/team/image6.png" alt="Dennis Van Maanen">
+                <h3>Dennis Van Maanen</h3>
+                <span class="small">Advisor</span>
+                <p>
+                    Dennis van Maanen has worked with iGaming companies since 2002.
+                    Initially, as a recruiter, and more recently as
+                    a matchmaker for M&amp;A, JV’s, partnerships, funding, expansion and staffing.
+                    As founder and chairman of Esanda Consulting, he led the sale of the business
+                    to a FTSE100 company. As an Angel investor, he continues to help technology companies grow.
+                    Through Esanda Recruitment he continues to lead th way in executive search for staff.
+                </p>
+            </div>
+            <div class="card-item" id="lyceum">
                 <img class="team-avatar" src="assets/images/team/image17.png" alt="Lycyum">
-                <h3>Lycyum</h3>
+                <h3>Lyceum</h3>
                 <span class="small">Media Partner</span>
                 <p>
                     Lyceum Media was founded reactively to exploit the experience and abilities of its founders
@@ -428,7 +445,7 @@
                     <a href="">Whitepaper</a>
                 </li>
                 <li>
-                    <a href="">Terms & Conditions</a>
+                    <a href="">Terms &amp; Conditions</a>
                 </li>
                 <li>
                     <a href="">Contact</a>

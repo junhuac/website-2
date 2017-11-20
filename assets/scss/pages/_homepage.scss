@@ -1099,7 +1099,14 @@
 
   h1{
     margin: 0;
+  }
 
+  a {
+    color: $main_dark;
+    &:hover, &:active, &:focus {
+      color: darken($main_dark, 0.2);
+      h3 { text-decoration: underline; }
+    }
   }
 
   .container{
