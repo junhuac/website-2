@@ -45,6 +45,14 @@
       background-image: url(../images/svg/twitter_icon_blue.svg);
     }
   }
+  &.icon-facebook{
+    height: 18px;
+    width: 19px;
+    background-image: url(../images/svg/facebook_icon.svg);
+    &:hover{
+      background-image: url(../images/svg/facebook_icon_blue.svg);
+    }
+  }
   &.icon-linkedin{
     height: 18px;
     width: 19px;
