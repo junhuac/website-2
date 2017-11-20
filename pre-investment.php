@@ -66,14 +66,13 @@
 <div class="gradient-helper pre-investment-page">
 	<div class="container">
 		<form method="POST" action="form-process.php">
-			<h1>Buy Better Now</h1>
+			<h1>Buy Betr Now</h1>
 			<div class="row">
 				<div class="col-sm-6">
 					<p>ICO pre-sales are now live and available for qualified and institutional investors. Public sales will be available mid-December 2017.</p>
 				</div>
 				<div class="col-sm-6">
-					<p>Please contact us for more information using the following number: <a href="tel:"></a></p>
-					<p>Alternatively use the form below and we will be in contact.</p>
+					<p>For more information on Pre Sales and the ICO, please complete the form below and we will be in contact.</p>
 				</div>
 			</div>
 <!-- 			<span class="small calculate">Calculate your <strong>Investment</strong> and Potential <strong>Profit</strong></span>
@@ -163,13 +162,9 @@
 					<label for="bitcoin" class="method">
 						<span class="method-bitcoin"></span>
 					</label>
-					<input type="radio" name="payment-method" id="method" value="bitcoin" disabled>
+					<input type="radio" name="payment-method" id="ethereum" value="ethereum" disabled>
 					<label for="method" class="method">
 						<span class="method-method"></span>
-					</label>
-					<input type="radio" name="payment-method" id="mastercard" value="bitcoin" disabled>
-					<label for="mastercard" class="method">
-						<span class="method-mastercard"></span>
 					</label>
 				</div>
 			</div>

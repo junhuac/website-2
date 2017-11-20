@@ -116,7 +116,7 @@ $(document).ready(function () {
   /**
    * Endtimer in 2 section
    */
-  var deadline = new Date(1512742809000);
+  var deadline = new Date(1513296000000);
   initializeClock('timer-js', deadline);
 
 

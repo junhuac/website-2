@@ -1,1 +1,50 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1172" height="283" viewBox="0 0 1172 283"><defs><path id="a" d="M375 6390v-30h292v30z"/><path id="b" d="M960 6640v-280h292v280z"/><path id="c" d="M667 6420v-60h293v60z"/><path id="d" d="M1252 6450v-90h293v90z"/><path id="e" d="M521 6390v-30h292v30z"/><path id="f" d="M1106 6390v-30h292v30z"/></defs><g transform="translate(-374 -6358)"><use fill="#fe9e63" xlink:href="#a"/></g><g transform="translate(-374 -6358)"><use fill="#8533af" xlink:href="#b"/></g><g transform="translate(-374 -6358)"><use fill="#f33853" xlink:href="#c"/></g><g transform="translate(-374 -6358)"><use fill="#4939d6" xlink:href="#d"/></g><g opacity=".5" transform="translate(-374 -6358)"><use fill="#f67063" xlink:href="#e"/></g><g opacity=".5" transform="translate(-374 -6358)"><use fill="#bb3d85" xlink:href="#f"/></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1466.4 168" style="enable-background:new 0 0 1466.4 168;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FE9E63;}
+	.st1{fill:#8533AF;}
+	.st2{fill:#F33853;}
+	.st3{fill:#4939D6;}
+	.st4{fill:#29293C;}
+	.st5{opacity:0.5;}
+	.st6{fill:#F67063;}
+	.st7{fill:#BB3D85;}
+</style>
+<g transform="translate(-374 -6358)">
+	<g>
+		<path id="a" class="st0" d="M375,6430v-70h292v70H375z"/>
+	</g>
+</g>
+<g transform="translate(-374 -6358)">
+	<g>
+		<path id="b" class="st1" d="M960,6374v-14h292v14H960z"/>
+	</g>
+</g>
+<g transform="translate(-374 -6358)">
+	<g>
+		<path id="c" class="st2" d="M667,6376.8V6360h293v16.8H667z"/>
+	</g>
+</g>
+<g transform="translate(-374 -6358)">
+	<g>
+		<path id="d" class="st3" d="M1252,6522.4V6360h293v162.4H1252z"/>
+	</g>
+</g>
+<g transform="translate(-374 -6358)">
+	<g>
+		<path id="d_1_" class="st4" d="M1545,6376.8V6360h293v16.8H1545z"/>
+	</g>
+</g>
+<g transform="translate(-374 -6358)" class="st5">
+	<g>
+		<path id="e" class="st6" d="M521,6367v-7h292v7H521z"/>
+	</g>
+</g>
+<g transform="translate(-374 -6358)" class="st5">
+	<g>
+		<path id="f" class="st7" d="M1106,6367v-7h292v7H1106z"/>
+	</g>
+</g>
+</svg>
