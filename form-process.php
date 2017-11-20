@@ -4,19 +4,43 @@ session_start();
 // Options
 $timestamp = date('H:i:s');
 $logFile = 'investment-message.log';
-$admin_email = 'anton@saborknight.com';
+$admin_email = 'ico@betterbetting.org';
+$recaptcha_secret = '6LfCnjkUAAAAADXMBH-Kx92G9RVirugcwl8yX52u'; // Keep Secret!
+$recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
 
 // Data Sanitation
 $first_name = filter_var($_POST['first_name'], FILTER_SANITIZE_STRING, FILTER_SANITIZE_SPECIAL_CHARS);
 $last_name = filter_var($_POST['last_name'], FILTER_SANITIZE_STRING, FILTER_SANITIZE_SPECIAL_CHARS);
 $email = $_POST['email'];
 $message = filter_var($_POST['message'], FILTER_SANITIZE_STRING, FILTER_SANITIZE_SPECIAL_CHARS);
+$recaptcha_response = $_POST['g-recaptcha-response'];
+
+unset($error, $success);
 
 // Data Validation
 if (strlen($email) < 1) {
 	$error[] = 'Please fill in your e-mail address.';
 } else if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
 	$error[] = 'Please use a valid e-mail address.';
+}
+
+//// Check reCaptcha
+if (!empty($recaptcha_response)) {
+	$curl_vars = "secret={$recaptcha_secret}&response={$recaptcha_response}";
+
+	$ch = curl_init($recaptcha_url);
+	curl_setopt($ch, CURLOPT_POST, 1);
+	curl_setopt($ch, CURLOPT_POSTFIELDS, $curl_vars);
+	curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+	curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+
+	$curl_response = json_decode(curl_exec($ch), true);
+
+	if (!$curl_response['success']) {
+		$error[] = 'ReCaptcha error: ' . $curl_response['error-codes'][0];
+	}
+} else {
+	$error[] = 'Please tick the reCaptcha box below to prove that you are not a robot.';
 }
 
 if (!empty($error)) {

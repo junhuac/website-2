@@ -21,14 +21,14 @@
 <header class="header subsite-header">
 	<div class="container">
 		<a href="index.html" class="logo">
-			BetterBetting <span>®</span>
+			BetterBetting
 		</a>
 		<div class="menu-icon"></div>
 		<div class="menu">
 			<ul>
-				<li>
+				<!-- <li>
 					<a href="market.html">MARKET</a>
-				</li>
+				</li> -->
 				<!-- <li>
 					<a href="whitepaper.html">Whitepaper</a>
 				</li> -->
@@ -49,7 +49,7 @@
 	</div>
 	<div class="betr-offer">
 		<div class="buy-bbb-methods">
-			<div class="text">Buy <b>Betr</b> with</div>
+			<div class="text">Buy <b>BETR</b> with</div>
 			<div class="methods">
 				<div class="method cash"></div>
 				<div class="method bitcoin"></div>
@@ -57,7 +57,7 @@
 			</div>
 		</div>
 		<div class="buy-bbb-btn">
-			<a href="pre-investment.php" class="button block colorful">Buy <b>Betr</b> <span>Tokens</span></a>
+			<a href="pre-investment.php" class="button block colorful">Buy <b>BETR</b> <span>Tokens</span></a>
 			<div class="extension"></div>
 		</div>
 	</div>
@@ -66,7 +66,7 @@
 <div class="gradient-helper pre-investment-page">
 	<div class="container">
 		<form method="POST" action="form-process.php">
-			<h1>Buy Betr Now</h1>
+			<h1>Buy BETR Now</h1>
 			<div class="row">
 				<div class="col-sm-6">
 					<p>ICO pre-sales are now live and available for qualified and institutional investors. Public sales will be available mid-December 2017.</p>
@@ -144,7 +144,7 @@
 					</div>
 					<div class="col-sm-12">
 						<div class="form-group">
-							<input type="email" placeholder="E-mail" class="form-control" id="email" name="email">
+							<input type="email" placeholder="E-mail" class="form-control" id="email" name="email" required>
 						</div>
 						<div class="form-group">
 							<textarea placeholder="Message" class="form-control" id="message" name="message"></textarea>
@@ -175,12 +175,12 @@
 <footer class="footer">
 	<div class="container">
 		<h1>Pre-ICO is Live Now</h1>
-		<p class="main">We’re raising a Hard Cap from between $2m - $30m which will be equivalent of 1.075.000.000 BBB.</p>
+		<p class="main">We’re raising a Hard Cap from between $2m - $30m which will be equivalent of 650,000,000 BETR.</p>
 
 		<form>
-			<input type="text" value="10.000">
-			<span class="calc-value">500$</span>
-			<button class="button buy-now" type="submit">Buy BBB Now</button>
+			<!-- <input type="text" value="10.000">
+			<span class="calc-value">500$</span> -->
+			<button class="button buy-now" type="submit">Buy BETR Now</button>
 		</form>
 		<div class="socials">
 			<ul>
@@ -204,9 +204,9 @@
 
 		<div class="footer-menu">
 			<ul class="left">
-				<li>
+				<!-- <li>
 					<a href="market.html">Market</a>
-				</li>
+				</li> -->
 				<li>
 					<a href="sigma.html">SIGMA</a>
 				</li>
