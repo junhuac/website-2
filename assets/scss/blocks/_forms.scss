@@ -25,3 +25,9 @@ textarea{
   border: 1px solid #dae2e9;
   background-color: #ffffff;
 }
+
+.g-recaptcha {
+  & > div {
+    margin: 0 auto;
+  }
+}

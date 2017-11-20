@@ -1,0 +1,98 @@
+.pre-investment-page {
+
+  .payment-methods{
+    margin-top: 45px;
+    display: flex;
+    @include media('<768px'){
+      flex-direction: column;
+    }
+    .investment-value{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      @include media('<768px'){
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      p{
+        margin-top: 10px;
+        color: $main_dark;
+        @include font(18,24,400,$futura);
+        text-transform: uppercase;
+        @include media('<992px'){
+          font-size:16px !important;
+        }
+      }
+    }
+    .payment-method{
+      margin: 0 auto;
+      @include media('<768px'){
+        text-align: center;
+        z-index:2;
+        margin-right: auto;
+      }
+      input[type="radio"]{
+        display: none;
+      }
+      .method{
+        width: 150px;
+        z-index: 3;
+        height: 70px;
+        margin-right: 8px;
+        box-shadow: 0 1px 4px rgba(35, 40, 54, 0.1);
+        border-radius: 4px;
+        background: #ffffff;
+        cursor: pointer;
+        @include media('<992px'){
+          width: 145px;
+        }
+        @include media('<768px'){
+          margin-bottom: 20px;
+        }
+        span{
+          display: block;
+          width: 100%;
+          height: 100%;
+          background-repeat: no-repeat;
+          background-position: center;
+          filter:grayscale(100%);
+          transition:.3s;
+          &:after{
+            content:'';
+            display: flex;
+            position: absolute;
+            bottom: 0;
+            height: 0;
+            left: 50%;
+            transform:translateX(-50%);
+            width: 94px;
+            background-color: #f33853;
+            background-image: linear-gradient(to right, #e64e64 0%, #fe9e63 100%);
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+          }
+        }
+
+        .method-bitcoin{
+          background-image: url(../images/payment_bitcoin.png);
+        }
+        .method-method{
+          background-image: url(../images/payment_method.png);
+        }
+        .method-mastercard{
+          background-image: url(../images/payment_mastercard.png);
+        }
+      }
+
+      input[type="radio"]:checked + .method{
+        position: relative;
+        span{
+          filter:none;
+          &:after{
+            height: 5px;
+          }
+        }
+      }
+    }
+  }
+}
