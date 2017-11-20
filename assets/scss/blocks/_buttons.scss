@@ -33,9 +33,10 @@ button {
   }
 
   &.orange{
-    background-color: #fe9e63;
+    background-color: #fec9a4;
+    //background-color: #fe9e63;
     &:hover {
-      background-color: darken(#fe9e63, 10%);
+      background-color: darken(#fec9a4, 10%);
     }
   }
 

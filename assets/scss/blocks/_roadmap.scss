@@ -20,7 +20,8 @@
   }
 
   &.roadmap-homepage-2{
-    margin-top: 100px;
+    //margin-top: 100px;
+    margin-bottom: 35px;
     .timeline{
       padding-bottom: 100px;
       &:before{
@@ -298,4 +299,155 @@
     }
   }
 
+}
+
+
+
+/**
+Roadmap 2.0
+ */
+
+
+.roadmap-wrapper{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+
+  .first-line,
+  .last-line{
+    width: 480px;
+  }
+  .image{
+    position: relative;
+    margin-bottom: 150px;
+    .timeline-single{
+      align-items: center;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform:translateX(-50%) translateY(100%);
+      min-width:350px;
+      text-align: center;
+    }
+  }
+
+  .timeline-single{
+    position: relative;
+    height: 169px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    &:first-of-type{
+      margin-top: 15px;
+    }
+    &:after{
+      content: '';
+      position: absolute;
+      margin-top: 7px;
+      right: 108px;
+      top:50%;
+      transform:translateY(-50%);
+      display: block;
+      height: 12px;
+      width: 12px;
+      background-color: #8533af;
+      border-radius: 50%;
+
+      @include media('<768px'){
+        right: 40px;
+      }
+
+    }
+    .small{
+      margin-bottom: 20px;
+    }
+
+    &.no-shape{
+      &:after{
+        display: none;
+      }
+    }
+    &.dot-12{
+      &:after{
+        height: 12px;
+        width: 12px;
+      }
+    }
+    &.dot-15{
+      &:after{
+        height: 15px;
+        width: 15px;
+      }
+    }
+    &.dot-18{
+      &:after{
+        height: 18px;
+        width: 18px;
+      }
+    }
+    &.dot-20{
+      h3{
+        margin-top: 20px;
+      }
+      &:after{
+        height: 20px;
+        width: 20px;
+        margin-top: 0;
+      }
+    }
+    &.dot-24{
+      h3{
+        margin-top: 20px;
+      }
+      &:after{
+        height: 24px;
+        width: 24px;
+        margin-top: 0;
+      }
+    }
+    &.dot-28{
+      &:after{
+        height: 28px;
+        width: 28px;
+      }
+    }
+    &.dot-30{
+      &:after{
+        height: 30px;
+        width: 30px;
+      }
+    }
+    &.dot-36{
+      &:after{
+        height: 36px;
+        width: 36px;
+      }
+    }
+  }
+  .first-line{
+    .timeline-single{
+      padding-right: 135px;
+      @include media('<992px', '>767px'){
+        padding-right: 100px;
+      }
+      &:after{
+        right: 50px;
+      }
+    }
+  }
+  .last-line{
+    .timeline-single{
+      padding-left: 135px;
+      align-items: flex-start;
+      text-align: left;
+      @include media('<992px', '>767px'){
+        padding-left: 100px;
+      }
+      &:after{
+        right: auto;
+        left: 50px;
+      }
+    }
+  }
 }
