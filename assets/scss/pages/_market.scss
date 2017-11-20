@@ -164,6 +164,15 @@
     }
   }
 
+  .competitors-container {
+    text-align: center;
+    .main {
+      max-width: 950px;
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
+
   .gray-market {
     background-color: #e8e6fa;
     background-image: linear-gradient(to right, #e8e6fa 0%, #ffffff 100%);
