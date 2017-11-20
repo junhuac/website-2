@@ -1104,7 +1104,7 @@
   a {
     color: $main_dark;
     &:hover, &:active, &:focus {
-      color: darken($main_dark, 0.2);
+      color: darken($main_dark, 20%);
       h3 { text-decoration: underline; }
     }
   }
