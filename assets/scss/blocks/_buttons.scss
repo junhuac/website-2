@@ -36,6 +36,7 @@ button {
     background-color: #fec9a4;
     //background-color: #fe9e63;
     &:hover {
+      color: darken($main_dark, 20%);
       background-color: darken(#fec9a4, 10%);
     }
   }

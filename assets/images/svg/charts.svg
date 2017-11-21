@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 1466.4 168" style="enable-background:new 0 0 1466.4 168;" xml:space="preserve">
+	 viewBox="0 0 1200 1200" style="enable-background:new 0 0 1200 1200;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#FE9E63;}
 	.st1{fill:#8533AF;}
@@ -11,40 +11,79 @@
 	.st5{opacity:0.5;}
 	.st6{fill:#F67063;}
 	.st7{fill:#BB3D85;}
+	.st8{clip-path:url(#SVGID_2_);fill:#4939D6;}
+	.st9{clip-path:url(#SVGID_2_);fill:#29293C;}
+	.st10{clip-path:url(#SVGID_2_);fill:#F33853;}
+	.st11{clip-path:url(#SVGID_2_);fill:#FE9E63;}
+	.st12{clip-path:url(#SVGID_2_);fill:#8533AF;}
+	.st13{display:none;}
+	.st14{display:inline;}
+	.st15{display:inline;clip-path:url(#SVGID_4_);fill:none;}
+	.st16{display:inline;opacity:0.21;clip-path:url(#SVGID_4_);fill:#F67063;}
 </style>
-<g transform="translate(-374 -6358)">
-	<g>
-		<path id="a" class="st0" d="M375,6430v-70h292v70H375z"/>
+<g>
+	<g transform="translate(-374 -6358)">
+		<g>
+			<path id="a" class="st0" d="M242.5,6238.4v-70h292v70H242.5z"/>
+		</g>
+	</g>
+	<g transform="translate(-374 -6358)">
+		<g>
+			<path id="b" class="st1" d="M827.5,6182.4v-14h292v14H827.5z"/>
+		</g>
+	</g>
+	<g transform="translate(-374 -6358)">
+		<g>
+			<path id="c" class="st2" d="M534.5,6185.2v-16.8h293v16.8H534.5z"/>
+		</g>
+	</g>
+	<g transform="translate(-374 -6358)">
+		<g>
+			<path id="d" class="st3" d="M1119.5,6330.8v-162.4h293v162.4H1119.5z"/>
+		</g>
+	</g>
+	<g transform="translate(-374 -6358)">
+		<g>
+			<path id="d_1_" class="st4" d="M1412.5,6185.2v-16.8h293v16.8H1412.5z"/>
+		</g>
+	</g>
+	<g transform="translate(-374 -6358)" class="st5">
+		<g>
+			<path id="e" class="st6" d="M388.5,6175.4v-7h292v7H388.5z"/>
+		</g>
+	</g>
+	<g transform="translate(-374 -6358)" class="st5">
+		<g>
+			<path id="f" class="st7" d="M973.5,6175.4v-7h292v7H973.5z"/>
+		</g>
 	</g>
 </g>
-<g transform="translate(-374 -6358)">
-	<g>
-		<path id="b" class="st1" d="M960,6374v-14h292v14H960z"/>
-	</g>
+<g id="Solid_Circle">
+	<defs>
+		<circle id="SVGID_1_" cx="600" cy="600" r="600"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+	<path class="st8" d="M600,600l-44.4,625.7c0,0-369.6,145-518.1-72.5S-27.2,600-27.2,600H600"/>
+	<polygon class="st9" points="600,600 555.6,1225.7 1341.1,1325.5 1845.2,518.5 1365.1,-225.6 652.3,-63.6 	"/>
+	<polyline class="st10" points="600,600 132.7,-477.7 -546,-127.4 -159.5,97 600,600 600,600 	"/>
+	<line class="st10" x1="600.5" y1="600" x2="600.5" y2="600"/>
+	<polyline class="st11" points="600.5,600 652.3,-63.6 132.7,-477.7 600,600 	"/>
+	<polygon class="st12" points="600,600 -159.5,97 -27.2,600 	"/>
 </g>
-<g transform="translate(-374 -6358)">
-	<g>
-		<path id="c" class="st2" d="M667,6376.8V6360h293v16.8H667z"/>
-	</g>
-</g>
-<g transform="translate(-374 -6358)">
-	<g>
-		<path id="d" class="st3" d="M1252,6522.4V6360h293v162.4H1252z"/>
-	</g>
-</g>
-<g transform="translate(-374 -6358)">
-	<g>
-		<path id="d_1_" class="st4" d="M1545,6376.8V6360h293v16.8H1545z"/>
-	</g>
-</g>
-<g transform="translate(-374 -6358)" class="st5">
-	<g>
-		<path id="e" class="st6" d="M521,6367v-7h292v7H521z"/>
-	</g>
-</g>
-<g transform="translate(-374 -6358)" class="st5">
-	<g>
-		<path id="f" class="st7" d="M1106,6367v-7h292v7H1106z"/>
-	</g>
+<g id="Solid_Circle_1_" class="st13">
+	<defs>
+		
+			<ellipse id="SVGID_3_" transform="matrix(0.9764 -0.2158 0.2158 0.9764 -115.3591 143.6434)" cx="600" cy="600" rx="244.5" ry="244.5"/>
+	</defs>
+	<clipPath id="SVGID_4_" class="st14">
+		<use xlink:href="#SVGID_3_"  style="overflow:visible;"/>
+	</clipPath>
+	<path class="st15" d="M600,600l-620.5,91.7c0,0-221.4-329.6-41.1-521.5S464.6-12.5,464.6-12.5L600,600"/>
+	<polygon class="st16" points="600,600 -20.5,691.7 51.5,1480.2 948.4,1798.2 1571.3,1168.9 1259.3,507.8 	"/>
+	<polyline class="st15" points="600,600 1551.4,-88.9 1062.9,-676 927.2,-250.2 600,600 600,600 	"/>
+	<polyline class="st15" points="600.1,600.5 1259.3,507.8 1551.4,-88.9 600,600 	"/>
+	<polygon class="st15" points="600,600 927.2,-250.2 464.6,-12.5 	"/>
 </g>
 </svg>

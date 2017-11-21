@@ -48,7 +48,7 @@
     justify-content: center;
     align-content: center;
     position: relative;
-    width: 450px;
+    width: 0px; // Was 450px
     margin: 75px auto 0;
     @include media('>767px'){
       left: -60px;
