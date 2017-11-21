@@ -1,6 +1,6 @@
 .technical{
   h1{
-    margin-top: 172px !important;
+    // margin-top: 132px !important;
   }
   &:not(.no-shape) {
     &:after {
@@ -19,7 +19,7 @@
       display: flex;
       justify-content: center;
       img {
-        margin: 129px 0 118px;
+        margin: 109px 0 118px;
         height: 100%;
         width: auto;
         @include media('<1200px'){
@@ -92,12 +92,13 @@
   }
 
   .compontents{
-    margin-top: 80px;
+    margin-top: 50px;
     background-color: #e8e6fa;
     background-image: linear-gradient(to right, #e8e6fa 0%, #ffffff 100%);
 
     h1{
-      margin-bottom: 150px;
+      margin-bottom: 80px;
+      margin-top: 132px;
       @include media('<992px'){
         margin-bottom: 75px;
       }
@@ -141,8 +142,8 @@
     }
 
     .technical-icons{
-      margin-top: 170px;
-      margin-bottom: 230px;
+      margin-top: 120px;
+      margin-bottom: 190px;
       @include media('<768px'){
         margin-top: 70px;
         margin-bottom: 150px;
@@ -197,8 +198,8 @@
   .directory{
     background-color: #e8e6fa;
     background-image: linear-gradient(to right, #ffffff 0%, #fff4e6 100%);
-    padding-bottom: 180px;
-    padding-top: 220px;
+    padding-bottom: 110px;
+    padding-top: 150px;
     position: relative;
     overflow: hidden;
 
@@ -223,7 +224,7 @@
   }
 
   .target-market{
-    padding-top: 271px;
+    padding-top: 111px;
     padding-bottom: 100px;
     @include media('<992px'){
       padding-top: 80px;
@@ -254,7 +255,7 @@
     }
   }
   .cashiers{
-    margin-top: 260px;
+    margin-top: 220px;
     margin-bottom: 18px;
     h2{
       margin-bottom: 48px;
@@ -281,6 +282,7 @@
       margin-top: 115px;
     }
     h1{
+      margin-top: 62px;
       @include media('<768px'){
         margin-top:0;
       }

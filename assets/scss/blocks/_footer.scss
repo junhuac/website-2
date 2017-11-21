@@ -51,7 +51,7 @@
     width: 0px; // Was 450px
     margin: 75px auto 0;
     @include media('>767px'){
-      left: -60px;
+      // left: -60px;
     }
     @include media('<768px'){
       width: 100%;

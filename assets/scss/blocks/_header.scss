@@ -297,6 +297,7 @@
                     text-transform: uppercase;
                     height: 82px;
                     line-height: 92px;
+                    align-items: baseline;
                     @include media('<768px') {
                         height: 58px;
                         line-height: 65px;
