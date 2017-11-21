@@ -44,6 +44,9 @@
 				<li>
 					<a href="technical.html">TECHNICAL</a>
 				</li>
+				<li>
+					<a class="active" href="pre-investment.php">CONTACT</a>
+				</li>
 			</ul>
 		</div>
 	</div>
@@ -177,7 +180,7 @@
 		<h1>Pre-ICO is Live Now</h1>
 		<p class="main">We’re raising a Hard Cap from between $2m - $30m which will be equivalent of 650,000,000 BETR.</p>
 
-		<form>
+		<form action="pre-investment.php">
 			<!-- <input type="text" value="10.000">
 			<span class="calc-value">500$</span> -->
 			<button class="button buy-now" type="submit">Buy BETR Now</button>
