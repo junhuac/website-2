@@ -312,14 +312,34 @@ Roadmap 2.0
   display: flex;
   justify-content: center;
   align-content: center;
-
+  flex-wrap: wrap;
+  padding-top: 15px;
+  padding-bottom: 300px;
+  @include media('<768px'){
+    flex-direction: column;
+    padding-bottom: 0;
+    position: relative;
+  }
   .first-line,
   .last-line{
     width: 480px;
+    @include media('<1200px', '>991px'){
+      width: 400px;
+    }
+    @include media('<992px', '>767px'){
+      width: 300px;
+    }
+    @include media('<768px'){
+      width: 100%;
+    }
   }
   .image{
-    position: relative;
+    position: absolute;
     margin-bottom: 150px;
+    margin-top: -15px;
+    left: 50%;
+    min-height:1650px;
+    transform: translateX(-50%);
     .timeline-single{
       align-items: center;
       position: absolute;
@@ -328,6 +348,9 @@ Roadmap 2.0
       transform:translateX(-50%) translateY(100%);
       min-width:350px;
       text-align: center;
+      @include media('<768px'){
+        width: 100%;
+      }
     }
   }
 
@@ -338,8 +361,10 @@ Roadmap 2.0
     flex-direction: column;
     align-items: flex-end;
     justify-content: center;
-    &:first-of-type{
-      margin-top: 15px;
+    @include media('<768px'){
+      align-items: flex-start;
+      text-align: left;
+      margin-bottom: 30px;
     }
     &:after{
       content: '';
@@ -364,6 +389,9 @@ Roadmap 2.0
     }
 
     &.no-shape{
+      @include media('<768px'){
+        display: none;
+      }
       &:after{
         display: none;
       }
@@ -424,19 +452,44 @@ Roadmap 2.0
         width: 36px;
       }
     }
+    &.dot-40{
+      &:after{
+        height: 40px;
+        width: 40px;
+      }
+    }
   }
+
   .first-line{
+    margin-right: 50px;
+    @include media('<768px'){
+      margin-right: 0;
+      padding-right: 50px;
+    }
     .timeline-single{
       padding-right: 135px;
       @include media('<992px', '>767px'){
         padding-right: 100px;
       }
+      @include media('<768px'){
+        padding-right: 0;
+      }
       &:after{
         right: 50px;
+        @include media('<768px'){
+          right: -25px;
+          left: auto;
+        }
       }
     }
   }
+
   .last-line{
+    margin-left: 50px;
+    @include media('<768px'){
+      margin-left: 0;
+      padding-right: 50px;
+    }
     .timeline-single{
       padding-left: 135px;
       align-items: flex-start;
@@ -444,9 +497,43 @@ Roadmap 2.0
       @include media('<992px', '>767px'){
         padding-left: 100px;
       }
+      @include media('<768px'){
+        padding-left: 0;
+      }
       &:after{
         right: auto;
         left: 50px;
+        @include media('<768px'){
+          right: -25px;
+          left: auto;
+        }
+      }
+    }
+  }
+
+  .image{
+    @include media('<768px'){
+      position: absolute;
+      right: 0;
+      left: calc(100% - 10px);
+      transform: translateX(-100%);
+      margin: 0;
+      height: 100%;
+      top: 0;
+      &:after{
+        content:'';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 8px;
+        height: 100%;
+        display: block;
+        border-radius: 4px;
+        background-color: #e9e7fa;
+        background-image: linear-gradient(to top, #8533af 0%, #e64e64 50%, #fe9e63 100%);
+      }
+      img{
+        display: none;
       }
     }
   }

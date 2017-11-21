@@ -9,8 +9,38 @@
     top: 320px;
     right: 0;
     opacity: 0.8;
+    z-index: 2;
     @include media('<768px'){
             display: none;
+    }
+  }
+  p.main{
+      max-width: 950px;
+      width: 950px;
+      text-align: center;
+      margin: 0 auto;
+      @include media('<768px'){
+        margin-top: 20px;
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+  > .gradient-helper{
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 130px;
+    &:after {
+      content: '';
+      display: block;
+      width: calc(100% + 100px);
+      position: absolute;
+      bottom: -47px;
+      height: 100px;
+      background: #fff4e6;
+      right: 0;
+      transform: rotate(-3deg);
+      z-index: 2;
     }
   }
 
@@ -93,7 +123,7 @@
         margin-top: auto;
         text-align: center;
         h2{
-          margin-top: 60px;
+          margin-top: 25px;
         }
       }
     }
@@ -104,19 +134,7 @@
     background-image: linear-gradient(to top, #ffffff 0%, #fff4e6 100%);
     position: relative;
     overflow: hidden;
-    margin-top: 230px;
-    &:before {
-      content: '';
-      display: block;
-      width: calc(100% + 100px);
-      position: absolute;
-      top: -47px;
-      height: 100px;
-      background: #fff;
-      right: 0;
-      transform: rotate(-3deg);
-      z-index: 2;
-    }
+
     @include media('<768px'){
         margin-top: 0px;
       }
@@ -129,17 +147,7 @@
         margin-bottom: 20px;
       }
     }
-    p.main{
-      max-width: 950px;
-      width: 950px;
-      text-align: center;
-      margin: 0 auto;
-      @include media('<768px'){
-        margin-top: 20px;
-        width: 100%;
-        text-align: center;
-      }
-    }
+
     img{
       margin-top: 60px;
       display: flex;
@@ -242,7 +250,7 @@
       display: block;
     }
 
-    #market-size-header {
+    h1 {
       text-align: center;
       @include media('<768px'){
         margin-top: 20px;
