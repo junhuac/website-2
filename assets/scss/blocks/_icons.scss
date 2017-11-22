@@ -47,10 +47,18 @@
   }
   &.icon-facebook{
     height: 18px;
-    width: 19px;
+    width: 9.5px;
     background-image: url(../images/svg/facebook_icon.svg);
     &:hover{
       background-image: url(../images/svg/facebook_icon_blue.svg);
+    }
+  }
+  &.icon-website{
+    height: 18px;
+    width: 19px;
+    background-image: url(../images/svg/website_icon.svg);
+    &:hover{
+      background-image: url(../images/svg/website_icon_blue.svg);
     }
   }
   &.icon-linkedin{
