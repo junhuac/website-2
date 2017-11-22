@@ -18,7 +18,6 @@
         margin-top: 105px;
         display: flex;
         justify-content: space-between;
-        margin-bottom: 80px;
         flex-wrap: wrap;
 
         .card-item {
@@ -134,7 +133,7 @@
             align-items: center;
             align-content: flex-start;
             padding: 0 15px;
-            text-align: center;
+            text-align: justify;
             @include media('<768px'){
                 width: 100%;
                 margin-bottom: 30px;

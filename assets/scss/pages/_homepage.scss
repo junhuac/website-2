@@ -1174,4 +1174,14 @@
       }
     }
   }
+
+  .partner {
+    @extend .person;
+    min-height: 60px;
+
+    img {
+      height: auto;
+      border-radius: 0;
+    }
+  }
 }
