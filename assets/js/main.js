@@ -109,6 +109,43 @@ function sslider() {
   });
 }
 
+function shiftRoadmapItems() {
+  var container = '.roadmap-wrapper',
+      item = '.timeline-single',
+      prefix = 'roadmap-';
+
+  // Init
+  if (!$(container).data('init')) {
+    var id = 0;
+    $(container + ' ' + item).each(function(index, element) {
+      id++;
+      $(element).attr('id', prefix + id);
+
+      if ($(element).data('home') === false) {
+        $(element).attr('data-home', prefix + (id + 1));
+      }
+    });
+
+    $(container).attr('data-init', 'true');
+  }
+
+  // Commence shifting!
+  var itemsToShift = $(container + ' [data-dest]');
+
+  itemsToShift.each(function(index, element) {
+    var elementId = $(element).attr('id');
+    var destination;
+
+    if ($(window).width() <= 768) {
+      destination = prefix + $(element).data('dest');
+    } else {
+      destination = $(container + ' [data-home=' + elementId + ']').attr('id');
+    }
+
+    $(element).insertAfter('#' + destination);
+  });
+}
+
 $(document).ready(function () {
   $('[data-toggle="tooltip"]').tooltip();
 
