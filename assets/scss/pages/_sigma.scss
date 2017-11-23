@@ -349,4 +349,7 @@
             }
         }
     }
+    &.previous {
+        .map .iframe { background-image: url(../images/map-previous.jpg); }
+    }
 }
