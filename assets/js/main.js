@@ -23,6 +23,9 @@ function initializeClock(id, endtime) {
   var minutesSpan = clock.querySelector('.minutes');
   var secondsSpan = clock.querySelector('.sec');
 
+  if ($('#' + id).data('deadline')) {
+    endtime = new Date($('#' + id).data('deadline'));
+  }
 
 
   function updateClock() {
