@@ -3,7 +3,7 @@ session_start();
 
 // Options
 $timestamp = date('H:i:s');
-$logFile = 'investment-message.log';
+$logFile = 'logs/investment-message.log';
 $admin_email = 'ico@betterbetting.org';
 $recaptcha_secret = '6LfCnjkUAAAAADXMBH-Kx92G9RVirugcwl8yX52u'; // Keep Secret!
 $recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
