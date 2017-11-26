@@ -2,8 +2,8 @@
 session_start();
 
 // Options
-$timestamp = date('H:i:s');
-$logFile = 'logs/investment-message.log';
+$timestamp = date('d-m-Y H:i:s');
+$logFile = 'logs/investment-message.csv';
 $admin_email = 'ico@betterbetting.org';
 $recaptcha_secret = '6LfCnjkUAAAAADXMBH-Kx92G9RVirugcwl8yX52u'; // Keep Secret!
 $recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
@@ -50,7 +50,7 @@ if (!empty($error)) {
 }
 
 // Log message
-$log = "[{$timestamp}] {$email} ({$first_name} {$last_name}) - {$message}\n";
+$log = "{$timestamp},{$email},{$first_name},{$last_name},\"{$message}\"\n";
 
 if (!file_put_contents($logFile, $log, FILE_APPEND))
 	$error[] = 'Message failed to log.';
