@@ -33,19 +33,19 @@
 					<a href="whitepaper.html">Whitepaper</a>
 				</li> -->
 				<li>
-					<a href="sigma.html">SIGMA</a>
+					<a href="hypethon.html">Hypethon</a>
 				</li>
 				<li>
-					<a href="road_map.html">ROADMAP</a>
+					<a href="road_map.html">Roadmap</a>
 				</li>
 				<li>
-					<a href="team.html">TEAM</a>
+					<a href="team.html">Team</a>
 				</li>
 				<li>
-					<a href="technical.html">TECHNICAL</a>
+					<a href="technical.html">Technical</a>
 				</li>
 				<li>
-					<a class="active" href="pre-investment.php">CONTACT</a>
+					<a href="pre-investment.php">Contact</a>
 				</li>
 			</ul>
 		</div>
@@ -211,7 +211,7 @@
 					<a href="market.html">Market</a>
 				</li> -->
 				<li>
-					<a href="sigma.html">SIGMA</a>
+					<a href="hypethon.html">Hypethon</a>
 				</li>
 				<li>
 					<a href="road_map.html">Roadmap</a>
