@@ -1,331 +1,331 @@
 .market-page {
-  position: relative;
-  &:after{
-    content: "";
-    position: absolute;
-    background-image: url(../images/svg/market_shape.svg);
-    width: 612px;
-    height: 723px;
-    top: 320px;
-    right: 0;
-    opacity: 0.8;
-    z-index: 2;
-    @include media('<768px'){
-            display: none;
-    }
-  }
-  p.main{
-      max-width: 950px;
-      width: 950px;
-      text-align: center;
-      margin: 0 auto;
-      @include media('<768px'){
-        margin-top: 20px;
-        width: 100%;
-        text-align: center;
-      }
-    }
+	position: relative;
+	&:after{
+		content: "";
+		position: absolute;
+		background-image: url(../images/svg/market_shape.svg);
+		width: 612px;
+		height: 723px;
+		top: 320px;
+		right: 0;
+		opacity: 0.8;
+		z-index: 2;
+		@include media('<768px'){
+			display: none;
+		}
+	}
+	p.main{
+		max-width: 950px;
+		width: 950px;
+		text-align: center;
+		margin: 0 auto;
+		@include media('<768px'){
+			margin-top: 20px;
+			width: 100%;
+			text-align: center;
+		}
+	}
 
-  > .gradient-helper{
-    position: relative;
-    overflow: hidden;
-    padding-bottom: 130px;
-    &:after {
-      content: '';
-      display: block;
-      width: calc(100% + 100px);
-      position: absolute;
-      bottom: -47px;
-      height: 100px;
-      background: #fff4e6;
-      right: 0;
-      transform: rotate(-3deg);
-      z-index: 2;
-    }
-  }
+	> .gradient-helper{
+		position: relative;
+		overflow: hidden;
+		padding-bottom: 130px;
+		&:after {
+			content: '';
+			display: block;
+			width: calc(100% + 100px);
+			position: absolute;
+			bottom: -47px;
+			height: 100px;
+			background: #fff4e6;
+			right: 0;
+			transform: rotate(-3deg);
+			z-index: 2;
+		}
+	}
 
-  #market-page-header {
-    @include media('<768px'){
-        margin-top: 20px;
-      }
-  }
-  .market-text {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 50px;
-    @include media('<768px'){
-      justify-content: center;
-      flex-wrap: wrap;
-      margin-top: 20px;
-      text-align: center;
-    }
-    .text-content {
-      width: calc(50% - 17px);
-      font-weight: 400;
-      line-height: 24px;
-      @include media('<768px'){
-        width: 100%;
-        margin-bottom: 10px;
-        text-align: center;
-      }
-    }
-    .center {
-      text-align: center;
-    }
-  }
-  .map-container {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 115px;
-    flex-wrap: wrap;
+	#market-page-header {
+		@include media('<768px'){
+			margin-top: 20px;
+		}
+	}
+	.market-text {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 50px;
+		@include media('<768px'){
+			justify-content: center;
+			flex-wrap: wrap;
+			margin-top: 20px;
+			text-align: center;
+		}
+		.text-content {
+			width: calc(50% - 17px);
+			font-weight: 400;
+			line-height: 24px;
+			@include media('<768px'){
+				width: 100%;
+				margin-bottom: 10px;
+				text-align: center;
+			}
+		}
+		.center {
+			text-align: center;
+		}
+	}
+	.map-container {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 115px;
+		flex-wrap: wrap;
 
-    .map-element {
-      display: flex;
-      flex-direction: column;
+		.map-element {
+			display: flex;
+			flex-direction: column;
 
-      @include media('<768px'){
-        margin-bottom: 20px;
-        width:100%;
-      }
-      .top {
-        margin-bottom: 30px;
-        width: 100%;
-        #map-asia {
-          width:100%;
-          max-width: 270px;
-          margin: 0 auto;
-          display: block;
-        }
-        #map-europe {
-          width:100%;
-          max-width: 136px;
-          margin: 0 auto;
-          display: block;
+			@include media('<768px'){
+				margin-bottom: 20px;
+				width:100%;
+			}
+			.top {
+				margin-bottom: 30px;
+				width: 100%;
+				#map-asia {
+					width:100%;
+					max-width: 270px;
+					margin: 0 auto;
+					display: block;
+				}
+				#map-europe {
+					width:100%;
+					max-width: 136px;
+					margin: 0 auto;
+					display: block;
 
-        }
-        #map-usa {
-          width:100%;
-          max-width: 208px;
-          margin: 0 auto;
-          display: block;
+				}
+				#map-usa {
+					width:100%;
+					max-width: 208px;
+					margin: 0 auto;
+					display: block;
 
-        }
-        #map-australia {
-          width:100%;
-          max-width: 258px;
-          margin: 0 auto;
-          display: block;
+				}
+				#map-australia {
+					width:100%;
+					max-width: 258px;
+					margin: 0 auto;
+					display: block;
 
-        }
+				}
 
-      }
-      .bottom {
-        margin-top: auto;
-        text-align: center;
-        h2{
-          margin-top: 25px;
-        }
-      }
-    }
-  }
+			}
+			.bottom {
+				margin-top: auto;
+				text-align: center;
+				h2{
+					margin-top: 25px;
+				}
+			}
+		}
+	}
 
-  .bitcoin-container {
-    background-color: #e8e6fa;
-    background-image: linear-gradient(to top, #ffffff 0%, #fff4e6 100%);
-    position: relative;
-    overflow: hidden;
+	.bitcoin-container {
+		background-color: #e8e6fa;
+		background-image: linear-gradient(to top, #ffffff 0%, #fff4e6 100%);
+		position: relative;
+		overflow: hidden;
 
-    @include media('<768px'){
-        margin-top: 0px;
-      }
-    #bitcoin-header {
-      margin-top: 242px;
-      margin-bottom: 50px;
-      text-align: center;
-      @include media('<768px'){
-        margin-top: 120px;
-        margin-bottom: 20px;
-      }
-    }
+		@include media('<768px'){
+			margin-top: 0px;
+		}
+		#bitcoin-header {
+			margin-top: 242px;
+			margin-bottom: 50px;
+			text-align: center;
+			@include media('<768px'){
+				margin-top: 120px;
+				margin-bottom: 20px;
+			}
+		}
 
-    img{
-      margin-top: 60px;
-      display: flex;
-      @include media('<768px'){
-        margin: 60px 0;
-      }
-    }
-    .bitcoin-legend {
-      margin: 30px 0 180px 150px;
-      @include media('<768px'){
-        margin:0 0 20px
-      }
-      .circle {
-        margin-left: 30px;
-        margin-right: 10px;
-        width: 17px;
-        height: 17px;
-        @include media('<768px'){
-          margin: 0px;
-        }
-      }
-    }
-  }
+		img{
+			margin-top: 60px;
+			display: flex;
+			@include media('<768px'){
+				margin: 60px 0;
+			}
+		}
+		.bitcoin-legend {
+			margin: 30px 0 180px 150px;
+			@include media('<768px'){
+				margin:0 0 20px
+			}
+			.circle {
+				margin-left: 30px;
+				margin-right: 10px;
+				width: 17px;
+				height: 17px;
+				@include media('<768px'){
+					margin: 0px;
+				}
+			}
+		}
+	}
 
-  .competitors-container {
-    text-align: center;
-    .main {
-      max-width: 950px;
-      text-align: center;
-      margin: 0 auto;
-    }
-  }
+	.competitors-container {
+		text-align: center;
+		.main {
+			max-width: 950px;
+			text-align: center;
+			margin: 0 auto;
+		}
+	}
 
-  .gray-market {
-    background-color: #e8e6fa;
-    background-image: linear-gradient(to right, #e8e6fa 0%, #ffffff 100%);
-    position: relative;
-    overflow: hidden;
-    &:before {
-      content: '';
-      display: block;
-      width: calc(100% + 200px);
-      position: absolute;
-      bottom: -80px;
-      height: 135px;
-      background: #fff;
-      right: 0;
-      transform: rotate(3deg);
-      z-index: 2;
-    }
+	.gray-market {
+		background-color: #e8e6fa;
+		background-image: linear-gradient(to right, #e8e6fa 0%, #ffffff 100%);
+		position: relative;
+		overflow: hidden;
+		&:before {
+			content: '';
+			display: block;
+			width: calc(100% + 200px);
+			position: absolute;
+			bottom: -80px;
+			height: 135px;
+			background: #fff;
+			right: 0;
+			transform: rotate(3deg);
+			z-index: 2;
+		}
 
-    #market-header {
-      margin-top: 180px;
-      margin-bottom: 105px;
-      text-align: center;
-      @include media('<768px'){
-        margin-top: 20px;
-        margin-bottom: 20px;
-      }
-    }
+		#market-header {
+			margin-top: 180px;
+			margin-bottom: 105px;
+			text-align: center;
+			@include media('<768px'){
+				margin-top: 20px;
+				margin-bottom: 20px;
+			}
+		}
 
-    .market-graph {
-      display: flex;
-      align-items: center;
-      margin-top: 50px;
-      .market-legend {
-        @include media('<768px'){
-          display: none;
-        }
-        .circle {
-          width: 15px;
-          height: 15px;
-        }
-        span{
-          margin: 0 10px;
-        }
-      }
-    }
+		.market-graph {
+			display: flex;
+			align-items: center;
+			margin-top: 50px;
+			.market-legend {
+				@include media('<768px'){
+					display: none;
+				}
+				.circle {
+					width: 15px;
+					height: 15px;
+				}
+				span{
+					margin: 0 10px;
+				}
+			}
+		}
 
-    .market-subtext {
-      margin-top: 120px;
-      margin-bottom: 240px;
-      display: block;
-      text-align: center;
-      @include media('<768px'){
-        margin: 60px 0 180px 0;
-      }
-    }
-    .market-img {
-      width: 100%;
-      height:auto;
-    }
-  }
+		.market-subtext {
+			margin-top: 120px;
+			margin-bottom: 240px;
+			display: block;
+			text-align: center;
+			@include media('<768px'){
+				margin: 60px 0 180px 0;
+			}
+		}
+		.market-img {
+			width: 100%;
+			height:auto;
+		}
+	}
 
-  .market-size {
-    position: relative;
+	.market-size {
+		position: relative;
 
-    .market-img {
-      width: 100%;
-      display: block;
-    }
+		.market-img {
+			width: 100%;
+			display: block;
+		}
 
-    h1 {
-      text-align: center;
-      @include media('<768px'){
-        margin-top: 20px;
-      }
-    }
-    .graph-subtitle {
-      display: flex;
-      justify-content: space-around;
-      margin: 0 16%;
-      h4 {
-        @include media('<768px'){
-          font-size: 12px;
-        }
-      }
-    }
-    p {
-      margin-top: 60px;
-      margin-bottom: 115px;
-      text-align: center;
-    }
-  }
+		h1 {
+			text-align: center;
+			@include media('<768px'){
+				margin-top: 20px;
+			}
+		}
+		.graph-subtitle {
+			display: flex;
+			justify-content: space-around;
+			margin: 0 16%;
+			h4 {
+				@include media('<768px'){
+					font-size: 12px;
+				}
+			}
+		}
+		p {
+			margin-top: 60px;
+			margin-bottom: 115px;
+			text-align: center;
+		}
+	}
 }
 
 .market-img {
-  @include media('<768px'){
-      width: 100%;
-      height: auto;
-  }
+	@include media('<768px'){
+		width: 100%;
+		height: auto;
+	}
 }
 
 .legend {
-  color: $main_dark;
-  font-family: "Open Sans";
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 20px;
-  .circle {
-    border-radius: 50%;
-    display: inline-block;
-  }
-  .purple {
-    background-color: #8533af;
-  }
-  .transparent {
-    border: 1px solid #e8e6fa;
-  }
-  .pink{
-    background-color: #e64e64;
-  }
-  .orange {
-    background-color: #fe9e63;
-  }
-  span {
-    vertical-align: super;
-  }
+	color: $main_dark;
+	font-family: "Open Sans";
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 20px;
+	.circle {
+		border-radius: 50%;
+		display: inline-block;
+	}
+	.purple {
+		background-color: #8533af;
+	}
+	.transparent {
+		border: 1px solid #e8e6fa;
+	}
+	.pink{
+		background-color: #e64e64;
+	}
+	.orange {
+		background-color: #fe9e63;
+	}
+	span {
+		vertical-align: super;
+	}
 }
 .right {
-  float: right;
-  text-align: right;
+	float: right;
+	text-align: right;
 }
 
 .legend-small{
-  span{
-    @include media('<768px'){
-      font-size: 10px;
-    }
-  }
-  .circle {
-    width: 12px;
-    height: 12px;
-  }
-  @include media('<768px'){
-    margin-top: 30px;
-  }
-  @include media('>768px'){
-    display: none;
-  }
+	span{
+		@include media('<768px'){
+			font-size: 10px;
+		}
+	}
+	.circle {
+		width: 12px;
+		height: 12px;
+	}
+	@include media('<768px'){
+		margin-top: 30px;
+	}
+	@include media('>768px'){
+		display: none;
+	}
 }

@@ -1,291 +1,290 @@
 .technical{
-  h1{
-    // margin-top: 132px !important;
-  }
-  &:not(.no-shape) {
-    &:after {
-      content: '';
-      position: absolute;
-      top: 250px;
-      right: 0;
-      width: 612px;
-      height: 720px;
-      display: block;
-      background: url(../images/svg/technical_shape.svg);
-    }
-  }
-  .technical-image {
-    picture {
-      display: flex;
-      justify-content: center;
-      img {
-        margin: 109px 0 118px;
-        height: 100%;
-        width: auto;
-        @include media('<1200px'){
-          width: 100%;
-        }
-        @include media('<768px'){
-          width: 100%;
-          max-width: 281px;
-          margin: 50px auto 50px;
-          display: block;
+	h1{
+		// margin-top: 132px !important;
+	}
+	&:not(.no-shape) {
+		&:after {
+			content: '';
+			position: absolute;
+			top: 250px;
+			right: 0;
+			width: 612px;
+			height: 720px;
+			display: block;
+			background: url(../images/svg/technical_shape.svg);
+		}
+	}
+	.technical-image {
+		picture {
+			display: flex;
+			justify-content: center;
+			img {
+				margin: 109px 0 118px;
+				height: 100%;
+				width: auto;
+				@include media('<1200px'){
+					width: 100%;
+				}
+				@include media('<768px'){
+					width: 100%;
+					max-width: 281px;
+					margin: 50px auto 50px;
+					display: block;
+				}
+			}
+		}
+	}
 
-        }
-      }
-    }
-  }
 
+	.technical-icons{
+		display: flex;
+		flex-wrap: wrap;
 
-  .technical-icons{
-    display: flex;
-    flex-wrap: wrap;
+		.item{
+			width:calc(100% / 3);
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			flex-direction: column;
+			padding: 0 15px;
+			margin-bottom: 55px;
+			@include media('<992px'){
+				margin-bottom: 35px;
+			}
+			@include media('<768px'){
+				width: 100%;
+				padding: 0;
+			}
+			h4{
+				text-align: center;
+				margin-top: 35px;
+				margin-bottom: 25px;
+			}
+			p{
+				text-align: center;
+			}
+		}
 
-    .item{
-      width:calc(100% / 3);
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
-      flex-direction: column;
-      padding: 0 15px;
-      margin-bottom: 55px;
-      @include media('<992px'){
-        margin-bottom: 35px;
-      }
-      @include media('<768px'){
-        width: 100%;
-        padding: 0;
-      }
-      h4{
-        text-align: center;
-        margin-top: 35px;
-        margin-bottom: 25px;
-      }
-      p{
-        text-align: center;
-      }
-    }
+		&.two-in-row{
+			.item{
+				width: 50%;
+				@include media('<768px'){
+					width: 100%;
+				}
+			}
+		}
+		&.five-in-row{
+			@include media('<992px'){
+				flex-wrap: wrap;
+				justify-content: center;
+			}
+			.item{
+				width: 20%;
+				@include media('<992px'){
+					width:calc(100% / 3);
+				}
+				@include media('<768px'){
+					width: 100%;
+				}
+			}
+		}
+	}
 
-    &.two-in-row{
-      .item{
-        width: 50%;
-        @include media('<768px'){
-          width: 100%;
-        }
-      }
-    }
-    &.five-in-row{
-      @include media('<992px'){
-        flex-wrap: wrap;
-        justify-content: center;
-      }
-      .item{
-        width: 20%;
-        @include media('<992px'){
-          width:calc(100% / 3);
-        }
-        @include media('<768px'){
-          width: 100%;
-        }
-      }
-    }
-  }
+	.compontents{
+		margin-top: 50px;
+		background-color: #e8e6fa;
+		background-image: linear-gradient(to right, #e8e6fa 0%, #ffffff 100%);
 
-  .compontents{
-    margin-top: 50px;
-    background-color: #e8e6fa;
-    background-image: linear-gradient(to right, #e8e6fa 0%, #ffffff 100%);
+		h1{
+			margin-bottom: 80px;
+			margin-top: 132px;
+			@include media('<992px'){
+				margin-bottom: 75px;
+			}
+		}
 
-    h1{
-      margin-bottom: 80px;
-      margin-top: 132px;
-      @include media('<992px'){
-        margin-bottom: 75px;
-      }
-    }
+		.distributed-model-image{
+			position: relative;
+			margin-top: 18px;
+			left: -33px;
+			@include media('<992px'){
+				transform: scale(0.8);
+			}
+			@include media('<768px'){
+				text-align: center;
+				display: none;
+			}
+			&:before{
+				content: '';
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				display: block;
+				width: 1097px;
+				height: 580px;
+				background: url(../images/svg/distributed_model-bg.svg) no-repeat;
+				background-position: -68px 0;
+				@include media('<1200px'){
+					background-position: -30px center;
+				}
+				@include media('<992px'){
+					width: 880px;
+					margin-left: 8px;
+					height: 335px;
+					background-position: center;
+				}
+				@include media('<768px'){
+					margin-left: 1px;
+				}
+			}
+		}
 
-    .distributed-model-image{
-      position: relative;
-      margin-top: 18px;
-      left: -33px;
-      @include media('<992px'){
-        transform: scale(0.8);
-      }
-      @include media('<768px'){
-        text-align: center;
-        display: none;
-      }
-      &:before{
-        content: '';
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        display: block;
-        width: 1097px;
-        height: 580px;
-        background: url(../images/svg/distributed_model-bg.svg) no-repeat;
-        background-position: -68px 0;
-        @include media('<1200px'){
-          background-position: -30px center;
-        }
-        @include media('<992px'){
-          width: 880px;
-          margin-left: 8px;
-          height: 335px;
-          background-position: center;
-        }
-        @include media('<768px'){
-          margin-left: 1px;
-        }
-      }
-    }
+		.technical-icons{
+			margin-top: 120px;
+			margin-bottom: 190px;
+			@include media('<768px'){
+				margin-top: 70px;
+				margin-bottom: 150px;
+			}
+		}
+	}
 
-    .technical-icons{
-      margin-top: 120px;
-      margin-bottom: 190px;
-      @include media('<768px'){
-        margin-top: 70px;
-        margin-bottom: 150px;
-      }
-    }
-  }
+	.authentication{
+		position: relative;
+		margin-top: -30px;
+		&:before{
+			content: '';
+			height: 170px;
+			width: 100%;
+			position: absolute;
+			top: 84px;
+			left: -17px;
+			background: #fff;
+			transform: translateY(-100%) rotate(3deg);
+		}
 
-  .authentication{
-    position: relative;
-    margin-top: -30px;
-    &:before{
-      content: '';
-      height: 170px;
-      width: 100%;
-      position: absolute;
-      top: 84px;
-      left: -17px;
-      background: #fff;
-      transform: translateY(-100%) rotate(3deg);
-    }
+		p,
+		h2{
+			text-align: right;
+			@include media('<768px') {
+				text-align: center;
+			}
+		}
+		h2{
+			margin-top: 87px;
+			margin-bottom: 45px;
 
-    p,
-    h2{
-      text-align: right;
-      @include media('<768px') {
-        text-align: center;
-      }
-    }
-    h2{
-      margin-top: 87px;
-      margin-bottom: 45px;
+			@include media('<992px'){
+				margin-top: 0;
+			}
+		}
+		.authentication-image{
+			position: relative;
+			margin-top: -230px;
+			@include media('<1200px'){
+				margin-top: -130px;
+			}
+			@include media('<768px'){
+				display: none;
+			}
+			img{
+				width: 100%;
+			}
+		}
+	}
 
-      @include media('<992px'){
-        margin-top: 0;
-      }
-    }
-    .authentication-image{
-      position: relative;
-      margin-top: -230px;
-      @include media('<1200px'){
-        margin-top: -130px;
-      }
-      @include media('<768px'){
-        display: none;
-      }
-      img{
-        width: 100%;
-      }
-    }
-  }
+	.directory{
+		background-color: #e8e6fa;
+		background-image: linear-gradient(to right, #ffffff 0%, #fff4e6 100%);
+		padding-bottom: 110px;
+		padding-top: 150px;
+		position: relative;
+		overflow: hidden;
 
-  .directory{
-    background-color: #e8e6fa;
-    background-image: linear-gradient(to right, #ffffff 0%, #fff4e6 100%);
-    padding-bottom: 110px;
-    padding-top: 150px;
-    position: relative;
-    overflow: hidden;
+		@include media('<768px'){
+			padding-top: 120px;
+			padding-bottom: 120px;
+		}
+		&:before{
+			content:'';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 150px;
+			background: #fff;
+			transform: translateY(-50%) rotate(-3deg);
+		}
+		h2{
+			text-align: center;
+			margin-bottom: 50px;
+		}
+	}
 
-    @include media('<768px'){
-      padding-top: 120px;
-      padding-bottom: 120px;
-    }
-    &:before{
-      content:'';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 150px;
-      background: #fff;
-      transform: translateY(-50%) rotate(-3deg);
-    }
-    h2{
-      text-align: center;
-      margin-bottom: 50px;
-    }
-  }
+	.target-market{
+		padding-top: 111px;
+		padding-bottom: 100px;
+		@include media('<992px'){
+			padding-top: 80px;
+		}
+		h2{
+			max-width:390px;
+			margin-bottom: 50px;
+		}
+		img{
+			@include media('<992px'){
+				width: 100%;
+			}
+		}
+	}
 
-  .target-market{
-    padding-top: 111px;
-    padding-bottom: 100px;
-    @include media('<992px'){
-      padding-top: 80px;
-    }
-    h2{
-      max-width:390px;
-      margin-bottom: 50px;
-    }
-    img{
-      @include media('<992px'){
-        width: 100%;
-      }
-    }
-  }
+	.miners{
+		padding-top: 80px;
+		@include media('<992px'){
+			padding-top: 90px;
+		}
+		h2{
+			text-align: center;
+			margin-bottom: 45px;
+		}
 
-  .miners{
-    padding-top: 80px;
-    @include media('<992px'){
-      padding-top: 90px;
-    }
-    h2{
-      text-align: center;
-      margin-bottom: 45px;
-    }
+		.technical-icons{
+			margin-top: 145px;
+		}
+	}
+	.cashiers{
+		margin-top: 220px;
+		margin-bottom: 18px;
+		h2{
+			margin-bottom: 48px;
+		}
+		.cashiers-image-1{
+			margin-top: -150px;
+			img{
+				width: 100%;
+			}
+		}
 
-    .technical-icons{
-      margin-top: 145px;
-    }
-  }
-  .cashiers{
-    margin-top: 220px;
-    margin-bottom: 18px;
-    h2{
-      margin-bottom: 48px;
-    }
-    .cashiers-image-1{
-      margin-top: -150px;
-      img{
-        width: 100%;
-      }
-    }
-
-    .cashiers-image-2{
-      text-align: center;
-      margin-top: 85px;
-      position: relative;
-      left: -50px;
-      @include media('<768px'){
-        display: none;
-      }
-    }
-  }
-  .apis{
-    .technical-icons{
-      margin-top: 115px;
-    }
-    h1{
-      margin-top: 62px;
-      @include media('<768px'){
-        margin-top:0;
-      }
-    }
-  }
+		.cashiers-image-2{
+			text-align: center;
+			margin-top: 85px;
+			position: relative;
+			left: -50px;
+			@include media('<768px'){
+				display: none;
+			}
+		}
+	}
+	.apis{
+		.technical-icons{
+			margin-top: 115px;
+		}
+		h1{
+			margin-top: 62px;
+			@include media('<768px'){
+				margin-top:0;
+			}
+		}
+	}
 }
