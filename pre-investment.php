@@ -42,7 +42,7 @@
 					<a href="whitepaper.html">Whitepaper</a>
 				</li> -->
 				<li>
-					<a href="hypethon.html">Hypethon</a>
+					<a href="block-show-asia.html">Block Show Asia</a>
 				</li>
 				<li>
 					<a href="road_map.html">Roadmap</a>
@@ -220,7 +220,7 @@
 					<a href="market.html">Market</a>
 				</li> -->
 				<li>
-					<a href="hypethon.html">Hypethon</a>
+					<a href="block-show-asia.html">Block Show Asia</a>
 				</li>
 				<li>
 					<a href="road_map.html">Roadmap</a>
