@@ -61,6 +61,14 @@
 			background-image: url(../images/svg/website_icon_blue.svg);
 		}
 	}
+	&.icon-telegram{
+		height: 18px;
+		width: 19px;
+		background-image: url(../images/svg/telegram_icon.svg);
+		&:hover{
+			background-image: url(../images/svg/telegram_icon_blue.svg);
+		}
+	}
 	&.icon-linkedin{
 		height: 18px;
 		width: 19px;
