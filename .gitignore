@@ -2,3 +2,4 @@ node_modules
 assets/css
 .htpasswd
 conf.json
+bootstrap.min.js
