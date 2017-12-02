@@ -3,3 +3,4 @@ assets/css
 .htpasswd
 **/.htaccess
 conf.json
+bootstrap.min.js

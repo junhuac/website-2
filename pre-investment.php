@@ -11,8 +11,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=latin-ext" rel="stylesheet">
-	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<!-- build:css assets/css/libs.css -->
+	<link rel="stylesheet" href="assets/css/libs/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/libs/nouislider.css">
+	<link rel="stylesheet" href="assets/css/libs/owl/owl.carousel.css">
+	<!-- endbuild -->
+	<!-- build:css assets/css/main.css -->
 	<link rel="stylesheet" href="assets/css/style.css">
+	<!-- endbuild -->
 	<script src='https://www.google.com/recaptcha/api.js'></script>
 
 	<link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicons/apple-touch-icon.png?v=jwLOaKBxPg">
@@ -265,10 +271,15 @@
 	integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
 	crossorigin="anonymous"></script>
 <script src="https://www.google-analytics.com/analytics.js" async defer></script>
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/owl.carousel.js"></script>
-<script src="assets/js/wNumb.js"></script>
-<script src="assets/js/nouislider.js"></script>
+<!-- build:js assets/js/libs.js -->
+<script src="assets/js/libs/bootstrap.min.js"></script>
+<script src="assets/js/libs/owl.carousel.js"></script>
+<script src="assets/js/libs/owl.autoplay.js"></script>
+<script src="assets/js/libs/wNumb.js"></script>
+<script src="assets/js/libs/nouislider.js"></script>
+<!-- endbuild -->
+<!-- build:js assets/js/main.js -->
 <script src="assets/js/main.js"></script>
+<!-- endbuild -->
 </body>
 </html>
