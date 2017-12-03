@@ -42,7 +42,7 @@ gulp.task("mangle", ["concat"], function() {
 		.pipe(gulp.dest('dist'));
 });
 
-gulp.task("concat", ['css', 'modules'], function() {
+gulp.task("concat", ['css'], function() {
 	return gulp.src(['**/*.html', '**/*.php', '!node_modules/**/*.*'])
 		.pipe(useref())
 		.pipe(gulp.dest('temp'));
@@ -54,7 +54,7 @@ gulp.task("css", ['sass'], function() {
 		.pipe(gulp.dest('assets/css/'));
 });
 
-gulp.task("sass", function () {
+gulp.task("sass", ["modules"], function () {
 	return gulp.src('assets/scss/**/*.scss')
 		.pipe(sass())
 		.pipe(gulp.dest('assets/css/'));
