@@ -42,11 +42,11 @@
 		<div class="menu">
 			<ul>
 				<!-- <li>
-					<a href="market.html">MARKET</a>
+					<a href="market.html">Market</a>
 				</li> -->
-				<!-- <li>
-					<a href="whitepaper.html">Whitepaper</a>
-				</li> -->
+				<li>
+					<a href="pre-investment.php">Whitepaper</a>
+				</li>
 				<li>
 					<a href="block-show-asia.html">Block Show Asia</a>
 				</li>
@@ -244,11 +244,11 @@
 			<ul class="right">
 				<!-- <li>
 					<a href="pre-investment.php">Token Sale</a>
-				</li>
+				</li> -->
 				<li>
-					<a href="">Whitepaper</a>
+					<a href="pre-investment.php">Whitepaper</a>
 				</li>
-				<li>
+				<!-- <li>
 					<a href="">Terms &amp; Conditions</a>
 				</li> -->
 				<li>
