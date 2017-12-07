@@ -1,0 +1,41 @@
+.popup {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	transform: translate3d(0, 100%, 0);
+	width: 100%;
+	padding: 1em 0;
+	z-index: 100;
+
+	color: #fff;
+	background-color: $main_dark;
+
+	transition: transform 0.5s ease-in-out;
+
+	&.show { transform: translate3d(0,0,0); }
+
+	p { margin: 0; }
+
+	.container {
+		display: flex;
+		align-items: center;
+	}
+
+	.button {
+		@include media('>768px') { margin: 0 0 0 auto; }
+		@include media('<768px') { margin: 0 auto; }
+	}
+
+	.close {
+		position: absolute;
+		top: 23px;
+		right: 8px;
+		transform: translate(-50%, -50%);
+		height: 16px;
+		width: 16px;
+		display: block;
+		opacity: 1;
+		filter: invert(1);
+		background: url(../images/svg/close.svg);
+	}
+}
