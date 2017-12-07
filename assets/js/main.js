@@ -62,6 +62,16 @@ function showMenu(){
 	});
 }
 
+function showPopup() {
+	$('.popup').addClass('show');
+
+	$('.popup .close').on('click', function(event) {
+		$(event.currentTarget)
+			.parents('.popup')
+			.removeClass('show');
+	});
+}
+
 function sslider() {
 	var options;
 	var owlSlid;
@@ -166,7 +176,15 @@ $(document).ready(function () {
 
 	showMenu();
 
+	var visitCount = document.cookie.replace(/(?:(?:^|.*;\s*)visitCount\s*\=\s*([^;]*).*$)|^.*$/, "$1");
+	visitCount++;
+	document.cookie = 'visitCount=' + visitCount + '; expires=Fri, 31 Dec 9999 23:59:59 GMT';
 
+	if (visitCount < 10) {
+		setTimeout(function() {
+			showPopup();
+		}, 10000);
+	}
 
 	var slider = document.getElementById('slider');
 
