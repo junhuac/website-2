@@ -2,7 +2,7 @@
 	session_start();
 ?>
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -191,8 +191,8 @@
 						<span class="method-bitcoin"></span>
 					</label>
 					<input type="radio" name="payment-method" id="ethereum" value="ethereum" disabled>
-					<label for="method" class="method">
-						<span class="method-method"></span>
+					<label for="ethereum" class="method">
+						<span class="method-ethereum"></span>
 					</label>
 				</div>
 			</div>
