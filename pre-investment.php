@@ -70,7 +70,7 @@
 					<a href="technical.html">Technical</a>
 				</li>
 				<li>
-					<a href="pre-investment.php">Contact</a>
+					<a class="active" href="pre-investment.php">Contact</a>
 				</li>
 			</ul>
 		</div>
