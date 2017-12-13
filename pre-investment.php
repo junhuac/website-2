@@ -58,7 +58,7 @@
 					<a href="pre-investment.php">Whitepaper</a>
 				</li>
 				<li>
-					<a href="block-show-asia.html">Block Show Asia</a>
+					<a href="events.html">Events</a>
 				</li>
 				<li>
 					<a href="road_map.html">Roadmap</a>
@@ -239,7 +239,7 @@
 					<a href="market.html">Market</a>
 				</li> -->
 				<li>
-					<a href="block-show-asia.html">Block Show Asia</a>
+					<a href="events.html">Events</a>
 				</li>
 				<li>
 					<a href="road_map.html">Roadmap</a>
