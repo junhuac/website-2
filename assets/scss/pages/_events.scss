@@ -1,5 +1,5 @@
 @import "../../../node_modules/include-media/dist/include-media";
-.eig-berlin {
+.events {
 	&.gradient-helper {
 		padding-top: 70px;
 		@include media('<768px'){
@@ -343,7 +343,7 @@
 			right: 0;
 			height: 723px;
 			width: 612px;
-			background: url('../images/eig-berlin-right-shape.png') no-repeat;
+			background: url('../images/events-right-shape.png') no-repeat;
 			@include media('<768px'){
 				opacity: .2;
 			}
