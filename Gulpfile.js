@@ -83,6 +83,14 @@ gulp.task("fonts", function() {
 		.pipe(gulp.dest('dist/assets/fonts/'));
 });
 
+gulp.task("sass:watch", ['sass'], function(){
+	watchSass([
+		'assets/scss/**/*.scss'
+	])
+		.pipe(sass())
+		.pipe(gulp.dest("assets/css"));
+});
+
 gulp.task("clean", function() {
 	return del(['dist/', 'assets/css/', 'assets/js/libs/bootstrap.min.js', 'temp/']);
 });
@@ -92,15 +100,11 @@ gulp.task("clean:post-deploy", function() {
 });
 
 gulp.task("build", ['clean'],  function() {
-	run(['mangle', 'images', 'fonts'], 'clean:post-deploy');
+	return run(['mangle', 'images', 'fonts'], 'clean:post-deploy');
 });
 
-gulp.task("sass:watch", ['sass'], function(){
-	watchSass([
-		'assets/scss/**/*.scss'
-	])
-		.pipe(sass())
-		.pipe(gulp.dest("assets/css"));
+gulp.task("build:deploy", function() {
+	return run(['mangle', 'images', 'fonts'], 'clean:post-deploy', 'deploy');
 });
 
 gulp.task("deploy", function() {
