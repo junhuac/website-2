@@ -28,16 +28,22 @@
 						@media all and (max-width: 991px) {
 							flex-direction: column;
 
-							img { margin-bottom: 40px; }
+							img:not(img[src*="right_arrow.svg"]) { margin-bottom: 40px; }
+
+							p { padding-left: 0; }
+
+							.register { margin-top: 1rem; }
 						}
+
 						@media all and (max-width: 767px) {
-							img {
+							img:not(img[src*="right_arrow.svg"]) {
 								width: 100%;
 								max-width: 460px;
 								margin: 0 auto 40px;
 								display: block;
 							}
 						}
+
 						display: flex;
 						align-items: center;
 						font-family: "Open Sans";
@@ -46,9 +52,7 @@
 						text-align: justify;
 					}
 
-					p {
-						padding-left: 30px;
-					}
+					p { padding-left: 30px; }
 
 					.details-text {
 						padding-left: 0;
@@ -130,31 +134,9 @@
 				.past-event {
 					@extend .upcoming-event;
 
-					.media {
-						flex-basis: 33%;
-						padding-left: 30px;
-					}
-
-					.image img {
-						width: 100%;
-						height: auto;
-					}
-
-					.video {
-						width: 33%;
-						div {
-							position: relative;
-							padding-bottom: 56.25%;
-							padding-top: 35px;
-							height: 0;
-							overflow: hidden;
-						}
-
-						iframe {
-							position: absolute;
-							top: 0;
-							width: 100%;
-							height: 100%;
+					& > div {
+						@media all and (max-width: 991px) and (min-width: 768px) {
+							flex-direction: row;
 						}
 					}
 				}
@@ -162,6 +144,14 @@
 		}
 		.more-media {
 			margin-top: 180px;
+
+			@media all and (max-width: 991px) {
+				margin-top: 1.5rem;
+			}
+
+			@media all and (max-width: 767px) {
+				&.row { display: none; }
+			}
 
 			h2 {
 				text-align: center;
@@ -174,16 +164,6 @@
 				font-family: "Open Sans";
 				font-size: 16px;
 				line-height: 60px;
-				@media all and (max-width: 992px) {
-					text-align: center;
-					margin-top: 5px;
-				}
-				@media all and (min-width: 992px) {
-					margin-left: -3%;
-				}
-				@media all and (min-width: 1200px) {
-					margin-left: -6%;
-				}
 
 				a {
 					color: $main_dark;
@@ -191,6 +171,16 @@
 						color: darken($main_dark, 20%);
 						text-decoration: underline !important;
 					}
+				}
+
+				@media all and (max-width: 992px) {
+					text-align: center;
+					margin-top: 5px;
+					margin-left: -3%;
+				}
+
+				@media all and (min-width: 1200px) {
+					margin-left: -6%;
 				}
 			}
 			a.button {
@@ -202,17 +192,37 @@
 
 				.button {
 					position: relative;
-					padding: 50px;
+					padding: 30px;
 					height: 0;
 					width: 0;
 					border-radius: 50%;
 					overflow: visible;
 
 					img {
-						height: 60px;
+						height: 35px;
 						position: absolute;
 						left: 50%;
 						transform: translateX(-40%);
+					}
+
+					span { display: none; }
+				}
+
+				@media all and (max-width: 767px) {
+					& {
+						padding-left: 0;
+						margin-top: 1.5rem;
+					}
+
+					.button {
+						width: 240px;
+						height: 60px;
+						padding: 0;
+						border-radius: 30px;
+
+						img { display: none; }
+
+						span { display: inline; }
 					}
 				}
 			}

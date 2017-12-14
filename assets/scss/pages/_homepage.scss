@@ -272,8 +272,11 @@
 
 .press-logos {
 	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: center;
+
+	img { margin: 15px; }
 }
 
 .countdown{
