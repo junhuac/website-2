@@ -69,9 +69,9 @@
 				<li>
 					<a href="technical.html">Technical</a>
 				</li>
-				<!-- <li>
-					<a href="ico.html">ICO</a>
-				</li> -->
+				<li>
+					<a href="ico-sales.html">ICO</a>
+				</li>
 				<li>
 					<a href="contact.php">Contact</a>
 				</li>
@@ -88,7 +88,7 @@
 			</div>
 		</div>
 		<div class="buy-bbb-btn">
-			<a href="contact.php" class="button block colorful">Buy <b>Betr</b> <span>Tokens</span></a>
+			<a href="ico-sales.html" class="button block colorful">Buy <b>Betr</b> <span>Tokens</span></a>
 			<div class="extension"></div>
 		</div>
 	</div>
@@ -101,32 +101,16 @@
 			<h1>Media</h1>
 			<div class="media-container">
 				<div class="media-item image">
-					<img src="assets/images/homepage_banner.png" alt="Image of Block Show Asia event">
+					<img src="assets/images/media/ronnie-adriaan1.jpg" alt="BetterBetting Media Image">
 				</div>
 				<div class="media-item image">
-					<img src="assets/images/homepage_banner.png" alt="Image of Block Show Asia event">
-				</div>
-				<div class="media-item video">
-					<div>
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/qzBXJmvpEOM" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-					</div>
+					<img src="assets/images/media/ronnie-adriaan2.jpg" alt="BetterBetting Media Image">
 				</div>
 				<div class="media-item image">
-					<img src="assets/images/homepage_banner.png" alt="Image of Block Show Asia event">
+					<img src="assets/images/media/ronnie-adriaan3.jpg" alt="BetterBetting Media Image">
 				</div>
 				<div class="media-item image">
-					<img src="assets/images/homepage_banner.png" alt="Image of Block Show Asia event">
-				</div>
-				<div class="media-item video">
-					<div>
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/qzBXJmvpEOM" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-					</div>
-				</div>
-				<div class="media-item image">
-					<img src="assets/images/homepage_banner.png" alt="Image of Block Show Asia event">
-				</div>
-				<div class="media-item image">
-					<img src="assets/images/homepage_banner.png" alt="Image of Block Show Asia event">
+					<img src="assets/images/media/ronnie-adriaan4.jpg" alt="BetterBetting Media Image">
 				</div>
 				<div class="media-item video">
 					<div>
@@ -146,10 +130,10 @@
 
 <footer class="footer">
 	<div class="container">
-		<h1>Pre-ICO is Live Now</h1>
+		<h1>ICO is Live Now</h1>
 		<p class="main">We’re raising a Hard Cap from between $2m - $30m which will be equivalent of 650,000,000 BETR.</p>
 
-		<form action="contact.php">
+		<form action="ico-sales.html">
 			<!-- <input type="text" value="10.000">
 			<span class="calc-value">500$</span> -->
 			<button class="button buy-now" type="submit">Buy BETR Now</button>
@@ -198,14 +182,14 @@
 				<li>
 					<a href="technical.html">Technical</a>
 				</li>
-				<!-- <li>
-					<a href="ico.html">ICO</a>
-				</li> -->
+				<li>
+					<a href="ico-sales.html">ICO</a>
+				</li>
 			</ul>
 			<ul class="right">
-				<!-- <li>
-					<a href="contact.php">Token Sale</a>
-				</li> -->
+				<li>
+					<a href="ico-sales.html">Token Sale</a>
+				</li>
 				<li>
 					<a href="BETTER_BETTING_Foundation_White_Paper.pdf">Whitepaper</a>
 				</li>

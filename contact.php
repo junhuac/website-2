@@ -72,9 +72,9 @@
 				<li>
 					<a href="technical.html">Technical</a>
 				</li>
-				<!-- <li>
-					<a href="ico.html">ICO</a>
-				</li> -->
+				<li>
+					<a href="ico-sales.html">ICO</a>
+				</li>
 				<li>
 					<a class="active" href="contact.php">Contact</a>
 				</li>
@@ -91,7 +91,7 @@
 			</div>
 		</div>
 		<div class="buy-bbb-btn">
-			<a href="contact.php" class="button block colorful">Buy <b>BETR</b> <span>Tokens</span></a>
+			<a href="ico-sales.html" class="button block colorful">Buy <b>Betr</b> <span>Tokens</span></a>
 			<div class="extension"></div>
 		</div>
 	</div>
@@ -100,10 +100,10 @@
 <div class="gradient-helper pre-investment-page">
 	<div class="container">
 		<form method="POST" action="form-process.php">
-			<h1>Buy BETR Now</h1>
+			<h1>Contact Us</h1>
 			<div class="row">
 				<div class="col-sm-6">
-					<p>ICO pre-sales are now live and available for qualified and institutional investors. Public sales will be available mid-December 2017.</p>
+					<p>BetterBetting ICO Sales are now live! Please register here to buy tokens.  If you have any questions or require more information please complete the form below and we will be in contact.</p>
 				</div>
 				<div class="col-sm-6">
 					<p>For more information on Pre Sales and the ICO, please complete the form below and we will be in contact.</p>
@@ -208,10 +208,10 @@
 
 <footer class="footer">
 	<div class="container">
-		<h1>Pre-ICO is Live Now</h1>
+		<h1>ICO is Live Now</h1>
 		<p class="main">We’re raising a Hard Cap from between $2m - $30m which will be equivalent of 650,000,000 BETR.</p>
 
-		<form action="contact.php">
+		<form action="ico-sales.html">
 			<!-- <input type="text" value="10.000">
 			<span class="calc-value">500$</span> -->
 			<button class="button buy-now" type="submit">Buy BETR Now</button>
@@ -259,14 +259,14 @@
 				<li>
 					<a href="technical.html">Technical</a>
 				</li>
-				<!-- <li>
-					<a href="ico.html">ICO</a>
-				</li> -->
+				<li>
+					<a href="ico-sales.html">ICO</a>
+				</li>
 			</ul>
 			<ul class="right">
-				<!-- <li>
-					<a href="contact.php">Token Sale</a>
-				</li> -->
+				<li>
+					<a href="ico-sales.html">Token Sale</a>
+				</li>
 				<li>
 					<a href="BETTER_BETTING_Foundation_White_Paper.pdf">Whitepaper</a>
 				</li>
