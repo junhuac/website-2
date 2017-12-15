@@ -220,17 +220,6 @@
 	</div>
 </footer>
 
-<!-- Delay Message -->
-<aside class="popup announcement" data-persistent="true">
-	<div class="container">
-		<div class="col-xs-12">
-			<p>We have taken the decision to delay the launch for 2 hours due to issues with the ICO platform.  Please come back at 18:00 GMT to participate in the token sale. We apologise for the delay.</p>
-			<p>Adriaan Brink<br><strong>CEO</strong></p>
-		</div>
-	</div>
-	<div class="close"></div>
-</aside>
-
 <!-- Investment Aside Popup -->
 <aside class="popup" data-persistent="false">
 	<div class="container">
