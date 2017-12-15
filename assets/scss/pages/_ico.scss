@@ -1,4 +1,5 @@
 .ico {
+	&:before { background-image: none; }
 	.item {
 		margin: 40px 0;
 
@@ -99,7 +100,7 @@
 	.right-shape {
 		position: absolute;
 		top: 200px;
-		right: -10%;
+		right: 0;
 		height: 397px;
 		width: 522px;
 		background: url('../images/button_bg.png') no-repeat;
