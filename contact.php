@@ -55,7 +55,7 @@
 					<a href="market.html">Market</a>
 				</li> -->
 				<li>
-					<a href="pre-investment.php">Whitepaper</a>
+					<a href="contact.php">Whitepaper</a>
 				</li>
 				<li>
 					<a href="events.html">Events</a>
@@ -76,7 +76,7 @@
 					<a href="ico.html">ICO</a>
 				</li>
 				<li>
-					<a class="active" href="pre-investment.php">Contact</a>
+					<a class="active" href="contact.php">Contact</a>
 				</li>
 			</ul>
 		</div>
@@ -91,7 +91,7 @@
 			</div>
 		</div>
 		<div class="buy-bbb-btn">
-			<a href="pre-investment.php" class="button block colorful">Buy <b>BETR</b> <span>Tokens</span></a>
+			<a href="contact.php" class="button block colorful">Buy <b>BETR</b> <span>Tokens</span></a>
 			<div class="extension"></div>
 		</div>
 	</div>
@@ -187,7 +187,7 @@
 				</div>
 			</div>
 			<div class="g-recaptcha" data-sitekey="6LfCnjkUAAAAAF7QjKS2-XtFCuypRSzJOEXTKTgr"></div>
-			<input type="hidden" name="source" value="pre-investment.php">
+			<input type="hidden" name="source" value="contact.php">
 			<button class="button button-invest red">SUBMIT</button>
 			<h3 class="text-center">Payment Methods Accepted</h3>
 			<div class="payment-methods">
@@ -211,7 +211,7 @@
 		<h1>Pre-ICO is Live Now</h1>
 		<p class="main">We’re raising a Hard Cap from between $2m - $30m which will be equivalent of 650,000,000 BETR.</p>
 
-		<form action="pre-investment.php">
+		<form action="contact.php">
 			<!-- <input type="text" value="10.000">
 			<span class="calc-value">500$</span> -->
 			<button class="button buy-now" type="submit">Buy BETR Now</button>
@@ -265,16 +265,16 @@
 			</ul>
 			<ul class="right">
 				<!-- <li>
-					<a href="pre-investment.php">Token Sale</a>
+					<a href="contact.php">Token Sale</a>
 				</li> -->
 				<li>
-					<a href="pre-investment.php">Whitepaper</a>
+					<a href="contact.php">Whitepaper</a>
 				</li>
 				<!-- <li>
 					<a href="">Terms &amp; Conditions</a>
 				</li> -->
 				<li>
-					<a href="pre-investment.php">Contact</a>
+					<a href="contact.php">Contact</a>
 				</li>
 			</ul>
 		</div>
