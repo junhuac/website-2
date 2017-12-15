@@ -1,0 +1,26 @@
+.terms-conditions {
+	ol {
+		counter-reset: item;
+
+		&.root > li:before { top: 0.5rem; }
+
+		li {
+			display: block;
+			position: relative;
+
+			&:before {
+				content: counters(item, ".")".";
+				counter-increment: item;
+				position: absolute;
+				margin-right: 100%;
+				right: 15px;
+			}
+		}
+
+		@media all and (max-width: 400px) {
+			ol {
+				padding-left: 0.9rem;
+			}
+		}
+	}
+}
