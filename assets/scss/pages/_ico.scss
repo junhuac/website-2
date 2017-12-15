@@ -1,20 +1,24 @@
-.media {
-	margin-top: 0;
+.ico {
+	.item {
+		margin: 40px 0;
 
-	&:before {
-		background-image: none;
+		img {
+			display: block;
+			margin: 2rem auto;
+			width: auto;
+			height: 300px;
+		}
 	}
 
-	.media-item {
-		padding-top: 35px;
-		padding-bottom: 35px;
-	}
-
-	.more-media {
-		margin-top: 180px;
+	.register {
+		margin-top: 60px;
 
 		@media all and (max-width: 991px) {
 			margin-top: 1.5rem;
+		}
+
+		@media all and (max-width: 767px) {
+			&.row { display: none; }
 		}
 
 		h2 {
@@ -28,16 +32,6 @@
 			font-family: "Open Sans";
 			font-size: 16px;
 			line-height: 60px;
-			@media all and (max-width: 992px) {
-				text-align: center;
-				margin-top: 5px;
-			}
-			@media all and (min-width: 992px) {
-				margin-left: -3%;
-			}
-			@media all and (min-width: 1200px) {
-				margin-left: -6%;
-			}
 
 			a {
 				color: $main_dark;
@@ -45,6 +39,16 @@
 					color: darken($main_dark, 20%);
 					text-decoration: underline !important;
 				}
+			}
+
+			@media all and (max-width: 992px) {
+				text-align: center;
+				margin-top: 5px;
+				margin-left: -3%;
+			}
+
+			@media all and (min-width: 1200px) {
+				margin-left: -6%;
 			}
 		}
 		a.button {
@@ -56,17 +60,37 @@
 
 			.button {
 				position: relative;
-				padding: 50px;
+				padding: 30px;
 				height: 0;
 				width: 0;
 				border-radius: 50%;
 				overflow: visible;
 
 				img {
-					height: 60px;
+					height: 35px;
 					position: absolute;
 					left: 50%;
 					transform: translateX(-40%);
+				}
+
+				span { display: none; }
+			}
+
+			@media all and (max-width: 767px) {
+				& {
+					padding-left: 0;
+					margin-top: 1.5rem;
+				}
+
+				.button {
+					width: 240px;
+					height: 60px;
+					padding: 0;
+					border-radius: 30px;
+
+					img { display: none; }
+
+					span { display: inline; }
 				}
 			}
 		}
@@ -75,10 +99,10 @@
 	.right-shape {
 		position: absolute;
 		top: 200px;
-		left: 0;
-		height: 361px;
-		width: 1310px;
-		background: url('../images/shape-17.png') no-repeat;
+		right: -10%;
+		height: 397px;
+		width: 522px;
+		background: url('../images/button_bg.png') no-repeat;
 		@include media('<768px'){
 			opacity: .2;
 		}

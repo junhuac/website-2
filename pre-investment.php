@@ -61,6 +61,9 @@
 					<a href="events.html">Events</a>
 				</li>
 				<li>
+					<a href="media.php">Media</a>
+				</li>
+				<li>
 					<a href="road_map.html">Roadmap</a>
 				</li>
 				<li>
@@ -68,6 +71,9 @@
 				</li>
 				<li>
 					<a href="technical.html">Technical</a>
+				</li>
+				<li>
+					<a href="ico.html">ICO</a>
 				</li>
 				<li>
 					<a class="active" href="pre-investment.php">Contact</a>
@@ -242,6 +248,9 @@
 					<a href="events.html">Events</a>
 				</li>
 				<li>
+					<a href="media.php">Media</a>
+				</li>
+				<li>
 					<a href="road_map.html">Roadmap</a>
 				</li>
 				<li>
@@ -249,6 +258,9 @@
 				</li>
 				<li>
 					<a href="technical.html">Technical</a>
+				</li>
+				<li>
+					<a href="ico.html">ICO</a>
 				</li>
 			</ul>
 			<ul class="right">
