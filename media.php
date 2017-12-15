@@ -52,7 +52,7 @@
 					<a href="market.html">Market</a>
 				</li> -->
 				<li>
-					<a href="contact.php">Whitepaper</a>
+					<a href="BETTER_BETTING_Foundation_White_Paper.pdf">Whitepaper</a>
 				</li>
 				<li>
 					<a href="events.html">Events</a>
@@ -207,7 +207,7 @@
 					<a href="contact.php">Token Sale</a>
 				</li> -->
 				<li>
-					<a href="contact.php">Whitepaper</a>
+					<a href="BETTER_BETTING_Foundation_White_Paper.pdf">Whitepaper</a>
 				</li>
 				<!-- <li>
 					<a href="">Terms &amp; Conditions</a>
