@@ -14,14 +14,6 @@
 	.register {
 		margin-top: 60px;
 
-		@media all and (max-width: 991px) {
-			margin-top: 1.5rem;
-		}
-
-		@media all and (max-width: 767px) {
-			&.row { display: none; }
-		}
-
 		h2 {
 			text-align: center;
 			margin-bottom: 30px;
@@ -53,47 +45,13 @@
 			}
 		}
 		a.button {
-			margin: 0 auto !important;
+			margin: 0 auto;
 		}
-		&.category {
-			margin: 0;
-			padding-left: 30px;
 
-			.button {
-				position: relative;
-				padding: 30px;
-				height: 0;
-				width: 0;
-				border-radius: 50%;
-				overflow: visible;
+		@media all and (max-width: 991px) {
+			margin-top: 1.5rem;
 
-				img {
-					height: 35px;
-					position: absolute;
-					left: 50%;
-					transform: translateX(-40%);
-				}
-
-				span { display: none; }
-			}
-
-			@media all and (max-width: 767px) {
-				& {
-					padding-left: 0;
-					margin-top: 1.5rem;
-				}
-
-				.button {
-					width: 240px;
-					height: 60px;
-					padding: 0;
-					border-radius: 30px;
-
-					img { display: none; }
-
-					span { display: inline; }
-				}
-			}
+			a.button { margin-top: 2rem; }
 		}
 	}
 
