@@ -62,14 +62,15 @@ function showMenu(){
 	});
 }
 
-function showPopup() {
-	$('.popup').addClass('show');
+function showPopup(element) {
+	$(element).addClass('show');
+	console.log($(element).prop('class').replace(' ', '.'));
 
-	$('.popup .close').on('click', function(event) {
-		$(event.currentTarget)
-			.parents('.popup')
-			.removeClass('show');
-	});
+	$(element)
+		.children('.close')
+		.on('click', function(event) {
+			$(element).removeClass('show');
+		});
 }
 
 function sslider() {
@@ -168,7 +169,7 @@ $(document).ready(function () {
 	/**
 	 * Endtimer in 2 section
 	 */
-	var deadline = new Date(1513346400000);
+	var deadline = new Date(1513353600000);
 	initializeClock('timer-js', deadline);
 
 
@@ -176,15 +177,21 @@ $(document).ready(function () {
 
 	showMenu();
 
-	var visitCount = document.cookie.replace(/(?:(?:^|.*;\s*)visitCount\s*\=\s*([^;]*).*$)|^.*$/, "$1");
-	visitCount++;
-	document.cookie = 'visitCount=' + visitCount + '; expires=Fri, 31 Dec 9999 23:59:59 GMT';
+	$('.popup').each(function(index, element) {
+		if ($(element).data('persistent') == false) {
+			var visitCount = document.cookie.replace(/(?:(?:^|.*;\s*)visitCount\s*\=\s*([^;]*).*$)|^.*$/, "$1");
+			visitCount++;
+			document.cookie = 'visitCount=' + visitCount + '; expires=Fri, 31 Dec 9999 23:59:59 GMT';
 
-	if (visitCount < 10) {
-		setTimeout(function() {
-			showPopup();
-		}, 10000);
-	}
+			if (visitCount < 10) {
+				setTimeout(function() {
+					showPopup(element);
+				}, 10000);
+			}
+		} else {
+			showPopup(element);
+		}
+	});
 
 	var slider = document.getElementById('slider');
 

@@ -72,9 +72,9 @@
 				<li>
 					<a href="technical.html">Technical</a>
 				</li>
-				<li>
+				<!-- <li>
 					<a href="ico.html">ICO</a>
-				</li>
+				</li> -->
 				<li>
 					<a class="active" href="contact.php">Contact</a>
 				</li>
@@ -259,9 +259,9 @@
 				<li>
 					<a href="technical.html">Technical</a>
 				</li>
-				<li>
+				<!-- <li>
 					<a href="ico.html">ICO</a>
-				</li>
+				</li> -->
 			</ul>
 			<ul class="right">
 				<!-- <li>
@@ -281,8 +281,19 @@
 	</div>
 </footer>
 
+<!-- Delay Message -->
+<aside class="popup announcement" data-persistent="true">
+	<div class="container">
+		<div class="col-xs-12">
+			<p>We have taken the decision to delay the launch for 2 hours due to issues with the ICO platform.  Please come back at 18:00 GMT to participate in the token sale. We apologise for the delay.</p>
+			<p>Adriaan Brink<br><strong>CEO</strong></p>
+		</div>
+	</div>
+	<div class="close"></div>
+</aside>
+
 <!-- Investment Aside Popup -->
-<aside class="popup">
+<aside class="popup" data-persistent="false">
 	<div class="container">
 		<div class="hidden-xs col-xs-10">
 			<p>Looking to invest with BetterBetting? Join our <strong>Telegram</strong> channel to discuss.</p>
