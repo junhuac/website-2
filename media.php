@@ -40,6 +40,7 @@
 </script>
 
 <header class="header subsite-header media">
+	<div class="right-shape"></div>
 	<div class="container">
 		<a href="index.html" class="logo">
 			BetterBetting

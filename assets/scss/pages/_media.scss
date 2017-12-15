@@ -69,4 +69,16 @@
 			}
 		}
 	}
+
+	.right-shape {
+		position: absolute;
+		top: 200px;
+		left: 0;
+		height: 361px;
+		width: 1310px;
+		background: url('../images/shape-17.png') no-repeat;
+		@include media('<768px'){
+			opacity: .2;
+		}
+	}
 }
