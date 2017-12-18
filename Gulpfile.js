@@ -22,7 +22,7 @@ gulp.task("mangle", ["concat"], function() {
 	var jsFilter = filter('**/*.js', {restore: true});
 	var htmlFilter = filter('**/*.html', {restore: true});
 
-	return gulp.src(['temp/**/*.js', 'temp/**/*.css', 'temp/**/*.html', 'temp/**/*.php', '**/.+(htpasswd|htaccess)', '!dist/**/*.*', '!node_modules/**/*.*'])
+	return gulp.src(['temp/**/*.js', 'temp/**/*.css', 'temp/**/*.html', 'temp/**/*.php', '**/.+(htpasswd|htaccess)', '*White_Paper*.pdf', '!dist/**/*.*', '!node_modules/**/*.*'])
 		// Minify
 		.pipe(cssFilter)
 		.pipe(css())
