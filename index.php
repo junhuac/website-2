@@ -1,102 +1,21 @@
 <!doctype html>
 <html class="no-js" lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>BetterBetting</title>
-	<meta name="description" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<?php
+$pageName = 'index';
+$customClass = 'homepage';
+include_once('inc/template.head.php');
+include_once('inc/config.social.php');
 
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=latin-ext" rel="stylesheet">
-	<!-- build:css assets/css/libs.css -->
-	<link rel="stylesheet" href="assets/css/libs/bootstrap.min.css">
-	<link rel="stylesheet" href="assets/css/libs/nouislider.css">
-	<link rel="stylesheet" href="assets/css/libs/owl/owl.carousel.css">
-	<!-- endbuild -->
-	<!-- build:css assets/css/main.css -->
-	<link rel="stylesheet" href="assets/css/style.css">
-	<!-- endbuild -->
-
-	<link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicons/apple-touch-icon.png?v=Jy7WrKnjGe">
-	<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png?v=Jy7WrKnjGe">
-	<link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png?v=Jy7WrKnjGe">
-	<link rel="manifest" href="assets/images/favicons/manifest.json?v=Jy7WrKnjGe">
-	<link rel="mask-icon" href="assets/images/favicons/safari-pinned-tab.svg?v=Jy7WrKnjGe" color="#232836">
-	<link rel="shortcut icon" href="assets/images/favicons/favicon.ico?v=Jy7WrKnjGe">
-	<meta name="msapplication-config" content="assets/images/favicons/browserconfig.xml?v=Jy7WrKnjGe">
-	<meta name="theme-color" content="#232836">
-</head>
-<!--[if lte IE 9]>
-<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-<![endif]-->
+$socialItems = '';
+foreach ($socialLinks as $id => $data) {
+	$socialItems .= "<li><a href='{$data['url']}' data-toggle='tooltip' title='{$data['description']}'><i class='icon {$data['icon']}'></i></a></li>";
+}
+?>
 <body>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111023593-1"></script>
-<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'UA-111023593-1');
-</script>
+<?php include_once('inc/template.header.php'); ?>
+<?php include_once('inc/module.google-analytics.php'); ?>
 
-
-<!-- Delay Message -->
-<aside class="popup-announcement" data-show-limit="false">
-	<div class="container">
-		<div>
-			<p>We have made excellent progress with pre and bulk sales with investment already in excess of US$ 2 Million, largely from within the gaming industry. These transactions will be added to the total token sales once the bonus stages are complete.</p>
-		</div>
-	</div>
-	<div class="close"></div>
-</aside>
-
-<!-- Content -->
-<main>
-<header class="header homepage-header">
-	<div class="container">
-		<a href="index.html" class="logo">
-			BetterBetting
-		</a>
-		<div class="menu-icon"></div>
-		<div class="menu">
-			<ul>
-				<!-- <li>
-					<a href="market.html">Market</a>
-				</li> -->
-				<li>
-					<a href="BETTER_BETTING_Foundation_White_Paper.pdf">Whitepaper</a>
-				</li>
-				<li>
-					<a href="events.html">Events</a>
-				</li>
-				<li>
-					<a href="media.php">Media</a>
-				</li>
-				<li>
-					<a href="road_map.html">Roadmap</a>
-				</li>
-				<li>
-					<a href="team.html">Team</a>
-				</li>
-				<li>
-					<a href="technical.html">Technical</a>
-				</li>
-				<!-- <li>
-					<a href="bounty.html">Bounty</a>
-				</li> -->
-				<li>
-					<a href="ico-sales.html">ICO</a>
-				</li>
-				<li>
-					<a href="contact.php">Contact</a>
-				</li>
-			</ul>
-			<a href="https://ico.betterbetting.org/user" class="button-companion">Login</a>
-			<a href="ico-sales.html" class="button orange w-165">REGISTER</a>
-		</div>
-	</div>
-</header>
-<div class="homepage-banner">
+<div class="homepage-banner <?php echo $customClass; ?>">
 	<div class="container">
 		<div class="banner-align-helper">
 			<h1>
@@ -107,7 +26,7 @@
 				Introducing BETR - the betting crypto-currency that will establish truly decentralised sports betting on the internet. Providing a Global Betting Liquidity Pool, BETR is being built by gaming industry veterans, for the industry. BETR will become the exclusive crypto-currency of some of the world's leading gaming operators.
 			</p>
 			<div class="button-line">
-				<a href="ico-sales.html" class="button orange w-200">BUY BETR NOW</a>
+				<a href="<?php echo $headerPageList['ICO']; ?>" class="button orange w-200">BUY BETR NOW</a>
 				<div class="logos">
 					<div class="logo-row">
 						<img src="assets/images/payment/bitcoin_logo_long_white.png" alt="Bitcoin Logo">
@@ -127,24 +46,7 @@
 	<div class="container">
 		<div class="socials">
 			<ul>
-				<li>
-					<a href="https://www.facebook.com/BETRBetting/" data-toggle="tooltip" title="Like us on Facebook" class=""><i class="icon icon-facebook"></i></a>
-				</li>
-				<li>
-					<a href="https://twitter.com/BETRBetting" data-toggle="tooltip" title="Follow on twitter"><i class="icon icon-twitter"></i></a>
-				</li>
-				<li>
-					<a href="https://www.linkedin.com/company/betterbetting" data-toggle="tooltip" title="Follow on linkedin"><i class="icon icon-linkedin"></i></a>
-				</li>
-				<li>
-					<a href="https://t.me/joinchat/HNsEWQ-L0aCjHMsmKW-d_w" data-toggle="tooltip" title="Check us out on telegram"><i class="icon icon-telegram"></i></a>
-				</li>
-				<li>
-					<a href="https://www.youtube.com/channel/UCFvNUWRiedqvcpNHqLnDAXg" data-toggle="tooltip" title="Check out our youtube channel"><i class="icon icon-youtube"></i></a>
-				</li>
-				<!-- <li>
-					<a href="" data-toggle="tooltip" title="Bitcoin"><i class="icon icon-bitcoin"></i></a>
-				</li> -->
+				<?php echo $socialItems; ?>
 			</ul>
 		</div>
 		<div class="about-banner">
@@ -209,7 +111,7 @@
 		<div class="traingle-image">
 			<div class="button-helper">
 				<div class="line"></div>
-				<a href="ico-sales.html" class="button orange-gradient">$30.000.000</a>
+				<a href="<?php echo $headerPageList['ICO']; ?>" class="button orange-gradient">$30.000.000</a>
 			</div>
 			<div class="counter-block left">
 				<div>105% Tokens</div>
@@ -230,7 +132,7 @@
 			</div>
 			<div class="button-counter">
 				<div class="button-count left">125% Tokens</div>
-				<a href="ico-sales.html" class="button red live-now">BUY BETR</a>
+				<a href="<?php echo $headerPageList['ICO']; ?>" class="button red live-now">BUY BETR</a>
 				<div class="button-count right">$1.000.000</div>
 			</div>
 		</div>
@@ -244,7 +146,7 @@
 		<h1>$30m Hard Cap</h1>
 		<p class="main main-bg">Once the target $30M in ICO sales is reached there will be no further token sales apart from maintenance tokens and reserve funds. The total token pool is hard capped at 650,000,000</p>
 
-		<a href="ico-sales.html" class="button huge button-investment"><span class="bg-wrapper">650,000,000 Tokens</span></a>
+		<a href="<?php echo $headerPageList['ICO']; ?>" class="button huge button-investment"><span class="bg-wrapper">650,000,000 Tokens</span></a>
 		<span class="small text-center" style="display: block;">Total number of BETR’s are capped and cannot be increased after ICO.</span>
 
 		<div class="bbb-section">
@@ -435,7 +337,7 @@
 
 			<div class="button-line">
 				<div class="button-line-inner">
-					<a href="ico-sales.html" class="button buy-now">BUY NOW</a>
+				<a href="<?php echo $headerPageList['ICO']; ?>" class="button buy-now">BUY NOW</a>
 					<div class="logos grey">
 						<div class="logo-row">
 							<img src="assets/images/payment/bitcoin_logo_long_white.png" alt="Bitcoin Logo">
@@ -476,11 +378,11 @@
 	</div>
 </div>
 
-<div class="team">
+<div class="team-section">
 	<div class="container"><h1>Our Team</h1></div>
 	<div class="container">
 		<div class="person">
-			<a href="team.html#brink">
+			<a href="<?php echo $headerPageList['Team']; ?>#brink">
 				<img src="assets/images/team/brink.png" alt="">
 				<h3>Adriaan Brink</h3>
 				<span class="small">Founder</span>
@@ -488,7 +390,7 @@
 			</a>
 		</div>
 		<div class="person">
-			<a href="team.html#ian">
+			<a href="<?php echo $headerPageList['Team']; ?>#ian">
 				<img src="assets/images/team/ian.png" alt="">
 				<h3>Ian Sherrington</h3>
 				<span class="small">CTO</span>
@@ -496,7 +398,7 @@
 			</a>
 		</div>
 		<div class="person">
-			<a href="team.html#ehrlich">
+			<a href="<?php echo $headerPageList['Team']; ?>#ehrlich">
 				<img src="assets/images/team/ehrlich.png" alt="">
 				<h3>Hilly Ehrlich</h3>
 				<span class="small">Co-Founder</span>
@@ -504,7 +406,7 @@
 			</a>
 		</div>
 		<div class="person">
-			<a href="team.html#rankin">
+			<a href="<?php echo $headerPageList['Team']; ?>#rankin">
 				<img src="assets/images/team/rankin.png" alt="">
 				<h3>Mitchell Rankin</h3>
 				<span class="small">Managment Team</span>
@@ -512,7 +414,7 @@
 			</a>
 		</div>
 		<div class="person">
-			<a href="team.html#vlad">
+			<a href="<?php echo $headerPageList['Team']; ?>#vlad">
 				<img src="assets/images/team/vlad.png" alt="">
 				<h3>Vlad Agaev</h3>
 				<span class="small">Consultant</span>
@@ -523,7 +425,7 @@
 	<div class="container"><h2>Advisors</h2></div>
 	<div class="container">
 		<div class="person rocket">
-			<a href="team.html#ronnie">
+			<a href="<?php echo $headerPageList['Team']; ?>#ronnie">
 				<div class="image">
 					<img src="assets/images/team/ronnie.png" alt="">
 					<i class="icon icon-medal"></i>
@@ -534,7 +436,7 @@
 			</a>
 		</div>
 		<div class="person">
-			<a href="team.html#matonis">
+			<a href="<?php echo $headerPageList['Team']; ?>#matonis">
 				<img src="assets/images/team/matonis.png" alt="">
 				<h3>Jon Matonis</h3>
 				<span class="small">Advisor</span>
@@ -542,7 +444,7 @@
 			</a>
 		</div>
 		<div class="person">
-			<a href="team.html#jez">
+			<a href="<?php echo $headerPageList['Team']; ?>#jez">
 				<img src="assets/images/team/image13.png" alt="">
 				<h3>Jez San OBE</h3>
 				<span class="small">Advisor</span>
@@ -550,7 +452,7 @@
 			</a>
 		</div>
 		<div class="person">
-			<a href="team.html#benz">
+			<a href="<?php echo $headerPageList['Team']; ?>#benz">
 				<img src="assets/images/team/benz.png" alt="">
 				<h3>Eric Benz</h3>
 				<span class="small">Advisor</span>
@@ -558,7 +460,7 @@
 			</a>
 		</div>
 		<div class="person">
-			<a href="team.html#vanrenen">
+			<a href="<?php echo $headerPageList['Team']; ?>#vanrenen">
 				<img src="assets/images/team/vanrenen.png" alt="">
 				<h3>David Vanrenen</h3>
 				<span class="small">Advisor</span>
@@ -566,7 +468,7 @@
 			</a>
 		</div>
 		<div class="person">
-			<a href="team.html#caselli">
+			<a href="<?php echo $headerPageList['Team']; ?>#caselli">
 				<img src="assets/images/team/caselli.png" alt="">
 				<h3>Michael Caselli</h3>
 				<span class="small">Advisor</span>
@@ -574,7 +476,7 @@
 			</a>
 		</div>
 		<div class="person">
-			<a href="team.html#rasmus">
+			<a href="<?php echo $headerPageList['Team']; ?>#rasmus">
 				<img src="assets/images/team/image16.png" alt="">
 				<h3>Rasmus Sojmark</h3>
 				<span class="small">Advisor</span>
@@ -582,7 +484,7 @@
 			</a>
 		</div>
 		<!-- <div class="person">
-			<a href="team.html#kamila">
+			<a href="<?php echo $headerPageList['Team']; ?>#kamila">
 				<img src="assets/images/team/image11.png" alt="">
 				<h3>Kamila Bobinska</h3>
 				<span class="small">Advisor</span>
@@ -590,7 +492,7 @@
 			</a>
 		</div> -->
 		<div class="person">
-			<a href="team.html#dennis">
+			<a href="<?php echo $headerPageList['Team']; ?>#dennis">
 				<img src="assets/images/team/image6.png" alt="">
 				<h3>Dennis Van Maanen</h3>
 				<span class="small">Advisor</span>
@@ -598,7 +500,7 @@
 			</a>
 		</div>
 		<div class="person">
-			<a href="team.html#lyceum">
+			<a href="<?php echo $headerPageList['Team']; ?>#lyceum">
 				<img src="assets/images/team/image17.png" alt="">
 				<h3>Lyceum Media</h3>
 				<span class="small">Media Partner</span>
@@ -606,7 +508,7 @@
 			</a>
 		</div>
 		<div class="person">
-			<a href="team.html#sbc">
+			<a href="<?php echo $headerPageList['Team']; ?>#sbc">
 				<img src="assets/images/team/sbc.png" alt="">
 				<h3>SBC</h3>
 				<span class="small">Media Partner</span>
@@ -617,141 +519,30 @@
 	<div class="container"><h2>Strategic Partners</h2></div>
 	<div class="container">
 		<div class="partner">
-			<a href="team.html#2bet2">
+			<a href="<?php echo $headerPageList['Team']; ?>#2bet2">
 				<img src="assets/images/team/image1.png" alt="">
 			</a>
 		</div>
 		<div class="partner">
-			<a href="team.html#optimaplay">
+			<a href="<?php echo $headerPageList['Team']; ?>#optimaplay">
 				<img src="assets/images/team/image2.png" alt="">
 			</a>
 		</div>
 		<!-- <div class="partner">
-			<a href="team.html#sorainen">
+			<a href="<?php echo $headerPageList['Team']; ?>#sorainen">
 				<img src="assets/images/team/image3.png" alt="">
 			</a>
 		</div> -->
 		<div class="partner">
-			<a href="team.html#coinpoint">
+			<a href="<?php echo $headerPageList['Team']; ?>#coinpoint">
 				<img src="assets/images/team/coinpoint.png" alt="">
 			</a>
 		</div>
 	</div>
-	<a href="team.html" class="button more-team">More About the Team</a>
+	<a href="<?php echo $headerPageList['Team']; ?>" class="button more-team">More About the Team</a>
 </div>
 
-<footer class="footer homepage-footer">
-	<div class="container">
-		<h1>ICO is Live Now</h1>
-		<p class="main">We’re raising a Hard Cap from between $2m - $30m which will be equivalent of 650,000,000 BETR.</p>
+<?php include_once('inc/template.footer.php'); ?>
 
-		<form action="ico-sales.html">
-			<!-- <input type="text" value="10.000">
-			<span class="calc-value">500$</span> -->
-			<button class="button buy-now" type="submit">Buy BETR Now</button>
-		</form>
-		<div class="socials">
-			<ul>
-				<li>
-					<a href="https://www.facebook.com/BETRBetting/" data-toggle="tooltip" title="Like us on Facebook" class=""><i class="icon icon-facebook"></i></a>
-				</li>
-				<li>
-					<a href="https://twitter.com/BETRBetting" data-toggle="tooltip" title="Follow on twitter"><i class="icon icon-twitter"></i></a>
-				</li>
-				<li>
-					<a href="https://www.linkedin.com/company/betterbetting" data-toggle="tooltip" title="Follow on linkedin"><i class="icon icon-linkedin"></i></a>
-				</li>
-				<li>
-					<a href="https://t.me/joinchat/HNsEWQ-L0aCjHMsmKW-d_w" data-toggle="tooltip" title="Check us out on telegram"><i class="icon icon-telegram"></i></a>
-				</li>
-				<li>
-					<a href="https://www.youtube.com/channel/UCFvNUWRiedqvcpNHqLnDAXg" data-toggle="tooltip" title="Check out our youtube channel"><i class="icon icon-youtube"></i></a>
-				</li>
-				<!-- <li>
-					<a href="" data-toggle="tooltip" title="Bitcoin"><i class="icon icon-bitcoin"></i></a>
-				</li> -->
-			</ul>
-		</div>
-
-		<div class="footer-menu">
-			<ul class="left">
-				<!-- <li>
-					<a href="market.html">Market</a>
-				</li> -->
-				<li>
-					<a href="events.html">Events</a>
-				</li>
-				<li>
-					<a href="media.php">Media</a>
-				</li>
-				<li>
-					<a href="road_map.html">Roadmap</a>
-				</li>
-				<li>
-					<a href="team.html">Team</a>
-				</li>
-				<li>
-					<a href="technical.html">Technical</a>
-				</li>
-				<!-- <li>
-					<a href="bounty.html">Bounty</a>
-				</li> -->
-			</ul>
-			<ul class="right">
-				<li>
-					<a href="ico-sales.html">Token Sale</a>
-				</li>
-				<li>
-					<a href="BETTER_BETTING_Foundation_White_Paper.pdf">Whitepaper</a>
-				</li>
-				<li>
-					<a href="terms-conditions.html">Terms &amp; Conditions</a>
-				</li>
-				<li>
-					<a href="contact.php">Contact</a>
-				</li>
-			</ul>
-		</div>
-	</div>
-</footer>
-</main>
-
-<!-- Investment Aside Popup -->
-<aside class="popup-general" data-show-limit="10">
-	<div class="container">
-		<div class="hidden-xs col-xs-10">
-			<p>Looking to invest with BetterBetting? Join our <strong>Telegram</strong> channel to discuss.</p>
-		</div>
-		<div class="col-xs-12 col-md-2">
-			<a class="button red" href="https://t.me/joinchat/HNsEWQ-L0aCjHMsmKW-d_w">Join us on Telegram</a>
-		</div>
-	</div>
-	<div class="close"></div>
-</aside>
-
-<!-- jQuery -->
-<script
-	src="https://code.jquery.com/jquery-2.2.4.min.js"
-	integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-	crossorigin="anonymous"></script>
-<script>
-	$(document).ready(function() {
-		shiftRoadmapItems('.roadmap-wrapper');
-		$(window).resize(function() {
-			shiftRoadmapItems();
-		});
-	});
-</script>
-<script src="https://www.google-analytics.com/analytics.js" async defer></script>
-<!-- build:js assets/js/libs.js -->
-<script src="assets/js/libs/bootstrap.min.js"></script>
-<script src="assets/js/libs/owl.carousel.js"></script>
-<script src="assets/js/libs/owl.autoplay.js"></script>
-<script src="assets/js/libs/wNumb.js"></script>
-<script src="assets/js/libs/nouislider.js"></script>
-<!-- endbuild -->
-<!-- build:js assets/js/main.js -->
-<script src="assets/js/main.js"></script>
-<!-- endbuild -->
 </body>
 </html>

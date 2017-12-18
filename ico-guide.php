@@ -65,7 +65,7 @@
 					<a href="road_map.html">Roadmap</a>
 				</li>
 				<li>
-					<a href="team.html">Team</a>
+					<a href="<?php echo $headerPageList['Team']; ?>">Team</a>
 				</li>
 				<li>
 					<a href="technical.html">Technical</a>
@@ -92,7 +92,7 @@
 			</div>
 		</div>
 		<div class="buy-bbb-btn">
-			<a href="ico-sales.html" class="button block colorful">Buy <b>Betr</b> <span>Tokens</span></a>
+			<a href="<?php echo $headerPageList['ICO']; ?>" class="button block colorful">Buy <b>Betr</b> <span>Tokens</span></a>
 			<div class="extension"></div>
 		</div>
 	</div>
@@ -150,108 +150,7 @@
 	</div>
 </div>
 
-<footer class="footer">
-	<div class="container">
-		<h1>ICO is Live Now</h1>
-		<p class="main">We’re raising a Hard Cap from between $2m - $30m which will be equivalent of 650,000,000 BETR.</p>
+<?php include_once('inc/template.footer.php'); ?>
 
-		<form action="ico-sales.html">
-			<!-- <input type="text" value="10.000">
-			<span class="calc-value">500$</span> -->
-			<button class="button buy-now" type="submit">Buy BETR Now</button>
-		</form>
-		<div class="socials">
-			<ul>
-				<li>
-					<a href="https://www.facebook.com/BETRBetting/" data-toggle="tooltip" title="Like us on Facebook" class=""><i class="icon icon-facebook"></i></a>
-				</li>
-				<li>
-					<a href="https://twitter.com/BETRBetting" data-toggle="tooltip" title="Follow on twitter"><i class="icon icon-twitter"></i></a>
-				</li>
-				<li>
-					<a href="https://www.linkedin.com/company/betterbetting" data-toggle="tooltip" title="Follow on linkedin"><i class="icon icon-linkedin"></i></a>
-				</li>
-				<li>
-					<a href="https://t.me/joinchat/HNsEWQ-L0aCjHMsmKW-d_w" data-toggle="tooltip" title="Check us out on telegram"><i class="icon icon-telegram"></i></a>
-				</li>
-				<li>
-					<a href="https://www.youtube.com/channel/UCFvNUWRiedqvcpNHqLnDAXg" data-toggle="tooltip" title="Check out our youtube channel"><i class="icon icon-youtube"></i></a>
-				</li>
-				<!-- <li>
-					<a href="" data-toggle="tooltip" title="Bitcoin"><i class="icon icon-bitcoin"></i></a>
-				</li> -->
-			</ul>
-		</div>
-
-		<div class="footer-menu">
-			<ul class="left">
-				<!-- <li>
-					<a href="market.html">Market</a>
-				</li> -->
-				<li>
-					<a href="events.html">Events</a>
-				</li>
-				<li>
-					<a href="media.php">Media</a>
-				</li>
-				<li>
-					<a href="road_map.html">Roadmap</a>
-				</li>
-				<li>
-					<a href="team.html">Team</a>
-				</li>
-				<li>
-					<a href="technical.html">Technical</a>
-				</li>
-				<!-- <li>
-					<a href="bounty.html">Bounty</a>
-				</li> -->
-			</ul>
-			<ul class="right">
-				<li>
-					<a href="ico-sales.html">Token Sale</a>
-				</li>
-				<li>
-					<a href="BETTER_BETTING_Foundation_White_Paper.pdf">Whitepaper</a>
-				</li>
-				<li>
-					<a href="terms-conditions.html">Terms &amp; Conditions</a>
-				</li>
-				<li>
-					<a href="contact.php">Contact</a>
-				</li>
-			</ul>
-		</div>
-	</div>
-</footer>
-</main>
-
-<!-- Investment Aside Popup -->
-<aside class="popup-general" data-show-limit="10">
-	<div class="container">
-		<div class="hidden-xs col-xs-10">
-			<p>Looking to invest with BetterBetting? Join our <strong>Telegram</strong> channel to discuss.</p>
-		</div>
-		<div class="col-xs-12 col-md-2">
-			<a class="button red" href="https://t.me/joinchat/HNsEWQ-L0aCjHMsmKW-d_w">Join us on Telegram</a>
-		</div>
-	</div>
-	<div class="close"></div>
-</aside>
-
-<!-- jQuery -->
-<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-				crossorigin="anonymous"></script>
-<script src="https://www.google-analytics.com/analytics.js" async defer></script>
-<!-- build:js assets/js/libs.js -->
-<script src="assets/js/libs/bootstrap.min.js"></script>
-<script src="assets/js/libs/owl.carousel.js"></script>
-<script src="assets/js/libs/owl.autoplay.js"></script>
-<script src="assets/js/libs/wNumb.js"></script>
-<script src="assets/js/libs/nouislider.js"></script>
-<!-- endbuild -->
-<!-- build:js assets/js/main.js -->
-<script src="assets/js/main.js"></script>
-<!-- endbuild -->
 </body>
 </html>
