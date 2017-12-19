@@ -1,0 +1,22 @@
+# Enable WebP Switheroo
+# Source: https://www.keycdn.com/blog/convert-to-webp-the-successor-of-jpeg/
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{HTTP_ACCEPT} image/webp
+    RewriteCond %{DOCUMENT_ROOT}/$1.webp -f
+    RewriteRule ^(assets/images.+)\.(jpe?g|png)$ $1.webp [T=image/webp,E=accept:1]
+</IfModule>
+
+<IfModule mod_headers.c>
+    Header append Vary Accept env=REDIRECT_accept
+</IfModule>
+
+AddType image/webp .webp
+
+# Enable GZIP
+<IfModule mod_deflate.c>
+	AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css application/x-javascript application/javascript image/svg+xml
+	BrowserMatch ^Mozilla/4 gzip-only-text/html
+	BrowserMatch ^Mozilla/4\.0[678] no-gzip
+	BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+</IfModule>

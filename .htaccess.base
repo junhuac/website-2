@@ -1,0 +1,22 @@
+# Load index.php
+DirectoryIndex index.php
+
+#Turns Rewrite engine on
+RewriteEngine On
+
+#Use the html if it exists
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
+
+#Request with no .php will still work
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^\.]+)$ $1.php [NC]
+
+#Non www requests get forwarded to www site
+RewriteCond %{HTTP_HOST} ^/
+RewriteRule (.*) /$1 [R=301,L]
+
+ErrorDocument 404 /404.php

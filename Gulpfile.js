@@ -1,3 +1,6 @@
+var fs				= require('fs');
+var process				= require('process');
+
 var gulp			= require('gulp');
 var filter			= require('gulp-filter');
 var rev				= require('gulp-rev');
@@ -15,6 +18,14 @@ var run				= require('run-sequence');
 var ftp				= require('vinyl-ftp');
 
 var conf  = require('./conf.json');
+
+gulp.task("default", function() {
+	var mode = '';
+	flag = getArg();
+	if (flag) mode = ':' + flag;
+
+	run(['apache' + mode, 'sass']);
+});
 
 gulp.task("mangle", ["concat"], function() {
 	var revFilter = filter(['**/*.css', '**/*.js'], {restore: true});
@@ -41,6 +52,38 @@ gulp.task("mangle", ["concat"], function() {
 		// Send it
 		.pipe(gulp.dest('dist'));
 });
+
+gulp.task("apache", function() {
+	return apache();
+});
+gulp.task("apache:development", function() {
+	return apache('development');
+});
+gulp.task("apache:staging", function() {
+	return apache('staging');
+});
+gulp.task("apache:production", function() {
+	return apache('production');
+});
+
+function apache(mode) {
+	// First flag assumed to dictate `mode`
+	if (!mode) {
+		var flag = getArg();
+		mode = flag ? flag : conf.mode;
+	}
+
+	// Concat .htaccess Modules
+	var resultFile = './.htaccess';
+	var baseFile = './' + conf.apache.htaccess.baseFile;
+	var addFile = mode !== 'development' ? './' + conf.apache.htaccess[mode + 'File'] : false;
+
+	var data = '# ' + (mode).capitalise() + ' .htaccess\n\n';
+	data += fs.readFileSync(baseFile, 'utf8') + '\n\n';
+	if (addFile) data += fs.readFileSync(addFile, 'utf8');
+
+	return fs.writeFileSync(resultFile, data);
+}
 
 gulp.task("concat", ['css'], function() {
 	return gulp.src(['**/*.html', '**/*.php', '!node_modules/**/*.*'])
@@ -100,11 +143,15 @@ gulp.task("clean:post-deploy", function() {
 });
 
 gulp.task("build", ['clean'],  function() {
-	return run(['mangle', 'images', 'fonts'], 'clean:post-deploy');
+	var mode = 'production';
+	flag = getArg();
+	if (flag) mode = flag;
+
+	return run(['apache:' + mode, 'mangle', 'images', 'fonts'], 'clean:post-deploy');
 });
 
-gulp.task("build:deploy", function() {
-	return run(['mangle', 'images', 'fonts'], 'clean:post-deploy', 'deploy');
+gulp.task("build:deploy", ['clean'], function() {
+	return run(['apache:' + mode, 'mangle', 'images', 'fonts'], 'clean:post-deploy', 'deploy');
 });
 
 gulp.task("deploy", function() {
@@ -137,3 +184,24 @@ gulp.task("deploy:test", function() {
 			cb(null, null);
 		}));
 });
+
+// Capitalise function
+String.prototype.capitalise = function() {
+	return this.replace(/(?:^|\s)\S/g, function(a) { return a.toUpperCase(); });
+};
+
+// Get CLI arguments
+function getArg(key) {
+	var result = false;
+
+	if (key) {
+		result = process.argv.includes(key);
+	} else {
+		var flag = process.argv.find(function(el) { return el.includes('--'); });
+
+		if (flag)
+			result = flag.replace('--','');
+	}
+
+	return result;
+}
