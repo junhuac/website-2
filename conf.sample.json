@@ -1,8 +1,16 @@
 {
+	"mode": "default mode(development|staging|production)",
 	"ftp": {
 		"host": "myserver.com",
 		"user": "username",
 		"password": "password",
 		"remoteDir": "website/root/directory"
+	},
+	"apache": {
+		"htaccess": {
+			"baseFile": ".htaccess.base",
+			"productionFile": ".htaccess.production",
+			"stagingFile": ".htaccess.staging"
+		}
 	}
 }
