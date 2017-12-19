@@ -70,6 +70,9 @@
 					<a href="technical.html">Technical</a>
 				</li>
 				<li>
+					<a href="bounty.html">Bounty</a>
+				</li>
+				<li>
 					<a href="ico-sales.html">ICO</a>
 				</li>
 				<li>
@@ -183,7 +186,7 @@
 					<a href="technical.html">Technical</a>
 				</li>
 				<li>
-					<a href="ico-sales.html">ICO</a>
+					<a href="bounty.html">Bounty</a>
 				</li>
 			</ul>
 			<ul class="right">
