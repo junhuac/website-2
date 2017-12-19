@@ -147,7 +147,7 @@
 				top: -75px;
 				display: flex;
 				list-style-type: none;
-				padding: 0;
+				padding: 0 100% 0 0;
 				margin: 0;
 
 				@include media('<992px', '>767px'){
