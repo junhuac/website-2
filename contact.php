@@ -112,34 +112,38 @@
 					<p>For more information on Pre Sales and the ICO, please complete the form below and we will be in contact.</p>
 				</div>
 			</div>
-<!-- 			<span class="small calculate">Calculate your <strong>Investment</strong> and Potential <strong>Profit</strong></span>
-			<div class="calculator-box">
-				<div class="calculator-row">
-					<div class="val">
-						<p class="set-slider-calculated-value">42.175360 BTC</p>
-						<span class="small">Bitcoin</span>
-					</div>
-					<div class="val">
-						<p class="set-slider-formatted-value">190,000 USD</p>
-						<span class="small">United States Dollar</span></div>
-				</div>
-				<div class="calculator-row slider-row">
-					<div id="slider"></div>
-				</div>
-				<div class="calculator-row grey">
-					<div class="val">
-						<p>3.7%</p>
-						<span class="small">Fixed Monthly Interest Rate</span>
-					</div>
-					<div class="val">
-						<p>84,360 USD</p>
-						<span class="small">Yearly Possible Profit</span>
-					</div>
+
+			<div class="container details-section">
+				<h2 class="text-center">Details</h2>
+				<h3 class="text-center">BetterBetting</h3>
+				<p class="text-center">Company No: 90014075</p>
+				<div class="address-container">
+					<address>
+						Rotermanni tn 14
+						<br>
+						Harju County
+						<br>
+						10111
+						<br>
+						Tallin, Estonia
+					</address>
+					<address class="text-right">
+						Office 19
+						<br>
+						Labs Atrium Camden
+						<br>
+						The Stables Market
+						<br>
+						Chalk Farm Rd
+						<br>
+						London
+						<br>
+						NW1 8AH
+					</address>
 				</div>
 			</div>
-			<input type="hidden" class="slider-input-value" value=""> -->
 
-			<h3 class="text-center">Enquiry Form</h3>
+			<h2 class="text-center">Enquiry Form</h2>
 
 			<div class="form-box notify">
 				<?php
