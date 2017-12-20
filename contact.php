@@ -100,7 +100,7 @@
 	</div>
 </header>
 
-<div class="gradient-helper pre-investment-page">
+<div class="gradient-helper contact">
 	<div class="container">
 		<form method="POST" action="form-process.php">
 			<h1>Contact Us</h1>
@@ -202,6 +202,18 @@
 					<input type="radio" name="payment-method" id="ethereum" value="ethereum" disabled>
 					<label for="ethereum" class="method">
 						<span class="method-ethereum"></span>
+					</label>
+					<input type="radio" name="payment-method" id="litecoin" value="litecoin" disabled>
+					<label for="litecoin" class="method">
+						<span class="method-litecoin"></span>
+					</label>
+					<input type="radio" name="payment-method" id="bitcoin-cash" value="bitcoin-cash" disabled>
+					<label for="bitcoin-cash" class="method">
+						<span class="method-bitcoin-cash"></span>
+					</label>
+					<input type="radio" name="payment-method" id="dash" value="dash" disabled>
+					<label for="dash" class="method">
+						<span class="method-dash"></span>
 					</label>
 				</div>
 			</div>
