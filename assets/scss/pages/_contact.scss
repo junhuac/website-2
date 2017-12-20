@@ -1,4 +1,21 @@
 .contact {
+	.details-section {
+		max-width: 600px;
+	}
+
+	.address-container {
+		display: flex;
+		justify-content: space-between;
+		align-items:flex-start;
+
+		@include media('<520px') {
+			flex-direction: column;
+
+			address.text-right {
+				text-align: left;
+			}
+		}
+	}
 
 	.payment-methods{
 		margin-top: 45px;
