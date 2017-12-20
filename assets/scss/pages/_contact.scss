@@ -1,4 +1,4 @@
-.pre-investment-page {
+.contact {
 
 	.payment-methods{
 		margin-top: 45px;
@@ -73,14 +73,29 @@
 					}
 				}
 
-				.method-bitcoin{
-					background-image: url(../images/payment_bitcoin.png);
+				%method-logos {
+					background-size: auto 50px;
 				}
-				.method-ethereum{
-					background-image: url(../images/payment_ethereum.png);
+
+				.method-bitcoin {
+					@extend %method-logos;
+					background-image: url(../images/payment/bitcoin_logo.png);
 				}
-				.method-mastercard{
-					background-image: url(../images/payment_mastercard.png);
+				.method-ethereum {
+					@extend %method-logos;
+					background-image: url(../images/payment/ethereum_logo.png);
+				}
+				.method-litecoin {
+					@extend %method-logos;
+					background-image: url(../images/payment/litecoin_logo.png);
+				}
+				.method-bitcoin-cash {
+					@extend %method-logos;
+					background-image: url(../images/payment/bitcoin-cash_logo.png);
+				}
+				.method-dash {
+					@extend %method-logos;
+					background-image: url(../images/payment/dash_logo.png);
 				}
 			}
 

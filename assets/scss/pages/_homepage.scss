@@ -102,7 +102,7 @@
 
 	.button-line{
 		display: flex;
-		align-content: center;
+		align-content: flex-start;
 		align-items: center;
 
 		@include media('<768px'){
@@ -110,7 +110,9 @@
 			flex-wrap: wrap;
 			justify-content: center;
 		}
+
 		.button{
+			align-self: flex-start;
 			margin-right: 20px;
 			font-family:$futura;
 			height: 70px;
@@ -122,12 +124,44 @@
 				height: 45px;
 			}
 		}
-		img{
-			margin:0 5px;
+
+		.logos {
 			@include media('<768px'){
 				display: none;
 			}
 		}
+
+		.logo-row {
+			margin-top: 1.5rem;
+		}
+
+		img{
+			width: auto;
+			height: 25px;
+			margin:0 10px;
+
+			&[src*='dash'] { height: 15px; }
+		}
+	}
+}
+
+.button-line {
+	.logos {
+		@include media('<768px'){
+			display: none;
+		}
+	}
+
+	.logo-row {
+		margin-top: 1.5rem;
+	}
+
+	img{
+		width: auto;
+		height: 25px;
+		margin:0 10px;
+
+		&[src*='dash'] { height: 15px; }
 	}
 }
 
@@ -1003,32 +1037,39 @@
 			display: flex;
 			margin: 50px auto 0;
 			justify-content: center;
-			padding-left:205px;
 			@include media('<768px'){
 				flex-direction: row;
 				flex-wrap: wrap;
 				justify-content: center;
-				padding-left: 0;
 			}
+			.button-line-inner { position: relative; }
 			.button{
-				margin-right: 20px;
 				@include media('<768px'){
-					margin-right: auto;
 					margin-bottom: 25px;
-					margin-left:auto;
-				}
-				@include media('<500px'){
-					margin:0 15% 25px
 				}
 			}
 			img{
 				margin-left: 10px;
+				filter: invert(1);
 				opacity: .2;
 				@include media('<768px'){
 					display: inline-block;
 					margin-bottom: 25px;
 				}
 			}
+
+			.logos {
+				@include media('<991px') {
+					display: none;
+				}
+
+				position: absolute;
+				top: 0; left: 100%;
+				width: 100vw;
+				margin-left: 2rem;
+			}
+
+			.logo-row { margin-top: 1rem; }
 		}
 	}
 }
