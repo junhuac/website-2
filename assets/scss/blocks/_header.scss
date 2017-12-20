@@ -98,7 +98,20 @@
 				height: 100%;
 				min-width: 140px;
 				@include font(14, 20, 400, $futura);
-				@include media('<992px') {
+				@include media('<1200px') {
+					display: none;
+				}
+			}
+
+			.button-companion {
+				color: #fff;
+				margin-right: 0.5rem;
+
+				&:hover, &:focus, &:active {
+					color: #fff;
+				}
+
+				@include media('<1200px') {
 					display: none;
 				}
 			}
