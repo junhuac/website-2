@@ -64,7 +64,6 @@ function showMenu(){
 
 function showPopup(element) {
 	$(element).addClass('show');
-	console.log($(element).prop('class').replace(' ', '.'));
 
 	$(element)
 		.children('.close')
@@ -177,21 +176,6 @@ $(document).ready(function () {
 
 	showMenu();
 
-	$('.popup').each(function(index, element) {
-		if ($(element).data('persistent') == false) {
-			var visitCount = document.cookie.replace(/(?:(?:^|.*;\s*)visitCount\s*\=\s*([^;]*).*$)|^.*$/, "$1");
-			visitCount++;
-			document.cookie = 'visitCount=' + visitCount + '; expires=Fri, 31 Dec 9999 23:59:59 GMT';
-
-			if (visitCount < 10) {
-				setTimeout(function() {
-					showPopup(element);
-				}, 10000);
-			}
-		} else {
-			showPopup(element);
-		}
-	});
 
 	var slider = document.getElementById('slider');
 
@@ -225,4 +209,30 @@ $(document).ready(function () {
 		$('.set-slider-calculated-value, .investment-btc-value').text(bettrFormat.to(parseInt(slider.noUiSlider.get()) * 0.000137));
 	});
 
+});
+
+// Wait for all the content to finish loading (images included)
+$(window).bind('load', function() {
+
+	var visitCount = document.cookie.replace(/(?:(?:^|.*;\s*)visitCount\s*\=\s*([^;]*).*$)|^.*$/, "$1");
+	visitCount++;
+	document.cookie = 'visitCount=' + visitCount + '; expires=Fri, 31 Dec 9999 23:59:59 GMT';
+
+	$('[class*="popup"]').each(function(index, element) {
+		var showLimit = $(element).data('show-limit');
+		var recordClosed = $(element).data('record-closed');
+
+		if (showLimit && !(recordClosed && closedBefore)) {
+			console.log(visitCount < showLimit, visitCount, showLimit);
+
+			if (visitCount < showLimit) {
+				setTimeout(function() {
+					showPopup(element, recordClosed);
+				}, 10000);
+			}
+		} else {
+			console.log('Truthy:', element, showLimit);
+			showPopup(element, recordClosed);
+		}
+	});
 });

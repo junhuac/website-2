@@ -1,31 +1,19 @@
-.popup {
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	transform: translate3d(0, 100%, 0);
+main {
+	position: relative;
+
+	.show-announcement {
+
+	}
+}
+
+%popup-base {
 	width: 100%;
 	padding: 1em 0;
 	z-index: 100;
 
 	color: #fff;
-	background-color: $main_dark;
 
-	transition: transform 0.5s ease-in-out;
-
-	&.show { transform: translate3d(0,0,0); }
-
-	&.announcement {
-		top: 0;
-		bottom: auto;
-		background-color: #f99a5d;
-		transform: translate3d(0,-100%,0);
-
-		p { margin-bottom: 10px; }
-
-		&.show { transform: translate3d(0,0,0); }
-	}
-
-	p { margin: 0; }
+	transition: all 0.5s ease-in-out;
 
 	.container {
 		display: flex;
@@ -48,5 +36,33 @@
 		opacity: 1;
 		filter: invert(1);
 		background: url(../images/svg/close.svg);
+	}
+}
+
+.popup-general {
+	@extend %popup-base;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	transform: translate3d(0, 100%, 0);
+
+	background-color: $main_dark;
+
+	&.show { transform: translate3d(0,0,0); }
+
+	p { margin: 0; }
+}
+
+.popup-announcement {
+	@extend %popup-base;
+	background-color: #f99a5d;
+	max-height: 0;
+	padding: 0;
+
+	p { margin-bottom: 10px; }
+
+	&.show {
+		max-height: 50vh;
+		padding: 1em 0;
 	}
 }
