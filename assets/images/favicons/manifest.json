@@ -1,13 +1,13 @@
 {
-    "name": "BetterBetting",
+    "name": "",
     "icons": [
         {
-            "src": "assets/images/favicons/android-chrome-72x72.png?v=jwLOaKBxPg",
-            "sizes": "72x72",
+            "src": "assets/images/favicons/android-chrome-144x144.png?v=Jy7WrKnjGe",
+            "sizes": "144x144",
             "type": "image/png"
         }
     ],
-    "theme_color": "#9538a2",
-    "background_color": "#9538a2",
+    "theme_color": "#232836",
+    "background_color": "#232836",
     "display": "standalone"
 }
