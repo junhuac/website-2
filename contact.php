@@ -21,14 +21,14 @@
 	<!-- endbuild -->
 	<script src='https://www.google.com/recaptcha/api.js'></script>
 
-	<link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicons/apple-touch-icon.png?v=jwLOaKBxPg">
-	<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png?v=jwLOaKBxPg">
-	<link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png?v=jwLOaKBxPg">
-	<link rel="manifest" href="assets/images/favicons/manifest.json?v=jwLOaKBxPg">
-	<link rel="mask-icon" href="assets/images/favicons/safari-pinned-tab.svg?v=jwLOaKBxPg" color="#9538a2">
-	<link rel="shortcut icon" href="assets/images/favicons/favicon.ico?v=jwLOaKBxPg">
-	<meta name="msapplication-config" content="assets/images/favicons/browserconfig.xml?v=jwLOaKBxPg">
-	<meta name="theme-color" content="#9538a2">
+	<link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicons/apple-touch-icon.png?v=Jy7WrKnjGe">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png?v=Jy7WrKnjGe">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png?v=Jy7WrKnjGe">
+	<link rel="manifest" href="assets/images/favicons/manifest.json?v=Jy7WrKnjGe">
+	<link rel="mask-icon" href="assets/images/favicons/safari-pinned-tab.svg?v=Jy7WrKnjGe" color="#232836">
+	<link rel="shortcut icon" href="assets/images/favicons/favicon.ico?v=Jy7WrKnjGe">
+	<meta name="msapplication-config" content="assets/images/favicons/browserconfig.xml?v=Jy7WrKnjGe">
+	<meta name="theme-color" content="#232836">
 </head>
 <!--[if lte IE 9]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
