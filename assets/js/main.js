@@ -223,7 +223,6 @@ $(window).bind('load', function() {
 		var recordClosed = $(element).data('record-closed');
 
 		if (showLimit && !(recordClosed && closedBefore)) {
-			console.log(visitCount < showLimit, visitCount, showLimit);
 
 			if (visitCount < showLimit) {
 				setTimeout(function() {
@@ -231,7 +230,6 @@ $(window).bind('load', function() {
 				}, 10000);
 			}
 		} else {
-			console.log('Truthy:', element, showLimit);
 			showPopup(element, recordClosed);
 		}
 	});
