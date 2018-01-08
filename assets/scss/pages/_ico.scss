@@ -1,17 +1,40 @@
 .ico {
 	&:before { background-image: none; }
-	.item {
-		margin: 40px 0;
+
+	p { font-size: 1rem; }
+
+	.item { margin: 40px 0; }
+
+	.images-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		div {
+			display: inline-block;
+			flex-basis: 20%;
+			flex-grow: 1;
+			margin: 2rem;
+			width: 100%;
+			text-align: center;
+		}
 
 		img {
-			display: block;
-			margin: 2rem auto;
-			width: auto;
-			height: 300px;
+			height: auto;
+			max-height: 400px;
+			max-width: 100%;
+		}
+
+		@include media('<991px') {
+			div { margin: 0.4rem; }
+		}
+
+		@include media('<768px') {
+			flex-direction: column;
 		}
 	}
 
-	a {
+	a:not(.buy-now) {
 		color: $main_dark;
 
 		&:hover, &:focus, &:active {
