@@ -20,7 +20,7 @@ var ftp				= require('vinyl-ftp');
 var conf  = require('./conf.json');
 
 gulp.task("default", function() {
-	var mode = '';
+	var mode = conf.mode;
 	flag = getArg();
 	if (flag) mode = ':' + flag;
 
@@ -33,7 +33,7 @@ gulp.task("mangle", ["concat"], function() {
 	var jsFilter = filter('**/*.js', {restore: true});
 	var htmlFilter = filter('**/*.html', {restore: true});
 
-	return gulp.src(['temp/**/*.js', 'temp/**/*.css', 'temp/**/*.html', 'temp/**/*.php', '**/.+(htpasswd|htaccess)', '*White_Paper*.pdf', '!dist/**/*.*', '!node_modules/**/*.*'])
+	return gulp.src(['temp/**/*.js', 'temp/**/*.css', 'temp/**/*.html', 'temp/**/*.php', '**/.+(htpasswd|htaccess)','*White_Paper*.pdf', '!dist/**/*.*', '!node_modules/**/*.*'])
 		// Minify
 		.pipe(cssFilter)
 		.pipe(css())
@@ -126,6 +126,11 @@ gulp.task("fonts", function() {
 		.pipe(gulp.dest('dist/assets/fonts/'));
 });
 
+gulp.task("data", function() {
+	return gulp.src(['data/**/*.*'])
+		.pipe(gulp.dest('dist/data'));
+});
+
 gulp.task("sass:watch", ['sass'], function(){
 	watchSass([
 		'assets/scss/**/*.scss'
@@ -147,11 +152,15 @@ gulp.task("build", ['clean'],  function() {
 	flag = getArg();
 	if (flag) mode = flag;
 
-	return run(['apache:' + mode, 'mangle', 'images', 'fonts'], 'clean:post-deploy');
+	return run(['apache:' + mode, 'mangle', 'images', 'fonts', 'data'], 'clean:post-deploy');
 });
 
 gulp.task("build:deploy", ['clean'], function() {
-	return run(['apache:' + mode, 'mangle', 'images', 'fonts'], 'clean:post-deploy', 'deploy');
+	var mode = 'production';
+	flag = getArg();
+	if (flag) mode = flag;
+
+	return run(['apache:' + mode, 'mangle', 'images', 'fonts', 'data'], 'clean:post-deploy', 'deploy');
 });
 
 gulp.task("deploy", function() {

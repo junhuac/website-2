@@ -21,6 +21,7 @@ $footerPageList = [
 	],
 	'right' => [
 		'Token Sale' => 'ico.php',
+		'Work with Us' => 'careers.php',
 		'Whitepaper' => 'BETTER_BETTING_Foundation_White_Paper.pdf',
 		'Terms &amp; Conditions' => 'terms-conditions.php',
 		'Contact' => 'contact.php'

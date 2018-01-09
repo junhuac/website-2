@@ -1,0 +1,54 @@
+[
+	{
+		"title": "Python Developer",
+		"visible": true,
+		"description": "You can be part of this new future in the sports betting industry. We are seeking the top tier developers to join our existing and growing team of leading industry experts.",
+		"lists":
+		{
+			"core_responsibilities":
+			[
+				"Develop and maintain web-based applications to enhance the performance and reliability of our current applications.",
+				"Participate in the development of new industry-leading products using our open-source-based tech stack.",
+				"Collaborate with other developers on best practices, code reviews, internal tools and process improvements.",
+				"Provide technical leadership within the team.",
+				"Develop, test, document, and implement software applications.",
+				"Analyze and resolve complex problems associated with applications systems. Detect, diagnose, and report related problems.",
+				"Coordination of efforts between the Engineering, Quality Assurance, Infrastructure, and Product Management.",
+				"A &lsquo;One Team&rsquo; mindset in which success is achieved through the success of others",
+				"A &ldquo;Systems Thinking&rdquo; approach that ensures solutions solve the problem at hand within the construct of a larger platform"
+			],
+			"requirements":
+			[
+				"Quick thinking and ability to solve complex issues and problems",
+				"Overall programming experience of 5+ years",
+				{
+					"Extensive knowledge of various Python frameworks":
+					[
+						"Python Peer to Peer frameworks: pyp2p",
+						"Python Web Application Frameworks",
+						"pytest"
+					]
+				},
+				{
+					"Extensive experience in Python and related Web Application software":
+					[
+						"Python Version: Python 2.7",
+						"Webserver: Apache 2.4.9",
+						"Responsive Web Design",
+						"REST APIs",
+						"Database Backend: MySQL"
+					]
+				},
+				"Unit testing methodologies",
+				"Strong organizational skills",
+				"Independent, self-managed and motivated",
+				"Excellent communication and interpersonal skills"
+			]
+		}
+	},
+	{
+		"title": "Admin Assistant",
+		"visible": false,
+		"description": "Join us! If you dare!"
+	}
+]
