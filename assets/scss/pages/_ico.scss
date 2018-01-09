@@ -1,4 +1,4 @@
-.ico {
+.ico:not(.header) {
 	&:before { background-image: none; }
 
 	p { font-size: 1rem; }

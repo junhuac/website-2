@@ -1,4 +1,4 @@
-.team {
+.team:not(.header) {
 	position: relative;
 	&:after{
 		content: '';

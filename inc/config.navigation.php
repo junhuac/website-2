@@ -17,8 +17,7 @@ $footerPageList = [
 		'Media' => 'media.php',
 		'Roadmap' => 'roadmap.php',
 		'Team' => 'team.php',
-		'Technical' => 'technical.php',
-		'ICO' => 'ico.php'
+		'Technical' => 'technical.php'
 	],
 	'right' => [
 		'Token Sale' => 'ico.php',
