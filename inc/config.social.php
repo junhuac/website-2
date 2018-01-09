@@ -23,6 +23,6 @@ $socialLinks = [
 	'youtube' => [
 		'url' => 'https://www.youtube.com/channel/UCFvNUWRiedqvcpNHqLnDAXg',
 		'description' => 'Check out our youtube channel',
-		'icon' => 'icon-telegram'
+		'icon' => 'icon-youtube'
 	]
 ];
