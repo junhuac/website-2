@@ -1,4 +1,4 @@
-.roadmap{
+.roadmap:not(.header) {
 	> .container{
 		@include media('<768px'){
 			overflow: hidden;
