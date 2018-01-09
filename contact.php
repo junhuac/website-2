@@ -23,7 +23,7 @@ include_once('inc/template.head.php');
 					<p>BetterBetting ICO Sales are now live! Please register here to buy tokens.  If you have any questions or require more information please complete the form below and we will be in contact.</p>
 				</div>
 				<div class="col-sm-6">
-					<p>For more information on Pre Sales and the ICO, please complete the form below and we will be in contact.</p>
+					<p>For more information on the ICO, please complete the form below and we will be in contact.</p>
 				</div>
 			</div>
 

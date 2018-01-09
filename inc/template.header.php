@@ -24,7 +24,7 @@ foreach ($headerPageList as $name => $url) {
 <aside class="popup-announcement" data-show-limit="false">
 	<div class="container">
 		<div>
-			<p>We have made excellent progress with pre and bulk sales with investment already in excess of US$ 2 Million, largely from within the gaming industry. These transactions will be added to the total token sales once the bonus stages are complete.</p>
+			<p>We have made excellent progress with pre and bulk sales with investment already in excess of US$ 2 Million, largely from within the gaming industry.</p>
 		</div>
 	</div>
 	<div class="close"></div>
@@ -33,9 +33,7 @@ foreach ($headerPageList as $name => $url) {
 <main>
 	<header class="header <?php echo $customClass; ?>-header">
 		<div class="container">
-			<a href="index.php" class="logo">
-				BetterBetting
-			</a>
+			<a href="./" class="logo">BetterBetting</a>
 			<div class="menu-icon"></div>
 			<div class="menu">
 				<ul>
@@ -51,7 +49,7 @@ foreach ($headerPageList as $name => $url) {
 <main>
 	<header class="header subsite-header <?php echo $customClass; ?>">
 		<div class="container">
-			<a href="index.php" class="logo">BetterBetting</a>
+			<a href="./" class="logo">BetterBetting</a>
 			<div class="menu-icon"></div>
 			<div class="menu">
 				<ul>

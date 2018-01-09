@@ -39,7 +39,7 @@ include_once('inc/template.head.php');
 					<div class="item">
 						<h4 id="stage1">Stage 1: Account registration</h4>
 						<ul>
-							<li>Go to <a href="https://betterbetting.org/ico-sales.html">https://betterbetting.org/ico-sales.html</a> and click &lsquo;Register&rsquo;</li>
+							<li>Click the above button saying &lsquo;Register&rsquo;</li>
 							<li>Enter your Email and choose a password (Upper and lower case, number and symbol)</li>
 							<li>Verify your email through the link we send you</li>
 						</ul>

@@ -80,7 +80,7 @@ if ($jobsData['status'] == 'error') {
 		<div class="right-shape"></div>
 		<div class="container">
 			<h1>Working with BetterBetting</h1>
-			<p class="main">Thanks for your interest in the BETR token. So you want to buy BETR tokens? That&rsquo;s great! We have prepared a step-by-step guide for you. In case of any questions, we&rsquo;re glad to help you in our live chat on <a href="https://twitter.com/BETRBetting">Telegram</a> or <a href="https://t.me/joinchat/HNsEWQ-L0aCjHMsmKW-d_w">Twitter</a> or email us <a href="mailto:ico@betterbetting.org">here</a>.</p>
+			<p class="main">Be part of this new future in the sports betting industry. We are seeking top tier professionals to join our existing and growing team of leading industry experts. See the available positions below and feel free to apply.</p>
 
 			<div class="row register">
 				<div class="col-xs-12 text-center">
