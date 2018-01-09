@@ -1,22 +1,29 @@
 # Load index.php
 DirectoryIndex index.php
 
-#Turns Rewrite engine on
+# Turns Rewrite engine on
 RewriteEngine On
 
-#Use the html if it exists
+# Get rid of file extensions. Must negate dead URLs
+RewriteBase /
+RewriteCond %{ENV:REDIRECT_STATUS} !200
+RewriteCond %{REQUEST_FILENAME} !/ico-sales\.html$
+RewriteCond %{REQUEST_FILENAME} !/road_map\.html$
+RewriteRule ^(.*)\.(?:php|html)$ $1 [R=301,L,QSA,NC]
+
+# Use the html if it exists
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteCond %{REQUEST_FILENAME}\.html -f
 RewriteRule ^([^\.]+)$ $1.html [NC,L]
 
-#Request with no .php will still work
+# Request with no .php will still work
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^([^\.]+)$ $1.php [NC]
 
-#Non www requests get forwarded to www site
-RewriteCond %{HTTP_HOST} ^/
-RewriteRule (.*) /$1 [R=301,L]
-
 ErrorDocument 404 /404.php
+
+# Redirect from old filenames
+Redirect 301 /ico-sales.html /ico
+Redirect 301 /road_map.html /roadmap

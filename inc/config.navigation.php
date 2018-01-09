@@ -1,29 +1,29 @@
 <?php
 $headerPageList = [
 	'Whitepaper' => 'BETTER_BETTING_Foundation_White_Paper.pdf',
-	'Events' => 'events.php',
-	'Media' => 'media.php',
-	'Roadmap' => 'roadmap.php',
-	'Team' => 'team.php',
-	'Technical' => 'technical.php',
-	'ICO' => 'ico.php',
-	'Contact' => 'contact.php'
+	'Events' => 'events',
+	'Media' => 'media',
+	'Roadmap' => 'roadmap',
+	'Team' => 'team',
+	'Technical' => 'technical',
+	'ICO' => 'ico',
+	'Contact' => 'contact'
 ];
 
 
 $footerPageList = [
 	'left' => [
-		'Events' => 'events.php',
-		'Media' => 'media.php',
-		'Roadmap' => 'roadmap.php',
-		'Team' => 'team.php',
-		'Technical' => 'technical.php'
+		'Events' => 'events',
+		'Media' => 'media',
+		'Roadmap' => 'roadmap',
+		'Team' => 'team',
+		'Technical' => 'technical'
 	],
 	'right' => [
-		'Token Sale' => 'ico.php',
-		'Work with Us' => 'careers.php',
+		'Token Sale' => 'ico',
+		'Work with Us' => 'careers',
 		'Whitepaper' => 'BETTER_BETTING_Foundation_White_Paper.pdf',
-		'Terms &amp; Conditions' => 'terms-conditions.php',
-		'Contact' => 'contact.php'
+		'Terms &amp; Conditions' => 'terms-conditions',
+		'Contact' => 'contact'
 	]
 ];
