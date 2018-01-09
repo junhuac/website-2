@@ -98,6 +98,7 @@ include_once('inc/template.head.php');
 						<div class="images-container">
 							<div><a href="/assets/images/screenshots/stage6a.png"><img src="/assets/images/screenshots/stage6a.png" alt="Stage 6 Screenshot"></a></div>
 							<div><a href="/assets/images/screenshots/stage6b.png"><img src="/assets/images/screenshots/stage6b.png" alt="Stage 6 Screenshot"></a></div>
+							<div><a href="/assets/images/screenshots/stage6c.png"><img src="/assets/images/screenshots/stage6c.png" alt="Stage 6 Screenshot"></a></div>
 						</div>
 					</div>
 				</div>
