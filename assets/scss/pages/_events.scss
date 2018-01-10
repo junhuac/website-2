@@ -46,6 +46,7 @@
 
 						display: flex;
 						align-items: center;
+						justify-content: space-between;
 						font-family: "Open Sans";
 						margin-top: 75px;
 						padding: 0 10px;
@@ -201,8 +202,8 @@
 					img {
 						height: 35px;
 						position: absolute;
-						left: 50%;
-						transform: translateX(-40%);
+						top: 50%; left: 50%;
+						transform: translate3d(-40%, -50%, 0);
 					}
 
 					span { display: none; }

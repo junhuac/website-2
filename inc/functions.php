@@ -5,7 +5,7 @@ function getData($dataCat = 'general') {
 	if (empty($data)) {
 		$result = [
 			'status' => 'error',
-			'content' => "Ooops! We weren't able to find <strong>{$dataCat}</strong>. Please contact us and let us know about this slight hiccup."
+			'content' => "Ooops! We weren't able to find <strong>{$dataCat}</strong>. This is probably a slight miscalculation on our part. Please contact us and let us know about this slight hiccup."
 		];
 	} else {
 		$result = [
