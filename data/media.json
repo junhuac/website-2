@@ -1,0 +1,33 @@
+[
+	{
+		"name": "Ronnie meets Adriaan to play some Snooker",
+		"visible": true,
+		"type": "image",
+		"src": "/assets/images/media/ronnie-adriaan1.jpg"
+	},
+	{
+		"name": "Ronnie meets Adriaan to play some Snooker",
+		"visible": true,
+		"type": "image",
+		"src": "/assets/images/media/ronnie-adriaan2.jpg"
+	},
+	{
+		"name": "Ronnie meets Adriaan to play some Snooker",
+		"visible": true,
+		"type": "image",
+		"src": "/assets/images/media/ronnie-adriaan3.jpg"
+	},
+	{
+		"name": "Ronnie meets Adriaan to play some Snooker",
+		"visible": true,
+		"type": "image",
+		"src": "/assets/images/media/ronnie-adriaan4.jpg"
+	},
+	{
+		"name": "BetterBetting Adriaan Brink Hypethon 2017",
+		"visible": true,
+		"type": "video",
+		"src": "https://www.youtube.com/embed/qzBXJmvpEOM",
+		"eventId": "hypethon1"
+	}
+]

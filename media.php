@@ -4,6 +4,31 @@
 $pageName = 'media';
 $customClass = 'media';
 include_once('inc/template.head.php');
+
+
+$mediaData = getData('media');
+if ($mediaData['status'] !== 'error') {
+	foreach ($mediaData['content'] as $details) {
+		if (!$details['visible'])
+			continue;
+
+		switch ($details['type']) {
+			case 'image':
+				$mediaItem = "<img src='{$details['src']}' alt='{$details['name']}' title='{$details['name']}'>";
+				break;
+
+			case 'video':
+				$mediaItem = "
+					<div>
+						<iframe width='560' height='315' src='{$details['src']}' frameborder='0' gesture='media' allow='encrypted-media' allowfullscreen></iframe>
+					</div>";
+		}
+
+		$mediaOutput[] = "<div class='media-item {$details['type']}'>{$mediaItem}</div>";
+	}
+} else {
+	$mediaOutput = "<div class='has-error'><p>{$mediaData['content']}</p></div>";
+}
 ?>
 <body>
 <?php include_once('inc/template.header.php'); ?>
@@ -15,23 +40,7 @@ include_once('inc/template.head.php');
 		<div>
 			<h1>Media</h1>
 			<div class="media-container">
-				<div class="media-item image">
-					<img src="assets/images/media/ronnie-adriaan1.jpg" alt="BetterBetting Media Image">
-				</div>
-				<div class="media-item image">
-					<img src="assets/images/media/ronnie-adriaan2.jpg" alt="BetterBetting Media Image">
-				</div>
-				<div class="media-item image">
-					<img src="assets/images/media/ronnie-adriaan3.jpg" alt="BetterBetting Media Image">
-				</div>
-				<div class="media-item image">
-					<img src="assets/images/media/ronnie-adriaan4.jpg" alt="BetterBetting Media Image">
-				</div>
-				<div class="media-item video">
-					<div>
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/qzBXJmvpEOM" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-					</div>
-				</div>
+				<?php echo implode('', $mediaOutput); ?>
 			</div>
 		</div>
 		<!-- Can be the Lazy load CTA in the future -->
