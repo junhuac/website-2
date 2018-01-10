@@ -9,6 +9,7 @@ RewriteBase /
 RewriteCond %{ENV:REDIRECT_STATUS} !200
 RewriteCond %{REQUEST_FILENAME} !/ico-sales\.html$
 RewriteCond %{REQUEST_FILENAME} !/road_map\.html$
+RewriteCond %{REQUEST_FILENAME} !/form-process\.php$
 RewriteRule ^(.*)\.(?:php|html)$ $1 [R=301,L,QSA,NC]
 
 # Use the html if it exists
