@@ -3,7 +3,6 @@
 <?php
 $pageName = 'careers';
 $customClass = 'careers';
-include_once('inc/config.php');
 include_once('inc/template.head.php');
 
 // Helper function for infinite array walk

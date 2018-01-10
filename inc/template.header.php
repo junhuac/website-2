@@ -18,17 +18,22 @@ foreach ($headerPageList as $name => $url) {
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
 <![endif]-->
 
-<?php if ($pageName == 'index'): ?>
+<?php
+if ($pageName == 'index'):
 
-<!-- Delay Message -->
-<aside class="popup-announcement" data-show-limit="false">
-	<div class="container">
-		<div>
-			<p>We have made excellent progress with pre and bulk sales with investment already in excess of US$ 2 Million, largely from within the gaming industry.</p>
+	$announcement = getData('general')['content']['announcement'];
+	if ($announcement['message'] !== ''):
+		?>
+	<!-- Delay Message -->
+	<aside class="popup-announcement" data-show-limit="<?php echo $announcement['showLimit']; ?>">
+		<div class="container">
+			<div>
+				<p><?php echo $announcement['message']; ?></p>
+			</div>
 		</div>
-	</div>
-	<div class="close"></div>
-</aside>
+		<div class="close"></div>
+	</aside>
+	<?php endif; ?>
 
 <main>
 	<header class="header <?php echo $customClass; ?>-header">
