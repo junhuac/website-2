@@ -51,7 +51,7 @@ foreach ($socialLinks as $id => $data) {
 		</div>
 		<div class="about-banner">
 			<p>
-				<strong>Endorsed by Ronnie O’Sullivan (”The Rocket”)</strong>
+				<strong>Endorsed by Ronnie O&rsquo;Sullivan (&ldquo;The Rocket&rdquo;)</strong>
 				The Greatest Snooker Player to Ever Live
 			</p>
 		</div>
@@ -60,6 +60,11 @@ foreach ($socialLinks as $id => $data) {
 
 <div class="container">
 	<div class="press">
+		<h2>BETR Token Live now!</h2>
+		<div class="container">
+			<p>Token Audit: <a href="BETTER_BETTING_Foundation_Audit.pdf">here</a>.</p>
+			<p>Token Contract Address: <a href="https://etherscan.io/token/0x763186eb8d4856d536ed4478302971214febc6a9">0x763186eb8d4856d536ed4478302971214febc6a9</a></p>
+		</div>
 		<h3>As seen in the Press</h3>
 		<div class="container">
 			<div class="press-logos">
