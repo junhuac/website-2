@@ -67,7 +67,7 @@ if ($eventsData['status'] !== 'error') {
 			$contentElement .= "<p>{$event['content']}</p>";
 		}
 
-		$registerElement = $event['register'] && !$hasEnded ? "
+		$registerElement = ($event['register'] && !$hasEnded) ? "
 			<div class='register'>
 				<a href='{$event['register']}' class='button event-register' title='Register to {$event['name']}'>Register</a>
 			</div>" : '';
@@ -127,7 +127,7 @@ if ($eventsData['status'] !== 'error') {
 	<?php if ($errors): ?>
 		<h1>Events</h1>
 		<?php echo implode('', $errors); ?>
-	<? endif;?>
+	<?php endif; ?>
 	</div>
 </div>
 
