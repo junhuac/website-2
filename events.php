@@ -23,9 +23,13 @@ if ($eventsData['status'] !== 'error') {
 
 		$contentElement = '';
 		if ($hasEnded && $mediaData['status'] !== 'error') {
+			$mediaCount = 0;
 			foreach ($mediaData['content'] as $item) {
 				if ($item['eventId'] !== $eventId)
 					continue;
+
+				$mediaCount++;
+				$itemElement = '';
 
 				switch ($item['type']) {
 					case 'image':
@@ -43,13 +47,22 @@ if ($eventsData['status'] !== 'error') {
 				$contentElement .= "<div class='media-item {$item['type']}'>{$itemElement}</div>";
 			}
 
-			$contentElement .= "
+			if ($mediaCount <= 0) {
+				$contentElement .= "
+					<div class='row more-media'>
+						<div class='col-xs-12 text-center'>
+							<a href='{$headerPageList['Media']}' class='button buy-now'>See Other Media</a>
+						</div>
+					</div>";
+			} else {
+				$contentElement .= "
 					<div class='more-media category'>
 						<a href='{$headerPageList['Media']}?q={$eventId}' class='button buy-now' title='See More media from this event!'>
 							<img src='assets/images/svg/right_arrow.svg' alt='See More Link'>
 							<span>See More</span>
 						</a>
 					</div>";
+			}
 		} else {
 			$contentElement .= "<p>{$event['content']}</p>";
 		}

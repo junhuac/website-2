@@ -29,5 +29,19 @@
 		"type": "video",
 		"src": "https://www.youtube.com/embed/qzBXJmvpEOM",
 		"eventId": "hypethon17"
+	},
+	{
+		"name": "Hypethon 2017",
+		"visible": true,
+		"type": "image",
+		"src": "/assets/images/media/hypethon-big-banner.png",
+		"eventId": "hypethon17"
+	},
+	{
+		"name": "Live band at Hypethon 2017",
+		"visible": true,
+		"type": "image",
+		"src": "/assets/images/media/hypethon17-band-night.png",
+		"eventId": "hypethon17"
 	}
 ]
