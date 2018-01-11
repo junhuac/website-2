@@ -22,9 +22,9 @@ var conf  = require('./conf.json');
 gulp.task("default", function() {
 	var mode = conf.mode;
 	flag = getArg();
-	if (flag) mode = ':' + flag;
+	if (flag) mode = flag;
 
-	run(['apache' + mode, 'sass']);
+	run(['apache:' + mode, 'sass']);
 });
 
 gulp.task("mangle", ["concat"], function() {
@@ -33,7 +33,7 @@ gulp.task("mangle", ["concat"], function() {
 	var jsFilter = filter('**/*.js', {restore: true});
 	var htmlFilter = filter('**/*.html', {restore: true});
 
-	return gulp.src(['temp/**/*.js', 'temp/**/*.css', 'temp/**/*.html', 'temp/**/*.php', '**/.+(htpasswd|htaccess)','*White_Paper*.pdf', '!dist/**/*.*', '!node_modules/**/*.*'])
+	return gulp.src(['temp/**/*.js', 'temp/**/*.css', 'temp/**/*.html', 'temp/**/*.php', '**/.+(htpasswd|htaccess)','BETTER_BETTING*.pdf', '!dist/**/*.*', '!node_modules/**/*.*'])
 		// Minify
 		.pipe(cssFilter)
 		.pipe(css())
@@ -186,7 +186,7 @@ gulp.task("deploy:test", function() {
 
 	console.log(conf.ftp, conf.ftp.host);
 
-	return gulp.src('dist/**/*.*')
+	return gulp.src(['dist/**/*.*', 'dist/**/.htaccess'])
 		.pipe(conn.newerOrDifferentSize(conf.ftp.remoteDir))
 		.pipe(conn.filter(conf.ftp.remoteDir, function(localFile, remoteFile, cb) {
 			console.log('Local File: ', localFile, 'Remote File: ', remoteFile.ftp.name);
