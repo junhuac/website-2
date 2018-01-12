@@ -111,6 +111,7 @@ include_once('inc/template.head.php');
 						<ul>
 							<li>Once the KYC documents have been confirmed by our team, your account will be activated and you will be asked to supply an ethereum address to receive the tokens.</li>
 							<li>Tokens will then be sent to this address and you will own your BETR tokens!</li>
+							<li>Please note we are not on any exchanges at this time but will be in the very near future. Please do <strong>not</strong> send your tokens to an exchange.</li>
 						</ul>
 						<div class="images-container">
 							<div><a href="/assets/images/screenshots/stage6a.png"><img src="/assets/images/screenshots/stage6a.png" alt="Stage 6 Screenshot"></a></div>
