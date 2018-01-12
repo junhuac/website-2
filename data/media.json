@@ -43,5 +43,11 @@
 		"type": "image",
 		"src": "/assets/images/media/hypethon17-band-night.png",
 		"eventId": "hypethon17"
+	},
+	{
+		"name": "Ronnie O&rsquo;Sullivan&rsquo;s Good Luck Message to BetterBetting",
+		"visible": true,
+		"type": "video",
+		"src": "https://www.youtube.com/embed/BYM_qCigsBQ"
 	}
 ]
