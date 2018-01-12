@@ -52,7 +52,7 @@ foreach ($socialLinks as $id => $data) {
 			<p>Looking to invest with BetterBetting? Join our <strong>Telegram</strong> channel to discuss.</p>
 		</div>
 		<div class="col-xs-12 col-md-2">
-			<a class="button red" href="https://t.me/joinchat/HNsEWQ-L0aCjHMsmKW-d_w">Join us on Telegram</a>
+			<a class="button red" href="/join-telegram">Join us on Telegram</a>
 		</div>
 	</div>
 	<div class="close"></div>
