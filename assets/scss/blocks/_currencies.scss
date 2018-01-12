@@ -1,9 +1,10 @@
 .currencies {
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
 
-	@include media('<768px') {
-		flex-direction: column;
+	@include media('<992px') {
+
 	}
 
 	.currency, .header-currency {
@@ -20,8 +21,8 @@
 		width: 150px;
 		height: 70px;
 		margin-top: 45px;
-		padding-left: 4px;
-		padding-right: 4px;
+		margin-left: 4px;
+		margin-right: 4px;
 		box-shadow: 0 1px 4px rgba(35, 40, 54, 0.1);
 		border-radius: 4px;
 		background: #ffffff;
@@ -29,11 +30,13 @@
 		&:hover, &:active { position: relative; }
 
 		@include media('<992px') {
-			width: 145px;
+			flex-basis: 75px;
+			flex-grow: 1;
+			height: 50px;
 		}
 
 		@include media('<768px') {
-			margin-bottom: 20px;
+			margin-top: 20px;
 		}
 	}
 
