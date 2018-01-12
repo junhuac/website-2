@@ -1,0 +1,82 @@
+{
+	"blockshowasia17": {
+		"name": "Block Show Asia 2017",
+		"visible": true,
+		"location": {
+			"addressShort": "RWS Sentosa, Singapore",
+			"addressLong": "Resorts World Sentosa, 8 Sentosa Gateway, Singapore 098269",
+			"link": "https://goo.gl/maps/oBLYTeQJZgq"
+		},
+		"logo": "assets/images/events/block-show-asia.png",
+		"website": "https://blockshowasia.com/",
+		"register": "",
+		"excerpt": "Once you open up the Blockchain, you&rsquo;ll never leave it behind. With the growth of Blockchain technology, it is impossible to ignore the countless advantages it has already given our world. The BlockShow team&rsquo;s aspiration is to showcase the industry&rsquo;s most groundbreaking solutions and bring businesses together with the Blockchain.",
+		"content": "Once you open up the Blockchain, you&rsquo;ll never leave it behind. With the growth of Blockchain technology, it is impossible to ignore the countless advantages it has already given our world. The BlockShow team&rsquo;s aspiration is to showcase the industry&rsquo;s most groundbreaking solutions and bring businesses together with the Blockchain.<br><br>If you yearn to gain real insight into the Blockchain, join our events and avail yourself of the opportunity to meet and partner with the world&rsquo;s key Blockchain value generators. You will get first-hand practical knowledge of how technology has been successfully implemented in different parts of the world and what a dramatic impact it has already had on the markets.",
+		"start": "15:00 29-11-2017",
+		"end": "15:00 29-11-2017"
+	},
+	"hypethon17": {
+		"name": "Hypethon 2017",
+		"visible": true,
+		"location": {
+			"addressShort": "RWS Sentosa, Singapore",
+			"addressLong": "Resorts World Sentosa, 8 Sentosa Gateway, Singapore 098269",
+			"link": "https://goo.gl/maps/oBLYTeQJZgq"
+		},
+		"logo": "assets/images/events/hypethon.png",
+		"website": "https://hypethon.cryptofriends.io/",
+		"register": "",
+		"excerpt": "",
+		"content": "Hypethon on BlockShow is all about networking, and 10 ICO-ready projects will be selected to find their investors, get mentors&rsquo; tips and support and finally launch their blockchain products and services right on the spot.<br><br>Keynote speeches and panel discussions, startups pitching and presentations, networking and experience sharing, partnerships and collaborations — all these opportunities you just can&rsquo;t miss if you want to be a part of the latest Blockchain industry trends and all of them will be included into the ICO-Hypethon in the City of the Future! 2017",
+		"start": "15:00 29-11-2017",
+		"end": "15:00 29-11-2017"
+	},
+	"blockchainlondon18": {
+		"name": "London Blockchain Week 2018",
+		"visible": true,
+		"location": {
+			"addressShort": "Grange Tower Bridge Hotel, London, UK",
+			"addressLong": "Grange Tower Bridge Hotel, 45 Prescot Street, London, E1 8GP, United Kingdom",
+			"link": "https://goo.gl/maps/uV4t28yQQhM2"
+		},
+		"logo": "/assets/images/events/blockchain-week-london.png",
+		"website": "https://www.blockchainweek.com/",
+		"register": "https://www.blockchainweek.com/page/1321478/register",
+		"excerpt": "",
+		"content": "Blockchain Week kicks off with the Hack-The-Block Blockchain Hackathon at Cocoon Network, followed by the 4th Annual Blockchain London Conference & Expo. Blockchain Week finishes with a series of workshops, including topics such as Smart Contracts, Ethereum and BigChainDB, to name a few.",
+		"start": "18:00 19-01-2018",
+		"end": "17:00 26-01-2018"
+	},
+	"sigma17": {
+		"name": "Sigma 2017",
+		"visible": true,
+		"location": {
+			"addressShort": "MFCC Malta Fairs and Convention Centre, Malta",
+			"addressLong": "Malta Fairs & Conventions Centre, Millennium Stand, Level 1, The National Stadium, Ta' Qali, ATD 4000, Malta",
+			"link": "https://goo.gl/maps/dYWXszv3VEN2"
+		},
+		"logo": "/assets/images/events/sigma-17.png",
+		"website": "https://www.maltaigamingsummit.com/",
+		"register": "",
+		"excerpt": "",
+		"content": "SIGMA has cemented itself as the largest igaming show in Malta and has grown in numbers and content in the last year. Malta is host to some 300 gaming companies, 450 licenses and a strong workforce of 10,000 so perfect place for industry networking and insight. We look forward to meeting you there to tell you more about the BetterBetting.",
+		"start": "9:00 22-11-2017",
+		"end": "19:00 25-11-2017"
+	},
+	"eigberlin17": {
+		"name": "EiG Berlin 2017",
+		"visible": true,
+		"location": {
+			"addressShort": "October 30 - November 1 2017, Arena Berlin, Germany",
+			"addressLong": "Arena Berlin, Eichenstrasse 4, Berlin, Germany 12435",
+			"link": "https://goo.gl/maps/Wb49gkzCYuo"
+		},
+		"logo": "/assets/images/events/eig-berlin.png",
+		"website": "http://www.eigexpo.com/",
+		"register": "",
+		"excerpt": "",
+		"content": "",
+		"start": "18:00 30-10-2017",
+		"end": "17:00 01-11-2017"
+	}
+}

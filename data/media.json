@@ -49,5 +49,12 @@
 		"visible": true,
 		"type": "video",
 		"src": "https://www.youtube.com/embed/BYM_qCigsBQ"
+	},
+	{
+		"name": "EiG Berlin 2017",
+		"visible": true,
+		"type": "image",
+		"src": "/assets/images/media/eig-berlin1.jpg",
+		"eventId": "eigberlin17"
 	}
 ]
