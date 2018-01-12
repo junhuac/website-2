@@ -7,7 +7,7 @@ $menu = '';
 foreach ($headerPageList as $name => $url) {
 	$class = '';
 
-	if ($name == $pageName)
+	if (!strcasecmp($name, $pageName))
 		$class = 'class="active"';
 
 	$menu .= "<li><a $class href='{$url}'>{$name}</a></li>";
