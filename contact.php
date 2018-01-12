@@ -9,6 +9,18 @@ $customClass = 'contact';
 $customFooterScripts = '<script src="https://www.google.com/recaptcha/api.js"></script>';
 
 include_once('inc/template.head.php');
+
+
+$currencyData = getData('general');
+
+if ($currencyData['status'] == 'ok') {
+	foreach ($currencyData['content']['currencies'] as $currency) {
+		$currencies[] = "
+			<div class='currency'>
+				<span class='currency-logo-{$currency}'></span>
+			</div>";
+	}
+}
 ?>
 <body>
 <?php include_once('inc/template.header.php'); ?>
@@ -110,31 +122,12 @@ include_once('inc/template.head.php');
 			<div class="g-recaptcha" data-sitekey="6LfCnjkUAAAAAF7QjKS2-XtFCuypRSzJOEXTKTgr"></div>
 			<input type="hidden" name="source" value="contact.php">
 			<button class="button button-invest red">SUBMIT</button>
-			<h3 class="text-center">Payment Methods Accepted</h3>
-			<div class="payment-methods">
-				<div class="payment-method">
-					<input type="radio" name="payment-method" id="bitcoin" value="bitcoin" disabled>
-					<label for="bitcoin" class="method">
-						<span class="method-bitcoin"></span>
-					</label>
-					<input type="radio" name="payment-method" id="ethereum" value="ethereum" disabled>
-					<label for="ethereum" class="method">
-						<span class="method-ethereum"></span>
-					</label>
-					<input type="radio" name="payment-method" id="litecoin" value="litecoin" disabled>
-					<label for="litecoin" class="method">
-						<span class="method-litecoin"></span>
-					</label>
-					<input type="radio" name="payment-method" id="bitcoin-cash" value="bitcoin-cash" disabled>
-					<label for="bitcoin-cash" class="method">
-						<span class="method-bitcoin-cash"></span>
-					</label>
-					<input type="radio" name="payment-method" id="dash" value="dash" disabled>
-					<label for="dash" class="method">
-						<span class="method-dash"></span>
-					</label>
+			<?php if (!empty($currencies)): ?>
+				<h3 class="currencies-title">Payment Methods Accepted</h3>
+				<div class="currencies">
+					<?php echo implode('', $currencies); ?>
 				</div>
-			</div>
+			<?php endif; ?>
 		</form>
 	</div>
 </div>

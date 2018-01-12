@@ -2,8 +2,11 @@
 include_once('config.navigation.php');
 
 $customClass = !empty($customClass) ? $customClass : '';
-$menu = '';
 
+
+$headerCurrencyData = getData('general');
+
+$menu = '';
 foreach ($headerPageList as $name => $url) {
 	$class = '';
 
@@ -11,6 +14,16 @@ foreach ($headerPageList as $name => $url) {
 		$class = 'class="active"';
 
 	$menu .= "<li><a $class href='{$url}'>{$name}</a></li>";
+}
+
+if ($headerCurrencyData['status'] == 'ok' && $pageName !== 'index') {
+	foreach ($headerCurrencyData['content']['currencies'] as $currency) {
+		$headerCurrencies[] = "
+			<div class='header-currency'>
+				<span class='currency-logo-{$currency}'></span>
+			</div>";
+	}
+	unset($currency);
 }
 ?>
 
@@ -63,15 +76,15 @@ if ($pageName == 'index'):
 			</div>
 		</div>
 		<div class="betr-offer">
-			<div class="buy-bbb-methods">
-				<div class="text">Buy <b>BETR</b> with</div>
-				<div class="methods">
-					<div class="method cash"></div>
-					<div class="method bitcoin"></div>
-					<div class="method other"></div>
+			<?php if (!empty($headerCurrencies)): ?>
+				<div class="buy-token-currencies">
+					<div class="text">Buy <b>BETR</b> with</div>
+					<div class="currencies">
+						<?php echo implode('', $headerCurrencies); ?>
+					</div>
 				</div>
-			</div>
-			<div class="buy-bbb-btn">
+			<?php endif; ?>
+			<div class="buy-token-btn">
 				<a href="<?php echo $headerPageList['ICO']; ?>" class="button block colorful">Buy <b>Betr</b> <span>Tokens</span></a>
 				<div class="extension"></div>
 			</div>

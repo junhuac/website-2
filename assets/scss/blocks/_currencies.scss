@@ -1,0 +1,80 @@
+.currencies {
+	display: flex;
+	justify-content: center;
+
+	@include media('<768px') {
+		flex-direction: column;
+	}
+
+	.currency, .header-currency {
+		cursor: pointer;
+	}
+
+	.header-currency {
+		$size: 17px;
+		width: $size;
+		height: $size;
+	}
+
+	.currency {
+		width: 150px;
+		height: 70px;
+		margin-top: 45px;
+		padding-left: 4px;
+		padding-right: 4px;
+		box-shadow: 0 1px 4px rgba(35, 40, 54, 0.1);
+		border-radius: 4px;
+		background: #ffffff;
+
+		&:hover, &:active { position: relative; }
+
+		@include media('<992px') {
+			width: 145px;
+		}
+
+		@include media('<768px') {
+			margin-bottom: 20px;
+		}
+	}
+
+	@each $currency in $currencies {
+		.currency, .header-currency {
+			.currency-logo-#{$currency} {
+				&:hover, &:active { filter: none; }
+			}
+		}
+
+		.currency .currency-logo-#{$currency} {
+			&:hover, &:active {
+				&:after { height: 5px; }
+			}
+		}
+
+		.currency-logo-#{$currency} {
+			display: block;
+			width: 100%;
+			height: 100%;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: auto 70%;
+			background-image: url(../images/payment/#{$currency}_logo.png);
+			filter:grayscale(100%);
+			transition: 0.3s;
+
+			&:after {
+				content: '';
+				display: flex;
+				position: absolute;
+				bottom: 0;
+				height: 0;
+				left: 50%;
+				transform: translateX(-50%);
+				width: 60%;
+				background-color: #f33853;
+				background-image: linear-gradient(to right, #e64e64 0%, #fe9e63 100%);
+				border-top-left-radius: 5px;
+				border-top-right-radius: 5px;
+			}
+		}
+	}
+}

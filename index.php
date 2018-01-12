@@ -6,9 +6,23 @@ $customClass = 'homepage';
 include_once('inc/template.head.php');
 include_once('inc/config.social.php');
 
+
 $socialItems = '';
 foreach ($socialLinks as $id => $data) {
 	$socialItems .= "<li><a href='{$data['url']}' data-toggle='tooltip' title='{$data['description']}'><i class='icon {$data['icon']}'></i></a></li>";
+}
+
+$currencyData = getData('general');
+
+if ($currencyData['status'] == 'ok') {
+	$i = 0;
+	foreach ($currencyData['content']['currencies'] as $currency) {
+		$i++;
+		$separator = ($i % 3 == 0) ? '</div><div class="logo-row">' : '';
+
+		$currencies[] = "{$separator}<img src='assets/images/payment/{$currency}_logo_long_white.png' alt='{ucwords($currency)} Logo'>";
+	}
+	unset($currency, $i);
 }
 ?>
 <body>
@@ -19,7 +33,7 @@ URL of the web page where the tag is expected to be placed: https://betterbettin
 This tag must be placed between the <body> and </body> tags, as close as possible to the opening tag.
 Creation Date: 01/12/2018
 -->
-<script type="text/javascript">
+<script>
 	var axel = Math.random() + "";
 	var a = axel * 10000000000000;
 	document.write('<iframe src="https://8329922.fls.doubleclick.net/activityi;src=8329922;type=retgi0;cat=bette0;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>');
@@ -44,17 +58,13 @@ Creation Date: 01/12/2018
 			</p>
 			<div class="button-line">
 				<a href="<?php echo $headerPageList['ICO']; ?>" class="button orange w-200">BUY BETR NOW</a>
-				<div class="logos">
-					<div class="logo-row">
-						<img src="assets/images/payment/bitcoin_logo_long_white.png" alt="Bitcoin Logo">
-						<img src="assets/images/payment/ethereum_logo_long_white.png" alt="Ethereum Logo">
+				<?php if ($currencies): ?>
+					<div class="logos">
+						<div class="logo-row">
+							<?php echo implode('', $currencies); ?>
+						</div>
 					</div>
-					<div class="logo-row">
-						<img src="assets/images/payment/litecoin_logo_long_white.png" alt="Litecoin Logo">
-						<img src="assets/images/payment/bitcoin-cash_logo_long_white.png" alt="Bitcoin-cash Logo">
-						<img src="assets/images/payment/dash_logo_long_white.png" alt="Dash Logo">
-					</div>
-				</div>
+				<?php endif; ?>
 			</div>
 		</div>
 	</div>
@@ -171,7 +181,7 @@ Creation Date: 01/12/2018
 		<a href="<?php echo $headerPageList['ICO']; ?>" class="button huge button-investment"><span class="bg-wrapper">650,000,000 Tokens</span></a>
 		<span class="small text-center" style="display: block;">Total number of BETR’s are capped and cannot be increased after ICO.</span>
 
-		<div class="bbb-section">
+		<div class="betr-section">
 			<h1>Will seek to secure a Listing on Leading Exchanges</h1>
 			<div class="list">
 				<div>
@@ -292,9 +302,9 @@ Creation Date: 01/12/2018
 			<h2>ICO ($2m-$30m)</h2>
 			<span class="small">November 2017</span>
 
-			<div class="bbb-values">
+			<div class="betr-values">
 				<div>
-					<i class="icon icon-bbb"></i>
+					<i class="icon icon-betr"></i>
 					1 BETR
 				</div>
 				<div class="equals">
@@ -360,17 +370,13 @@ Creation Date: 01/12/2018
 			<div class="button-line">
 				<div class="button-line-inner">
 				<a href="<?php echo $headerPageList['ICO']; ?>" class="button buy-now">BUY NOW</a>
-					<div class="logos grey">
-						<div class="logo-row">
-							<img src="assets/images/payment/bitcoin_logo_long_white.png" alt="Bitcoin Logo">
-							<img src="assets/images/payment/ethereum_logo_long_white.png" alt="Ethereum Logo">
+					<?php if ($currencies): ?>
+						<div class="logos grey">
+							<div class="logo-row">
+								<?php echo implode('', $currencies); ?>
+							</div>
 						</div>
-						<div class="logo-row">
-							<img src="assets/images/payment/litecoin_logo_long_white.png" alt="Litecoin Logo">
-							<img src="assets/images/payment/bitcoin-cash_logo_long_white.png" alt="Bitcoin-cash Logo">
-							<img src="assets/images/payment/dash_logo_long_white.png" alt="Dash Logo">
-						</div>
-					</div>
+					<?php endif; ?>
 				</div>
 			</div>
 		</div>

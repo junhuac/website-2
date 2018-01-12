@@ -256,7 +256,7 @@
 			@include media('<1700px') {
 				position: relative;
 			}
-			.buy-bbb-methods {
+			.buy-token-currencies {
 				width: 150px;
 				height: 100%;
 				display: flex;
@@ -278,31 +278,8 @@
 					text-align: right;
 					margin-bottom: 5px;
 				}
-				.methods {
-					height: 17px;
-					display: flex;
-					justify-content: center;
-					align-items: flex-end;
-					.method {
-						width: 17px;
-						height: 100%;
-						&.cash {
-							background: url('../images/bbb-buy-method-cash-small.png') no-repeat;
-							margin-right: 2px;
-						}
-						&.bitcoin {
-							background: url('../images/bbb-buy-method-bitcoin-small.png') no-repeat;
-							margin-right: 3px;
-						}
-						&.other {
-							margin-right: -2px;
-							padding-right: 0;
-							background: url('../images/bbb-buy-method-other-small.png') no-repeat;
-						}
-					}
-				}
 			}
-			.buy-bbb-btn {
+			.buy-token-btn {
 				margin-top: -1px;
 				font-size: 14px;
 				.button {
@@ -325,7 +302,7 @@
 					margin-top: - 1px;
 					width: 75px;
 					height: 12px;
-					background: url('../images/buy-bbb-btn-extension.png') no-repeat;
+					background: url('../images/buy-token-btn-extension.png') no-repeat;
 				}
 			}
 		}

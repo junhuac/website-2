@@ -13,7 +13,7 @@ include_once('inc/template.head.php');
 	This tag must be placed between the <body> and </body> tags, as close as possible to the opening tag.
 	Creation Date: 01/12/2018
 	-->
-	<script type="text/javascript">
+	<script>
 		var axel = Math.random() + "";
 		var a = axel * 10000000000000;
 		document.write('<iframe src="https://8329922.fls.doubleclick.net/activityi;src=8329922;type=retgi0;cat=bette00;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>');

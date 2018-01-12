@@ -3,5 +3,12 @@
 	"announcement": {
 		"showLimit": false,
 		"message": ""
-	}
+	},
+	"currencies": [
+		"bitcoin",
+		"ethereum",
+		"litecoin",
+		"bitcoin-cash",
+		"dash"
+	]
 }
