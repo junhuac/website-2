@@ -1,4 +1,84 @@
 {
+	"bitcoincash18": {
+		"name": "CoinPoint Bitcoin Cash Party",
+		"visible": true,
+		"location": {
+			"addressShort": "La Barrique Wine Bar & Restaurant, London, UK",
+			"addressLong": "La Barrique Wine Bar & Restaurant, R5, Warehouse K, ExCel West, Western Gateway, London, E16 1DR",
+			"link": "https://goo.gl/maps/XNwUrie7PMx"
+		},
+		"logo": "/assets/images/events/coinpoint-bitcoin-cash-party.jpg",
+		"website": "https://www.eventbrite.com/e/coinpoint-bitcoin-cash-party-tickets-42073113816",
+		"register": "https://www.eventbrite.com/e/coinpoint-bitcoin-cash-party-tickets-42073113816",
+		"excerpt": "",
+		"content": "Sponsored by BetterBetting - CoinPoint&rsquo;s own Bitcoin Cash Party is a private, invite only, event held at La Barrique Bar, located at the western gateway to the ExCel.<br><br><strong>What do I need to bring to the event?</strong><br>Visit the CoinPoint booth @ ICE - SD9-C and you will get an official invitation. Make sure that the bitcoin.com application will be installed on your mobile device.<br><br>Contact the organiser at <a href='mailto:admin@coinpoint.com'>admin@coinpoint.com</a><br><br><strong>Make sure to RSVP!</strong>",
+		"start": "16:30 08-02-2018",
+		"end": "23:30 08-02-2018"
+	},
+	"blockchainlondon18": {
+		"name": "London Blockchain Week 2018",
+		"visible": true,
+		"location": {
+			"addressShort": "Grange Tower Bridge Hotel, London, UK",
+			"addressLong": "Grange Tower Bridge Hotel, 45 Prescot Street, London, E1 8GP, United Kingdom",
+			"link": "https://goo.gl/maps/uV4t28yQQhM2"
+		},
+		"logo": "/assets/images/events/blockchain-week-london.png",
+		"website": "https://www.blockchainweek.com/",
+		"register": "https://www.blockchainweek.com/page/1321478/register",
+		"excerpt": "",
+		"content": "Blockchain Week kicks off with the Hack-The-Block Blockchain Hackathon at Cocoon Network, followed by the 4th Annual Blockchain London Conference & Expo. Blockchain Week finishes with a series of workshops, including topics such as Smart Contracts, Ethereum and BigChainDB, to name a few.",
+		"start": "18:00 19-01-2018",
+		"end": "17:00 26-01-2018"
+	},
+	"ice18": {
+		"name": "ICE 2018",
+		"visible": true,
+		"location": {
+			"addressShort": "ExCeL London, UK",
+			"addressLong": "Royal Victoria Dock, 1 Western Gateway, London, E16 1XL",
+			"link": "https://goo.gl/maps/zSfLU7BBdqz"
+		},
+		"logo": "/assets/images/events/ice.png",
+		"website": "https://www.icetotallygaming.com/",
+		"register": "https://registration.n200.com/survey/0jnh6z8tpknji",
+		"excerpt": "",
+		"content": "ICE Totally Gaming represents the entire gaming industry covering landbased and online channels across all sectors<br><br>ICE is a:<br>- meeting place<br>- market place<br>- educational and debating forum<br>- networking and social hub for the gaming industry</li></ul><br><br>ICE continues to be the leading industry event due to its size and scale, the quality and quantity of the audience and the consequent networking and business development opportunities it offers.",
+		"start": "10:00 06-02-2018",
+		"end": "16:00 08-02-2018"
+	},
+	"aseangaming18": {
+		"name": "Asean Gaming Summit 2018",
+		"visible": true,
+		"location": {
+			"addressShort": "Conrad Manila, Manila, Philippines",
+			"addressLong": "Conrad Manila, Seaside Boulevard, Coral Way, Pasay, 1300 Metro Manila, Philippines",
+			"link": "https://goo.gl/maps/m9WZTGu5mm52"
+		},
+		"logo": "/assets/images/events/asean.png",
+		"website": "https://www.aseangaming.com/",
+		"register": "https://www.aseangaming.com/#tile_registration_anchor",
+		"excerpt": "Tech trends, convergence, strategy, return on investment",
+		"content": "<p>The ASEAN Gaming Summit was hailed as a major success by all who attended in 2017. Over 300 industry participants from Asia's land-based and online gaming industry were in attendance, representing 24 different countries. In 2018, our aim is to bring our delegates, sponsors and speakers an even more valuable experience.Mark your calendars for ASEAN Gaming Summit in 2018, which will once again be held at the Conrad Manila from March 20-22, 2018. <br><br>For ticket enquiries or to enquire about speaking or sponsorship opportunities, write to us at <a href='mailto:events@agbrief.com'>events@agbrief.com</a>.<br><br>Don't forget to <a href='http://addtocalendar.com/atc/google?f=m&amp;e%5b0%5d%5bdate_start%5d=2017-03-20%2008%3A00%3A00&amp;e%5b0%5d%5bdate_end%5d=2017-03-22%2018%3A00%3A00&amp;e%5b0%5d%5btimezone%5d=Asia%2FManila&amp;e%5b0%5d%5btitle%5d=ASEAN%20Gaming%20Summit%202018&amp;e%5b0%5d%5bdescription%5d=Asia%20Gaming%20Brief%20is%20pleased%20to%20announce%20the%20return%20of%20ASEAN%20Gaming%20Summit%20in%202018%2C%20which%20will%20be%C2%A0held%20at%20Conrad%20Manila%20on%20March%2020-22%2C%202018.%C2%A0&amp;e%5b0%5d%5blocation%5d=Conrad%20Manila%2C%20Philippines&amp;e%5b0%5d%5borganizer%5d=Asia%20Gaming%20Brief&amp;e%5b0%5d%5borganizer_email%5d=asean%40agbrief.com&amp;e%5b0%5d%5bprivacy%5d=public&amp;' target='_blank'>mark your calendars</a> for ASEAN Gaming Summit 2018. </p>",
+		"start": "10:00 20-03-2018",
+		"end": "16:00 22-03-2018"
+	},
+	"bettingonfootball18": {
+		"name": "Betting on Football 2018",
+		"visible": true,
+		"location": {
+			"addressShort": "Stamford Bridge, Chelsea, UK",
+			"addressLong": "Stamford Bridge, Fulham Rd, Fulham, London, SW6 1HS",
+			"link": "https://goo.gl/maps/uT5hqJ9i7aL2"
+		},
+		"logo": "/assets/images/events/betting-on-football-18.png",
+		"website": "http://sbcevents.com/betting-on-football-2018/",
+		"register": "http://sbcevents.com/betting-on-football-2018/#register",
+		"excerpt": "Betting on Football 2018 is the fifth edition of the largest international sports and football betting trade conference 20-23 March at Stamford Bridge",
+		"content": "With no less than 200 leading industry speakers, Betting on Football is set to deliver the most senior speaker line-up of any gaming conference to date.<br><br>There are plenty of 1-on-1 business opportunities with senior executives, as well as a large exhibition hall, dedicated networking areas, and access to the stadium pitch itself.",
+		"start": "10:00 20-03-2018",
+		"end": "13:00 23-03-2018"
+	},
 	"blockshowasia17": {
 		"name": "Block Show Asia 2017",
 		"visible": true,
@@ -30,22 +110,6 @@
 		"content": "Hypethon on BlockShow is all about networking, and 10 ICO-ready projects will be selected to find their investors, get mentors&rsquo; tips and support and finally launch their blockchain products and services right on the spot.<br><br>Keynote speeches and panel discussions, startups pitching and presentations, networking and experience sharing, partnerships and collaborations — all these opportunities you just can&rsquo;t miss if you want to be a part of the latest Blockchain industry trends and all of them will be included into the ICO-Hypethon in the City of the Future! 2017",
 		"start": "15:00 29-11-2017",
 		"end": "15:00 29-11-2017"
-	},
-	"blockchainlondon18": {
-		"name": "London Blockchain Week 2018",
-		"visible": true,
-		"location": {
-			"addressShort": "Grange Tower Bridge Hotel, London, UK",
-			"addressLong": "Grange Tower Bridge Hotel, 45 Prescot Street, London, E1 8GP, United Kingdom",
-			"link": "https://goo.gl/maps/uV4t28yQQhM2"
-		},
-		"logo": "/assets/images/events/blockchain-week-london.png",
-		"website": "https://www.blockchainweek.com/",
-		"register": "https://www.blockchainweek.com/page/1321478/register",
-		"excerpt": "",
-		"content": "Blockchain Week kicks off with the Hack-The-Block Blockchain Hackathon at Cocoon Network, followed by the 4th Annual Blockchain London Conference & Expo. Blockchain Week finishes with a series of workshops, including topics such as Smart Contracts, Ethereum and BigChainDB, to name a few.",
-		"start": "18:00 19-01-2018",
-		"end": "17:00 26-01-2018"
 	},
 	"sigma17": {
 		"name": "Sigma 2017",
