@@ -69,21 +69,21 @@ if ($eventsData['status'] !== 'error') {
 
 		$registerElement = ($event['register'] && !$hasEnded) ? "
 			<div class='register'>
-				<a href='{$event['register']}' class='button event-register' title='Register to {$event['name']}'>Register</a>
+				<a href='{$event['register']}' target='_blank' class='button event-register' title='Register to {$event['name']}'>Register</a>
 			</div>" : '';
 
 		$eventItem = "
 			<div class='{$tense}-event'>
 				<div>
 					<div class='logo'>
-						<a href='{$event['website']}'>
+						<a href='{$event['website']}' target='_blank' title='Visit event organiser website'>
 							<img src='{$event['logo']}' alt='{$event['name']} Logo'>
 						</a>
 					</div>
 					{$contentElement}
 				</div>
 				<div class='details'>
-					<p class='details-text'>{$startDate} – {$endDate}, <a href='{$event['location']['link']}' title='Go to Google Maps'>{$event['location']['addressShort']}</a></p>
+					<p class='details-text'>{$startDate} – {$endDate}, <a href='{$event['location']['link']}' target='_blank' title='Go to Google Maps'>{$event['location']['addressShort']}</a></p>
 					{$registerElement}
 				</div>
 			</div>";
