@@ -1,0 +1,44 @@
+.shield-404 {
+	.button { padding: 0; }
+
+	.close {
+		position: absolute;
+		top: 23px; right: 8px;
+		transform: translate(-50%, -50%);
+		height: 16px;
+		width: 16px;
+		display: block;
+		opacity: 1;
+		filter: invert(1);
+		background: url(../images/svg/close.svg);
+		z-index: 100;
+	}
+
+	.previous-page {
+		color: #fff;
+		background-color: #F89FAC;
+		&:hover, &:active, &:focus {
+			background-color: darken(#F89FAC, 10%);
+		}
+	}
+
+	@include media('<768px') {
+		.modal-dialog {
+			width: 100%;
+			height: 100%;
+			margin: 0;
+			padding: 0;
+		}
+
+		.modal-content {
+			height: auto;
+			border-radius: 0;
+		}
+
+		.close { filter: none; }
+
+		.button { width: 100%; }
+
+		.previous-page { margin-bottom: 2rem; }
+	}
+}

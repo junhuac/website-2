@@ -1,3 +1,10 @@
+<?php
+if (!empty($_SERVER['HTTP_REFERER'])) {
+	$refPos = strpos($_SERVER['HTTP_REFERER'], '?');
+	$referer = substr($_SERVER['HTTP_REFERER'], 0, ($refPos ? $refPos : strlen($_SERVER['HTTP_REFERER'])));
+	header("Location: {$referer}?404=true");
+}
+?>
 <!doctype html>
 <html class="no-js" lang="en">
 <?php
@@ -9,7 +16,6 @@ include_once('inc/template.head.php');
 <body>
 <?php
 	include_once('inc/template.header.php');
-	include_once('inc/module.google-analytics.php');
 ?>
 
 <div class="gradient-helper <?php echo $customClass; ?>">

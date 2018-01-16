@@ -7,7 +7,6 @@ include_once('inc/template.head.php');
 ?>
 <body>
 <?php include_once('inc/template.header.php'); ?>
-<?php include_once('inc/module.google-analytics.php'); ?>
 
 <!-- TUU -->
 <div class="gradient-helper <?php echo $customClass; ?>">

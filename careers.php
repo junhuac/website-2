@@ -73,7 +73,6 @@ if ($jobsData['status'] == 'error') {
 ?>
 <body>
 	<?php include_once('inc/template.header.php'); ?>
-	<?php include_once('inc/module.google-analytics.php'); ?>
 
 	<div class="gradient-helper <?php echo $customClass; ?>">
 		<div class="right-shape"></div>

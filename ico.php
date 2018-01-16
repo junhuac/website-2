@@ -24,7 +24,6 @@ include_once('inc/template.head.php');
 	<!-- End of DoubleClick Floodlight Tag: Please do not remove -->
 
 	<?php include_once('inc/template.header.php'); ?>
-	<?php include_once('inc/module.google-analytics.php'); ?>
 
 	<div class="gradient-helper <?php echo $customClass; ?>">
 		<div class="right-shape"></div>
@@ -40,7 +39,7 @@ include_once('inc/template.head.php');
 				</div>
 			</div>
 			<h1 class="early-bird">Guide to Buying BETR</h1>
-			<p class="main">Thanks for your interest in the BETR token. So you want to buy BETR tokens? That&rsquo;s great! We have prepared a step-by-step guide for you. In case of any questions, we&rsquo;re glad to help you in our live chat on <a href="https://twitter.com/BETRBetting">Telegram</a> or <a href="https://t.me/joinchat/HNsEWQ-L0aCjHMsmKW-d_w">Twitter</a> or email us <a href="mailto:ico@betterbetting.org">here</a>.</p>
+			<p class="main">Thanks for your interest in the BETR token. So you want to buy BETR tokens? That&rsquo;s great! We have prepared a step-by-step guide for you. In case of any questions, we&rsquo;re glad to help you in our live chat on <a href="<?php echo $socialLinks['telegram']['url']; ?>">Telegram</a> or <a href="<?php echo $socialLinks['twitter']['url']; ?>">Twitter</a> or email us <a href="mailto:ico@betterbetting.org">here</a>.</p>
 			<div style="margin-top: 4rem;">
 				<p>Joining the Token sale is done in 5 steps:</p>
 				<ol>

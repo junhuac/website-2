@@ -44,7 +44,6 @@ Creation Date: 01/12/2018
 <!-- End of DoubleClick Floodlight Tag: Please do not remove -->
 
 <?php include_once('inc/template.header.php'); ?>
-<?php include_once('inc/module.google-analytics.php'); ?>
 
 <div class="homepage-banner <?php echo $customClass; ?>">
 	<div class="container">

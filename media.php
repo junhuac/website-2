@@ -32,7 +32,6 @@ if ($mediaData['status'] !== 'error') {
 ?>
 <body>
 <?php include_once('inc/template.header.php'); ?>
-<?php include_once('inc/module.google-analytics.php'); ?>
 
 <div class="gradient-helper media">
 	<div class="right-shape"></div>

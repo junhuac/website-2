@@ -32,6 +32,11 @@ if ($headerCurrencyData['status'] == 'ok' && $pageName !== 'index') {
 <![endif]-->
 
 <?php
+include_once('inc/module.google-analytics.php');
+if (!empty($_GET['404']))
+	include_once('inc/module.404.php');
+
+
 if ($pageName == 'index'):
 
 	$announcement = getData('general')['content']['announcement'];
