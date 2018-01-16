@@ -20,9 +20,31 @@ curl_setopt($ping, CURLOPT_FRESH_CONNECT, 1);
 curl_setopt($ping, CURLOPT_HEADER, getallheaders());
 
 curl_exec($ping);
-$curl_error = curl_error($ping);
+$errors[] = curl_error($ping);
+unset($ping);
 
-if ($curl_error)
-	header("Location: /join-telegram");
-else
-	header("Location: {$socialLinks['telegram']['url']}");
+// Send without campaign
+$url = 'https://www.google-analytics.com/collect';
+$cid = str_replace('GA1.2.', '', $_COOKIE['_ga']);
+
+$data = "v=1&t=pageview&tid=UA-111023593-1&cid={$cid}&dp=%2Fjoin-telegram&dt=BetterBetting%20%7C%20Join%20Telegram";
+
+$ping = curl_init($url);
+curl_setopt($ping, CURLOPT_POST, 1);
+curl_setopt($ping, CURLOPT_POSTFIELDS, $data);
+curl_setopt($ping, CURLOPT_AUTOREFERER, 1);
+curl_setopt($ping, CURLOPT_FOLLOWLOCATION, 1);
+curl_setopt($ping, CURLOPT_RETURNTRANSFER, 1);
+curl_setopt($ping, CURLOPT_FRESH_CONNECT, 1);
+
+curl_exec($ping);
+$errors[] = curl_error($ping);
+
+if ($errors) {
+	if ($_GET['r'] < 2) {
+		$retries = $_GET['r'] ? $retries + 1 : 1;
+		header("Location: /join-telegram?r={$retries}");
+	}
+}
+
+header("Location: {$socialLinks['telegram']['url']}");
