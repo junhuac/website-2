@@ -20,7 +20,7 @@ if ($currencyData['status'] == 'ok') {
 		$i++;
 		$separator = ($i % 3 == 0) ? '</div><div class="logo-row">' : '';
 
-		$currencies[] = "{$separator}<img src='assets/images/payment/{$currency}_logo_long_white.png' alt='{ucwords($currency)} Logo'>";
+		$currencies[] = "{$separator}<img src='assets/images/payment/{$currency}_logo_long_white.png' alt='{$currency} Logo'>";
 	}
 	unset($currency, $i);
 }

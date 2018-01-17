@@ -304,6 +304,11 @@
 	}
 }
 
+.press p {
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
 .press-logos {
 	display: flex;
 	flex-wrap: wrap;
