@@ -50,6 +50,7 @@ button { border: 0; }
 	}
 
 	&.orange-gradient {
+		text-decoration: none;
 		border-radius: 18px;
 		background-color: #fe9e63;
 		background-image: linear-gradient(-250deg, #e64e64 0%, #fe9e63 100%);
