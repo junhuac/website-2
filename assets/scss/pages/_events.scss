@@ -25,6 +25,14 @@
 				}
 				.upcoming-event {
 					& > div {
+						display: flex;
+						align-items: center;
+						justify-content: space-between;
+						font-family: "Open Sans";
+						margin-top: 75px;
+						padding: 0 10px;
+						text-align: justify;
+
 						@media all and (max-width: 991px) {
 							flex-direction: column;
 
@@ -32,6 +40,11 @@
 
 							p { padding-left: 0; }
 
+							.logo {
+								margin-bottom: 2rem;
+
+								img { width: 100%; }
+							}
 							.register { margin-top: 1rem; }
 						}
 
@@ -43,14 +56,6 @@
 								display: block;
 							}
 						}
-
-						display: flex;
-						align-items: center;
-						justify-content: space-between;
-						font-family: "Open Sans";
-						margin-top: 75px;
-						padding: 0 10px;
-						text-align: justify;
 					}
 
 					p { padding-left: 30px; }
