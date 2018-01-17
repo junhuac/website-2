@@ -59,11 +59,15 @@ if ($pageName == 'index'):
 			<a href="./" class="logo">BetterBetting</a>
 			<div class="menu-icon"></div>
 			<div class="menu">
+				<div class="mobile-buttons">
+					<a href="https://ico.betterbetting.org/user" class="button mobile-button-companion">Login</a>
+					<a href="<?php echo $headerPageList['ICO']; ?>" class="button orange w-165">Register</a>
+				</div>
 				<ul>
 					<?php echo $menu; ?>
 				</ul>
 				<a href="https://ico.betterbetting.org/user" class="button-companion">Login</a>
-				<a href="<?php echo $headerPageList['ICO']; ?>" class="button orange w-165">REGISTER</a>
+				<a href="<?php echo $headerPageList['ICO']; ?>" class="button orange w-165">Register</a>
 			</div>
 		</div>
 	</header>

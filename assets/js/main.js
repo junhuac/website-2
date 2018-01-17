@@ -49,13 +49,13 @@ function initializeClock(id, endtime) {
 
 function showMenu(){
 	$(document).on('click', '.menu-icon', function () {
-		if($(window).innerWidth() < 768){
+		if($(window).innerWidth() < 1200){
 			$('.menu').addClass('showed');
 			$('.menu').append('<div class="close"></div>');
 		}
 	});
 	$(document).on('click', '.close', function () {
-		if($(window).innerWidth() < 768 && $('.menu:not(.close)')){
+		if($(window).innerWidth() < 1200 && $('.menu:not(.close)')){
 			$('.menu').removeClass('showed');
 			$('.close').remove();
 		}
