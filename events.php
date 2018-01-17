@@ -13,8 +13,8 @@ if ($eventsData['status'] !== 'error') {
 	foreach ($eventsData['content'] as $eventId => $event) {
 		$startTimestamp = date_format(date_create_from_format('H:i d-m-Y', $event['start']), 'U');
 		$endTimestamp = date_format(date_create_from_format('H:i d-m-Y', $event['end']), 'U');
-		$hasBegun = $startTimestamp > (date('U'));
-		$hasEnded = $endTimestamp < (date('U'));
+		$hasBegun = $startTimestamp > date('U');
+		$hasEnded = $endTimestamp < date('U');
 
 		$startDate = date('F j', $startTimestamp);
 		$endDate = date('F j Y', $endTimestamp);
@@ -25,6 +25,8 @@ if ($eventsData['status'] !== 'error') {
 		if ($hasEnded && $mediaData['status'] !== 'error') {
 			$mediaCount = 0;
 			foreach ($mediaData['content'] as $item) {
+				if (empty($item['eventId']))
+					continue;
 				if ($item['eventId'] !== $eventId)
 					continue;
 

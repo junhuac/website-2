@@ -1,20 +1,4 @@
 {
-	"bitcoincash18": {
-		"name": "CoinPoint Bitcoin Cash Party",
-		"visible": true,
-		"location": {
-			"addressShort": "La Barrique Wine Bar & Restaurant, London, UK",
-			"addressLong": "La Barrique Wine Bar & Restaurant, R5, Warehouse K, ExCel West, Western Gateway, London, E16 1DR",
-			"link": "https://goo.gl/maps/XNwUrie7PMx"
-		},
-		"logo": "/assets/images/events/coinpoint-bitcoin-cash-party.jpg",
-		"website": "https://www.eventbrite.com/e/coinpoint-bitcoin-cash-party-tickets-42073113816",
-		"register": "https://www.eventbrite.com/e/coinpoint-bitcoin-cash-party-tickets-42073113816",
-		"excerpt": "",
-		"content": "Sponsored by BetterBetting - CoinPoint&rsquo;s own Bitcoin Cash Party is a private, invite only, event held at La Barrique Bar, located at the western gateway to the ExCel.<br><br><strong>What do I need to bring to the event?</strong><br>Visit the CoinPoint booth @ ICE - SD9-C and you will get an official invitation. Make sure that the bitcoin.com application will be installed on your mobile device.<br><br>Contact the organiser at <a href='mailto:admin@coinpoint.com'>admin@coinpoint.com</a><br><br><strong>Make sure to RSVP!</strong>",
-		"start": "16:30 08-02-2018",
-		"end": "23:30 08-02-2018"
-	},
 	"blockchainlondon18": {
 		"name": "London Blockchain Week 2018",
 		"visible": true,
@@ -30,6 +14,22 @@
 		"content": "Blockchain Week kicks off with the Hack-The-Block Blockchain Hackathon at Cocoon Network, followed by the 4th Annual Blockchain London Conference & Expo. Blockchain Week finishes with a series of workshops, including topics such as Smart Contracts, Ethereum and BigChainDB, to name a few.",
 		"start": "18:00 19-01-2018",
 		"end": "17:00 26-01-2018"
+	},
+	"bitcoincash18": {
+		"name": "CoinPoint Bitcoin Cash Party",
+		"visible": true,
+		"location": {
+			"addressShort": "La Barrique Wine Bar & Restaurant, London, UK",
+			"addressLong": "La Barrique Wine Bar & Restaurant, R5, Warehouse K, ExCel West, Western Gateway, London, E16 1DR",
+			"link": "https://goo.gl/maps/XNwUrie7PMx"
+		},
+		"logo": "/assets/images/events/coinpoint-bitcoin-cash-party.jpg",
+		"website": "https://www.eventbrite.com/e/coinpoint-bitcoin-cash-party-tickets-42073113816",
+		"register": "https://www.eventbrite.com/e/coinpoint-bitcoin-cash-party-tickets-42073113816",
+		"excerpt": "",
+		"content": "Sponsored by BetterBetting - CoinPoint&rsquo;s own Bitcoin Cash Party is a private, invite only, event held at La Barrique Bar, located at the western gateway to the ExCel.<br><br><strong>What do I need to bring to the event?</strong><br>Visit the CoinPoint booth @ ICE - SD9-C and you will get an official invitation. Make sure that the bitcoin.com application will be installed on your mobile device.<br><br>Contact the organiser at <a href='mailto:admin@coinpoint.com'>admin@coinpoint.com</a><br><br><strong>Make sure to RSVP!</strong>",
+		"start": "16:30 08-02-2018",
+		"end": "23:30 08-02-2018"
 	},
 	"ice18": {
 		"name": "ICE 2018",

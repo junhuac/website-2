@@ -56,5 +56,11 @@
 		"type": "image",
 		"src": "/assets/images/media/eig-berlin1.jpg",
 		"eventId": "eigberlin17"
+	},
+	{
+		"name": "Ronnie O&rsquo;Sullivan Congratulating - Soft-cap",
+		"visible": true,
+		"type": "video",
+		"src": "https://www.youtube.com/embed/2cRZenSimQg"
 	}
 ]
