@@ -78,7 +78,7 @@ if ($eventsData['status'] !== 'error') {
 			<div class='{$tense}-event'>
 				<div>
 					<div class='logo'>
-						<a href='{$event['website']}' target='_blank' title='Visit event organiser website'>
+						<a href='{$event['website']}' target='_blank' class='link-img' title='Visit event organiser website'>
 							<img src='{$event['logo']}' alt='{$event['name']} Logo'>
 						</a>
 					</div>
@@ -125,7 +125,7 @@ if ($eventsData['status'] !== 'error') {
 			</div>
 		</div>
 	<?php endif; ?>
-	<?php if ($errors): ?>
+	<?php if (!empty($errors)): ?>
 		<h1>Events</h1>
 		<?php echo implode('', $errors); ?>
 	<?php endif; ?>

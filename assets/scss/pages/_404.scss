@@ -1,12 +1,1 @@
-._404 {
-	&:before { background-image: none; }
-
-	a {
-		color: $main_dark;
-
-		&:hover, &:focus, &:active {
-			color: #000;
-			text-decoration: underline !important;
-		}
-	}
-}
+._404:before { background-image: none; }

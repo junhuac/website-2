@@ -1,10 +1,20 @@
+.header:not(.subsite-header) {
+	color: #fff;
+	a:not(.orange) {
+		color: #fff;
+
+		&:hover, &:focus { color: #fff; }
+	}
+}
+
 .header {
 	z-index: 23;
+
+	a { text-decoration: none; }
 	.container {
 		display: flex;
 		flex-direction: row;
 		.logo {
-			color: #ffffff;
 			@include font(27, 33, 400, $futura);
 			span{
 				font-size: 12px;
@@ -52,7 +62,7 @@
 							margin: 10px 0;
 							a {
 								font-size: 20px !important;
-								color: $main_dark !important;
+								color: $main_dark;
 							}
 						}
 					}
@@ -84,10 +94,9 @@
 				li {
 					a {
 						padding: 0 20px;
-						color: #ffffff;
 						@include font(14, 18, 400, $futura);
 						text-transform: uppercase;
-						text-decoration: none !important;
+						text-decoration: none;
 						@include media('<992px') {
 							padding: 0 10px;
 						}
@@ -104,12 +113,7 @@
 			}
 
 			.button-companion {
-				color: #fff;
 				margin-right: 0.5rem;
-
-				&:hover, &:focus, &:active {
-					color: #fff;
-				}
 
 				@include media('<1200px') {
 					display: none;
@@ -151,7 +155,7 @@
 		&.header {
 			.container {
 				padding-left: 0px;
-				padding-right: 0px; //margin-left: 350px; //border: 1px solid red;
+				padding-right: 0px;
 				position: relative;
 				display: flex;
 				height: 100%;
@@ -159,7 +163,6 @@
 				justify-content: center;
 				align-items: center;
 				.logo {
-					//margin-left: 350px;
 					height: 100%;
 					color: black;
 					line-height: 71px;
@@ -170,9 +173,8 @@
 					}
 				}
 				.menu {
-					height: calc(100% - 2px);
+					height: 100%;
 					ul {
-						margin: -4px 0px 0 0;
 						height: 100%;
 						li {
 							height: 100%;
@@ -181,10 +183,8 @@
 								height: 100%;
 								align-content: center;
 								align-items: center;
-								color: $main_dark;
 								position: relative;
-								padding: 0;
-								margin: 0 15px;
+								padding: 0 15px;
 								@include media('<992px') {
 									margin: 0 10px;
 									@include font(12, 16, 400, $futura);
@@ -206,41 +206,6 @@
 								}
 							}
 						}
-					}
-				}
-				.calculator {
-					margin-top: 0px;
-					display: flex;
-					background-color: #f3f7fb;
-					height: 100%;
-					padding: 0 20px 0 8px;
-					align-items: center;
-					@include media('<768px'){
-						display: none;
-					}
-					.item {
-						margin-top: -5px;
-						display: flex;
-						max-height: 19px;
-						margin-left: 12px;
-						img {
-							margin-right: 6px;
-							vertical-align: top;
-							margin-top: -1px;
-							height: 19px;
-						}
-						.text {
-							font-family: "Futura";
-							font-size: 14px;
-						}
-					}
-					.equals {
-						color: #787e8a;
-						font-family: "Open Sans";
-						font-size: 12px;
-						margin-top: -7px;
-						margin-left: 12px;
-						margin-right: 2px;
 					}
 				}
 			}

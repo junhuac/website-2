@@ -234,7 +234,7 @@
 		flex-direction: column;
 		height: auto;
 		.logotype{
-			a{
+			a {
 				height: 30px;
 				display: flex;
 				align-items: center;
@@ -307,6 +307,8 @@
 .press p {
 	overflow: hidden;
 	text-overflow: ellipsis;
+
+	a { display: inline-block; }
 }
 
 .press-logos {
@@ -1155,9 +1157,8 @@
 	}
 
 	a {
-		color: $main_dark;
+		text-decoration: none;
 		&:hover, &:active, &:focus {
-			color: darken($main_dark, 20%);
 			h3 { text-decoration: underline; }
 		}
 	}

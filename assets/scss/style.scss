@@ -87,9 +87,19 @@ p {
 }
 
 a {
-	&:hover {
-		text-decoration: none !important;
+	color: $main_dark;
+	text-decoration: underline;
+
+	&:focus { border: 2px solid $page_purple; }
+
+	&:hover, &:focus {
+		color: darken($main_dark, 15%);
+		text-decoration: none;
 	}
+
+	&:hover, &:active { border: none; }
+
+	&.link-img { display: inline-block; }
 }
 
 

@@ -154,7 +154,7 @@
 			li{
 				margin: 0 8px;
 				display: flex;
-				a{
+				a {
 					display: flex;
 					height: 100%;
 					align-items: center;
@@ -213,16 +213,17 @@
 				}
 			}
 			li{
-				a{
+				a {
 					@extend p;
-					color: #787e8a;
 					margin-bottom: 0;
+					color: #787e8a;
+					text-decoration: none;
+
 					@include media('<1200px', '>767px'){
 						font-size: 12px !important;
 					}
 
 					&:hover{
-						text-decoration: none;
 						color:#fff;
 					}
 				}

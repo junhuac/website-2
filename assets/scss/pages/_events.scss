@@ -61,15 +61,6 @@
 
 						font-size: 12px;
 						color: #787e8a;
-
-						a {
-							color: $main_dark;
-
-							&:active, &:hover, &:focus {
-								color: darken($main_dark, 20%);
-								text-decoration: underline !important;
-							}
-						}
 					}
 
 					.details {
@@ -89,7 +80,7 @@
 							border-right-color: #fe7e30;
 							border-left-color: #672788;
 
-							color: $main_dark;
+							text-decoration: none;
 
 							&:before {
 								content: '';
@@ -167,14 +158,6 @@
 				font-family: "Open Sans";
 				font-size: 16px;
 				line-height: 60px;
-
-				a {
-					color: $main_dark;
-					&:hover, &:active, &:focus {
-						color: darken($main_dark, 20%);
-						text-decoration: underline !important;
-					}
-				}
 
 				@media all and (max-width: 992px) {
 					text-align: center;

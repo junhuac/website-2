@@ -60,7 +60,7 @@ include_once('inc/template.head.php');
 							<li>Verify your email through the link we send you</li>
 						</ul>
 						<div class="images-container">
-							<div><a href="/assets/images/screenshots/stage1.png"><img src="/assets/images/screenshots/stage1.png" alt="Stage 1 Screenshot"></a></div>
+							<div><a href="/assets/images/screenshots/stage1.png" class="link-img"><img src="/assets/images/screenshots/stage1.png" alt="Stage 1 Screenshot"></a></div>
 						</div>
 					</div>
 					<div class="item">
@@ -70,7 +70,7 @@ include_once('inc/template.head.php');
 							<li>Enter the amount you want to purchase – your bonus tokens will be added automatically</li>
 						</ul>
 						<div class="images-container">
-							<div><a href="/assets/images/screenshots/stage2.png"><img src="/assets/images/screenshots/stage2.png" alt="Stage 2 Screenshot"></a></div>
+							<div><a href="/assets/images/screenshots/stage2.png" class="link-img"><img src="/assets/images/screenshots/stage2.png" alt="Stage 2 Screenshot"></a></div>
 						</div>
 					</div>
 					<div class="item">
@@ -83,7 +83,7 @@ include_once('inc/template.head.php');
 							<li>Funds will appear in your BETR account when the transaction gets a certain amount of confirmations from network. This can take from 10 minutes to 2 hours</li>
 						</ul>
 						<div class="images-container">
-							<div><a href="/assets/images/screenshots/stage3.png"><img src="/assets/images/screenshots/stage3.png" alt="Stage 3 Screenshot"></a></div>
+							<div><a href="/assets/images/screenshots/stage3.png" class="link-img"><img src="/assets/images/screenshots/stage3.png" alt="Stage 3 Screenshot"></a></div>
 						</div>
 					</div>
 					<div class="item">
@@ -92,7 +92,7 @@ include_once('inc/template.head.php');
 							<li>Once the incoming funds are cleared, you will be able to claim tokens by clicking the &ldquo;claim tokens&rdquo; button next to the transaction</li>
 						</ul>
 						<div class="images-container">
-							<div><a href="/assets/images/screenshots/stage4.png"><img src="/assets/images/screenshots/stage4.png" alt="Stage 4 Screenshot"></a></div>
+							<div><a href="/assets/images/screenshots/stage4.png" class="link-img"><img src="/assets/images/screenshots/stage4.png" alt="Stage 4 Screenshot"></a></div>
 						</div>
 					</div>
 					<div class="item">
@@ -101,8 +101,8 @@ include_once('inc/template.head.php');
 							<li>You will be required to submit proof of identity and address (KYC) prior to their tokens being issued. This is a very simple process which involves uploading two images on the website with the relevant documentation. We will inform you once this is approved.</li>
 						</ul>
 						<div class="images-container">
-							<div><a href="/assets/images/screenshots/stage5a.png"><img src="/assets/images/screenshots/stage5a.png" alt="Stage 5 Screenshot"></a></div>
-							<div><a href="/assets/images/screenshots/stage5b.png"><img src="/assets/images/screenshots/stage5b.png" alt="Stage 5 Screenshot"></a></div>
+							<div><a href="/assets/images/screenshots/stage5a.png" class="link-img"><img src="/assets/images/screenshots/stage5a.png" alt="Stage 5 Screenshot"></a></div>
+							<div><a href="/assets/images/screenshots/stage5b.png" class="link-img"><img src="/assets/images/screenshots/stage5b.png" alt="Stage 5 Screenshot"></a></div>
 						</div>
 					</div>
 					<div class="item">
@@ -113,9 +113,9 @@ include_once('inc/template.head.php');
 							<li>Please note we are not on any exchanges at this time but will be in the very near future. Please do <strong>not</strong> send your tokens to an exchange.</li>
 						</ul>
 						<div class="images-container">
-							<div><a href="/assets/images/screenshots/stage6a.png"><img src="/assets/images/screenshots/stage6a.png" alt="Stage 6 Screenshot"></a></div>
-							<div><a href="/assets/images/screenshots/stage6b.png"><img src="/assets/images/screenshots/stage6b.png" alt="Stage 6 Screenshot"></a></div>
-							<div><a href="/assets/images/screenshots/stage6c.png"><img src="/assets/images/screenshots/stage6c.png" alt="Stage 6 Screenshot"></a></div>
+							<div><a href="/assets/images/screenshots/stage6a.png" class="link-img"><img src="/assets/images/screenshots/stage6a.png" alt="Stage 6 Screenshot"></a></div>
+							<div><a href="/assets/images/screenshots/stage6b.png" class="link-img"><img src="/assets/images/screenshots/stage6b.png" alt="Stage 6 Screenshot"></a></div>
+							<div><a href="/assets/images/screenshots/stage6c.png" class="link-img"><img src="/assets/images/screenshots/stage6c.png" alt="Stage 6 Screenshot"></a></div>
 						</div>
 					</div>
 				</div>
