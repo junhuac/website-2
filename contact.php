@@ -40,7 +40,7 @@ if ($currencyData['status'] == 'ok') {
 
 			<div class="container details-section">
 				<h2 class="text-center">Details</h2>
-				<h3 class="text-center">BetterBetting</h3>
+				<h3 class="text-center">Better Betting Foundation</h3>
 				<p class="text-center">Company No: 90014075</p>
 				<div class="address-container">
 					<address>
