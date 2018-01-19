@@ -5,7 +5,7 @@ $page_red: #e64e64;
 $page_purple: #7E418F;
 $defaultFontFamily: 'Open Sans';
 $futura: "Futura";
-$currencies: ['bitcoin', 'ethereum', 'litecoin', 'bitcoin-cash', 'dash'];
+$currencies: ['bitcoin', 'ethereum', 'litecoin', 'bitcoin-cash', 'dash', 'thai-baht', 'indonesian-rupiah', 'vietnamese-dong', 'malaysian-ringgit'];
 
 @mixin font($fz, $lh: $fz, $fw: 400, $fontFamily: $defaultFontFamily) {
 	font: $fw #{($fz/$defaultFontSize)}rem/#{($lh/$defaultFontSize)}rem $fontFamily;

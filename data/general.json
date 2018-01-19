@@ -9,6 +9,10 @@
 		"ethereum",
 		"litecoin",
 		"bitcoin-cash",
-		"dash"
+		"dash",
+		"malaysian-ringgit",
+		"vietnamese-dong",
+		"indonesian-rupiah",
+		"thai-baht"
 	]
 }

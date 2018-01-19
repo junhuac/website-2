@@ -79,7 +79,7 @@ include_once('inc/template.head.php');
 							<li>You will be assigned your personal unique wallet address in your chosen currency for purchasing tokens</li>
 							<li>Go to your wallet and send funds to this unique address. Please make sure your deposit equals or exceeds the minimum purchase amount of $100</li>
 							<li>All incoming funds will be displayed on the &ldquo;Buy Tokens&rdquo; page, together with an indicator as to how far they have progressed in the process of blockchain confirmation.</li>
-							<li>Funds may be remitted in BTC, BCH, ETH, LTC and DASH. Funds may also be received in FIAT (US$) – these payments are limited to $10K or more at this stage.</li>
+							<li>Funds may be remitted in BTC, BCH, ETH, LTC and DASH. Funds may also be received in FIAT (US$) – these payments are limited to $10K or more at this stage. We also accept payment through bank transfer in the following currencies: Malaysian Ringgit, Thai Baht, Indonesian Rupiah, and Vietnamese Dong.</li>
 							<li>Funds will appear in your BETR account when the transaction gets a certain amount of confirmations from network. This can take from 10 minutes to 2 hours</li>
 						</ul>
 						<div class="images-container">
