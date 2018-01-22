@@ -18,9 +18,11 @@ if ($currencyData['status'] == 'ok') {
 	$i = 0;
 	foreach ($currencyData['content']['currencies'] as $currency) {
 		$i++;
-		$separator = ($i % 3 == 0) ? '</div><div class="logo-row">' : '';
-
-		$currencies[] = "{$separator}<img src='assets/images/payment/{$currency}_logo_long_white.png' alt='{$currency} Logo'>";
+		if ($i <= 5)
+			$separator = ((($i % 2 == 0) || ($i == 5)) && ($i != 4)) ? '</div><div class="logo-row">' : '';
+		else
+			$separator = ($i % 2 == 1) ? '</div><div class="logo-row">' : '';
+		$currencies[] = "<img src='assets/images/payment/{$currency}_logo_long_white.png' alt='{$currency} Logo'>{$separator}";
 	}
 	unset($currency, $i);
 }
