@@ -8,7 +8,7 @@ include_once('inc/template.head.php');
 <body>
 <?php include_once('inc/template.header.php'); ?>
 
-<div class="gradient-helper investment-page">
+<div id="content" class="gradient-helper investment-page">
 	<div class="container">
 		<form>
 			<h1>Get Shares Now</h1>

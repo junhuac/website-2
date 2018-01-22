@@ -47,7 +47,7 @@ Creation Date: 01/12/2018
 
 <?php include_once('inc/template.header.php'); ?>
 
-<div class="homepage-banner <?php echo $customClass; ?>">
+<div id="content" class="homepage-banner <?php echo $customClass; ?>">
 	<div class="container">
 		<div class="banner-align-helper">
 			<h1>

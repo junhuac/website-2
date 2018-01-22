@@ -18,7 +18,7 @@ include_once('inc/template.head.php');
 <body>
 <?php include_once('inc/template.header.php'); ?>
 
-<div class="gradient-helper <?php echo $customClass; ?>" >
+<div id="content" class="gradient-helper <?php echo $customClass; ?>" >
 	<div class="container">
 		<h1 class="roadmap-title">Better Betting Roadmap</h1>
 		<a href="<?php echo $headerPageList['ICO']; ?>" class="button huge"><span class="bg-wrapper">650,000,000 Tokens</span></a>

@@ -18,7 +18,7 @@ include_once('inc/template.head.php');
 	include_once('inc/template.header.php');
 ?>
 
-<div class="gradient-helper <?php echo $customClass; ?>">
+<div id="content" class="gradient-helper <?php echo $customClass; ?>">
 	<div class="container">
 		<h1>Can't find that!</h1>
 		<p class="main">But worry not, you'll find your Tokens <a href="<?php echo $headerPageList['ICO']; ?>">here</a>.</p>

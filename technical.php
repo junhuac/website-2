@@ -8,7 +8,7 @@ include_once('inc/template.head.php');
 <body>
 <?php include_once('inc/template.header.php'); ?>
 
-<div class="gradient-helper <?php echo $customClass; ?>">
+<div id="content" class="gradient-helper <?php echo $customClass; ?>">
 	<div class="right-shape"></div>
 	<div class="container">
 		<h1>The BETR Betting Model</h1>

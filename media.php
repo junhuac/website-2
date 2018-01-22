@@ -33,7 +33,7 @@ if ($mediaData['status'] !== 'error') {
 <body>
 <?php include_once('inc/template.header.php'); ?>
 
-<div class="gradient-helper media">
+<div id="content" class="gradient-helper media">
 	<div class="right-shape"></div>
 	<div class="container">
 		<div>

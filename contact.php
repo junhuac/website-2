@@ -25,7 +25,7 @@ if ($currencyData['status'] == 'ok') {
 <body>
 <?php include_once('inc/template.header.php'); ?>
 
-<div class="gradient-helper <?php echo $customClass; ?>">
+<div id="content" class="gradient-helper <?php echo $customClass; ?>">
 	<div class="container">
 		<form method="POST" action="form-process.php">
 			<h1>Contact Us</h1>

@@ -9,7 +9,7 @@ include_once('inc/template.head.php');
 <?php include_once('inc/template.header.php'); ?>
 
 <!-- TUU -->
-<div class="gradient-helper <?php echo $customClass; ?>">
+<div id="content" class="gradient-helper <?php echo $customClass; ?>">
 	<div class="container">
 		<h1>Meet the Team</h1>
 		<p class="main">The Better Betting Foundation represents a true marriage of experienced Blockchain and iGaming experts.</p>

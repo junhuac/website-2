@@ -9,7 +9,7 @@ include_once('inc/template.head.php');
 <?php include_once('inc/template.header.php'); ?>
 
 <!-- TUU -->
-<div class="market-page">
+<div id="content" class="market-page">
 	<div class="gradient-helper">
 		<div class="container">
 			<h1 id="market-page-header">ICO Market Impact</h1>

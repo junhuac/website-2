@@ -30,6 +30,7 @@ if ($headerCurrencyData['status'] == 'ok' && $pageName !== 'index') {
 <!--[if lte IE 9]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
 <![endif]-->
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
 
 <?php
 include_once('inc/module.google-analytics.php');
