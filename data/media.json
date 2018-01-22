@@ -1,5 +1,17 @@
 [
 	{
+		"name": "Ronnie O&rsquo;Sullivan Congratulating - Soft-cap",
+		"visible": true,
+		"type": "video",
+		"src": "https://www.youtube.com/embed/2cRZenSimQg"
+	},
+	{
+		"name": "Ronnie O&rsquo;Sullivan&rsquo;s Good Luck Message to BetterBetting",
+		"visible": true,
+		"type": "video",
+		"src": "https://www.youtube.com/embed/BYM_qCigsBQ"
+	},
+	{
 		"name": "Ronnie meets Adriaan to play some Snooker",
 		"visible": true,
 		"type": "image",
@@ -45,22 +57,10 @@
 		"eventId": "hypethon17"
 	},
 	{
-		"name": "Ronnie O&rsquo;Sullivan&rsquo;s Good Luck Message to BetterBetting",
-		"visible": true,
-		"type": "video",
-		"src": "https://www.youtube.com/embed/BYM_qCigsBQ"
-	},
-	{
 		"name": "EiG Berlin 2017",
 		"visible": true,
 		"type": "image",
 		"src": "/assets/images/media/eig-berlin1.jpg",
 		"eventId": "eigberlin17"
-	},
-	{
-		"name": "Ronnie O&rsquo;Sullivan Congratulating - Soft-cap",
-		"visible": true,
-		"type": "video",
-		"src": "https://www.youtube.com/embed/2cRZenSimQg"
 	}
 ]
