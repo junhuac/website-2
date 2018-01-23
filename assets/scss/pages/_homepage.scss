@@ -177,11 +177,9 @@
 		.socials {
 			ul {
 				position: absolute;
-				left: 0;
-				top: -75px;
+				top: -75px; left: 0; right: 0;
 				display: flex;
 				list-style-type: none;
-				padding: 0 100% 0 0;
 				margin: 0;
 
 				@include media('<992px', '>767px'){
@@ -304,16 +302,39 @@
 	}
 }
 
-.press p {
-	overflow: hidden;
-	text-overflow: ellipsis;
+.details {
+	margin-top: 40px;
+
+	.highlight {
+		position: relative;
+		width: 100%;
+		height: 0;
+		padding-bottom: 56.25%;
+
+		iframe {
+			position: absolute;
+			top: 0; left: 0;
+			width: 100%;
+			height: 100%;
+		}
+	}
 }
 
+.press {
+	p {
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+	@include media('>991px') {
+		& > h2 { margin-top: 0; }
+	}
+}
 .press-logos {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
-	justify-content: center;
+	justify-content: flex-start;
 
 	img { margin: 15px; }
 }

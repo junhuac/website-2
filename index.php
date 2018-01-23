@@ -87,39 +87,46 @@ Creation Date: 01/12/2018
 </div>
 
 <div class="container">
-	<div class="press">
-		<h2>BETR Token Live now!</h2>
-		<div class="container">
-			<p>Token Audit: <a href="BETTER_BETTING_Foundation_Audit.pdf">here</a>.</p>
-			<p>Token Contract Address: <a href="https://etherscan.io/token/0x763186eb8d4856d536ed4478302971214febc6a9">0x763186eb8d4856d536ed4478302971214febc6a9</a></p>
+	<div class="details">
+		<div class="col-xs-12 col-md-6">
+			<div class="highlight">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/B28WOawYPqc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			</div>
 		</div>
-		<h3>As seen in the Press</h3>
-		<div class="container">
-			<div class="press-logos">
-				<a href="http://bitcoinprbuzz.com/betbetting-launches-pre-ico-betr-betting-currency-future/">
-					<img src="assets/images/press/bitcoin-pr-buzz.png" alt="Bitcoin PR Buzz Logo">
-				</a>
-				<a href="https://finance.yahoo.com/news/betterbetting-launches-pre-ico-betr-004800210.html">
-					<img src="assets/images/press/yahoo.png" alt="Yahoo Finance Logo">
-				</a>
-				<a href="http://www.igamingbusiness.com/press/betterbetting-launches-pre-ico-betr-betting-currency-future">
-					<img src="assets/images/press/igamingbusiness.png" alt="iGamingBusiness Logo">
-				</a>
-				<a href="https://calvinayre.com/2017/11/24/press-releases/betterbetting-launches-pre-ico-betr-betting-currency-future/">
-					<img src="assets/images/press/calvinayre.png" alt="Calvin Ayre Logo">
-				</a>
-				<a href="http://coinwisdom.org/35965-betterbetting-launches-pre-sales-for-the-future-of-betting-betr/">
-					<img src="assets/images/press/coin-wisdom.png" alt="Coin Wisdom Logo">
-				</a>
-				<a href="http://news.morningstar.com/all/access-wire/ASWAccesswire483339MSN/betterbetting-launches-pre-ico-for-betr-the-betting-currency-of-the-future.aspx">
-					<img src="assets/images/press/morningstar.png" alt="Morningstar Logo">
-				</a>
-				<a href="https://www.sbcnews.co.uk/technology/2017/11/24/betterbetting-launches-pre-ico-betting-cryptocurrency-betr/">
-					<img src="assets/images/press/sbc-news.png" alt="SBC News Logo">
-				</a>
-				<a href="http://kicktrend.com/2017/11/24/icotrack-betterbetting-org-betterbetting-betting-currency-of-the-future/">
-					<img src="assets/images/press/kicktrend.png" alt="Kicktrend Logo">
-				</a>
+		<div class="col-xs-12 col-md-6">
+			<div class="press">
+				<h2>BETR Token Live now!</h2>
+				<div>
+					<p>Token Audit: <a href="BETTER_BETTING_Foundation_Audit.pdf">here</a>.</p>
+					<p>Token Contract Address: <a href="https://etherscan.io/token/0x763186eb8d4856d536ed4478302971214febc6a9">0x763186eb8d4856d536ed4478302971214febc6a9</a></p>
+				</div>
+				<h3>As seen in the Press</h3>
+				<div class="press-logos">
+					<a href="http://bitcoinprbuzz.com/betbetting-launches-pre-ico-betr-betting-currency-future/">
+						<img src="assets/images/press/bitcoin-pr-buzz.png" alt="Bitcoin PR Buzz Logo">
+					</a>
+					<a href="https://finance.yahoo.com/news/betterbetting-launches-pre-ico-betr-004800210.html">
+						<img src="assets/images/press/yahoo.png" alt="Yahoo Finance Logo">
+					</a>
+					<a href="http://www.igamingbusiness.com/press/betterbetting-launches-pre-ico-betr-betting-currency-future">
+						<img src="assets/images/press/igamingbusiness.png" alt="iGamingBusiness Logo">
+					</a>
+					<a href="https://calvinayre.com/2017/11/24/press-releases/betterbetting-launches-pre-ico-betr-betting-currency-future/">
+						<img src="assets/images/press/calvinayre.png" alt="Calvin Ayre Logo">
+					</a>
+					<a href="http://coinwisdom.org/35965-betterbetting-launches-pre-sales-for-the-future-of-betting-betr/">
+						<img src="assets/images/press/coin-wisdom.png" alt="Coin Wisdom Logo">
+					</a>
+					<a href="http://news.morningstar.com/all/access-wire/ASWAccesswire483339MSN/betterbetting-launches-pre-ico-for-betr-the-betting-currency-of-the-future.aspx">
+						<img src="assets/images/press/morningstar.png" alt="Morningstar Logo">
+					</a>
+					<a href="https://www.sbcnews.co.uk/technology/2017/11/24/betterbetting-launches-pre-ico-betting-cryptocurrency-betr/">
+						<img src="assets/images/press/sbc-news.png" alt="SBC News Logo">
+					</a>
+					<a href="http://kicktrend.com/2017/11/24/icotrack-betterbetting-org-betterbetting-betting-currency-of-the-future/">
+						<img src="assets/images/press/kicktrend.png" alt="Kicktrend Logo">
+					</a>
+				</div>
 			</div>
 		</div>
 	</div>
