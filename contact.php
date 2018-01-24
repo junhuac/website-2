@@ -53,7 +53,7 @@ if ($currencyData['status'] == 'ok') {
 						Tallin, Estonia
 					</address>
 					<address class="text-right">
-						Office 19
+						Office 14
 						<br>
 						Labs Atrium Camden
 						<br>
