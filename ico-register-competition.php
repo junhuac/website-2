@@ -1,0 +1,1 @@
+<?php header('Location: https://ico.betterbetting.org/register?utm_source=social&utm_medium=post&utm_campaign=ronnie_competition'); ?>
